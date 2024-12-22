@@ -14,7 +14,7 @@ name                     : &name "Sigrun"
 description              : &description "personal description"
 url                      : https://sigrun.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "sigrun.github.io"
+repository               : "sigrun/sigrun.github.io"
 remote_theme             : "academicpages/academicpages.github.io"
 
 
