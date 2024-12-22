@@ -14,7 +14,7 @@ name                     : &name "Sigrun"
 description              : &description "personal description"
 url                      : https://sigrun.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "sigrun/sigrun.github.io"
+repository               : "sigrun.github.io"
 
 
 # Site Author - The following control what appear as part of the author content on the side bar.
