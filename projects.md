@@ -1,7 +1,7 @@
 ---
-layout: single
-title: "Prosjekter"
 permalink: /projects/
+title: "Prosjekter"
+excerpt: "Mine prosjekter"
 author_profile: true
 ---
 
