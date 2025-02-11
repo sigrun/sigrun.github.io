@@ -22,10 +22,10 @@ repository               : "sigrun/sigrun.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   name             : "Sigrun Lindaas Norhagen"
   pronouns         : # example: "she/her"  
-  bio              : "Bio"
+  bio              : "PhD-kandidat på profesjonsfaglig digital kompetanse i lærerutdanning"
   location         : "Bergen"
   employer         : "NLA høgskolen"
   uri              : # URL
