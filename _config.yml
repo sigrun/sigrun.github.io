@@ -22,7 +22,7 @@ repository               : "sigrun/sigrun.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/profile.png"
   name             : "Sigrun Lindaas Norhagen"
   pronouns         : # example: "she/her"  
   bio              : "<a href="https://app.cristin.no/persons/show.jsf?id=791793">Cristin</a>"
