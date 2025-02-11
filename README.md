@@ -1,5 +1,3 @@
-# sigrun.github.io - snorhagen.no
-
 På denne siden har jeg samlet noe av det jeg driver med i jobben som leder for digitalisering av utdanning på NLA og som doktorgradskandidat på UiB. Prosjektsiden viser pågående utviklingsprosjekter, mens portfoliosiden viser en del av forskningsprosjektet mitt knyttet til PfDK i lærerutdanningen. Du finner også en oversikt over publikasjoner, undervisning, konferansebidrag og min CV.
 
 Siden er laget med mestemarten markdown filer på GitHub med Academic Pages malen. 
