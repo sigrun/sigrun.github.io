@@ -9,16 +9,16 @@ author:
   bio: "Din bio"
   location: "Norge"
 
- # Academic websites
-  googlescholar    : "https://scholar.google.com/citations?hl=no&view_op=list_works&gmla=AOv-ny_wrmcIsm5ANL381tyZCje-uNN3A8b3kd1_C5-KxjmyHlfZK0H0lR86fueEyyWoQry9D33NnRxN7O-BWjJ0cxXGbT6IbpX1F1WL&user=IibnOuQAAAAJ"
-  orcid            : "https://orcid.org/0000-0002-8570-3201"
-  cristin          : "https://app.cristin.no/persons/show.jsf?id=791793"
-  linkedin         : "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://no.linkedin.com/in/sigrun-lindaas-norhagen-ab97ab96&ved=2ahUKEwjI1fW9mruLAxUwQlUIHWWpHqoQFnoECAwQAQ&usg=AOvVaw0t9GIiOkPiWcRk7LiWSR4K"
-  twitter          : "@slindaas"
+# Academic websites
+googlescholar: "https://scholar.google.com/citations?hl=no&view_op=list_works&gmla=AOv-ny_wrmcIsm5ANL381tyZCje-uNN3A8b3kd1_C5-KxjmyHlfZK0H0lR86fueEyyWoQry9D33NnRxN7O-BWjJ0cxXGbT6IbpX1F1WL&us[...]"
+orcid: "https://orcid.org/0000-0002-8570-3201"
+cristin: "https://app.cristin.no/persons/show.jsf?id=791793"
+linkedin: "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://no.linkedin.com/in/sigrun-lindaas-norhagen-ab97ab96&ved=2ahUKEwjI1fW9mruLAxUwQlUIHWWpHqoQFnoECAwQAQ&usg=[...]"
+twitter: "@slindaas"
 
- # Repositories and software development
- github           : "sigrun"
-  kaggle           : # Username  
+# Repositories and software development
+github: "sigrun"
+kaggle: # Username
 
 # Site Settings
 locale: "nb-NO"  # Setter norsk som språk
@@ -26,8 +26,6 @@ remote_theme: "academicpages/academicpages.github.io"
 
 # Defaults for pages
 defaults:
-  # _pages
-  
   - scope:
       path: ""
       type: pages
