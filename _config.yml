@@ -33,6 +33,16 @@ publication_category:
 locale: "nb-NO"  # Setter norsk som språk
 remote_theme: "academicpages/academicpages.github.io"
 
+# Defaults for pages
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
+# Site navigation
+include: ["_pages"]
 
 
