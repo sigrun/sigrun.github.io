@@ -3,7 +3,7 @@ title: "Developing professional digital competence in Norwegian teacher educatio
 collection: publications
 category: manuscripts
 permalink: /publication/2024-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'First paper of my PhD project.'
 date: 2024-04-12
 venue: 'Journal 1'
 paperurl: 'https://www.frontiersin.org/articles/10.3389/feduc.2024.1363529/pdf'
