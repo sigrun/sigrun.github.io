@@ -29,7 +29,7 @@ author:
   location         : "Bergen"
   employer         : "NLA høgskolen"
   uri              : # URL
-  email            : "sigrun@nla.no" 
+  email            : "https://www.nla.no/ansattliste/ansatte/sigrun-lindaas-norhagen/" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -37,7 +37,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-8570-3201"
   semantic         : # URL
-  pubmed           : "https://app.cristin.no/persons/show.jsf?id=79179"
+  cristin          : "https://app.cristin.no/persons/show.jsf?id=791793"
   researchgate     : # URL
   scopus           : # URL
 
@@ -46,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "sigrun"
+  github           : #
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
