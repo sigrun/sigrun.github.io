@@ -1,4 +1,4 @@
-title: Sigrun
+title: Sigruns side
 description: > 
   Din beskrivelse her
 
@@ -6,7 +6,7 @@ description: >
 author:
   name: "Sigrun Lindaas Norhagen"
   avatar: "profile.png"  # Du kan legge til et profilbilde senere
-  bio: "Tidligere almennlærer, master i IKT støttet læring og PhD student på profesjonsfaglig digital kompetanse. Forsker på lærerutdanning og spesielt interessert i Ai literacy og kunstig intelligens i skolen."
+  bio: "Tidligere almennlærer, master i Digitalt læringsdesign og PhD-student på profesjonsfaglig digital kompetanse i lærerutdanning. Spesielt interessert i Ai literacy og kunstig intelligens i skolen."
   location: "Norge"
 
 # Academic websites
@@ -20,18 +20,19 @@ twitter: "@slindaas"
 github: "sigrun"
 kaggle: # Username
 
+# Publication Category - The following the list of publication categories and their headings
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'
+
 # Site Settings
 locale: "nb-NO"  # Setter norsk som språk
 remote_theme: "academicpages/academicpages.github.io"
 
-# Defaults for pages
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
 
-# Site navigation
-include: ["_pages"]
+
+
