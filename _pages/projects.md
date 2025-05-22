@@ -1,6 +1,6 @@
 ---
 permalink: /projects/
-title: "Prosjekter"
+title: "Utviklingsarbeid"
 excerpt: "Mine prosjekter"
 author_profile: true
 ---
