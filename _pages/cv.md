@@ -34,12 +34,12 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Digital førstelinje-support for hele slekta – ansvarlig for alt fra nettverk til nettbank.
+* HTML og CSS
+  * Ved hjelp av Ki, nå også alt annet
+* Adobe programvare
+* Microsoft Suite
+* Apple programvare
 
 Publications
 ======
