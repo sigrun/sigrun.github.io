@@ -1,7 +1,7 @@
 ---
 title: 'Green Screen i iMovie'
 date: 2019-09-04
-permalink: /posts/2019/09/green-screen-imovie/
+permalink: /posts/2019-09-green-screen-imovie
 tags:
   - verktøy
   - tips
@@ -19,3 +19,4 @@ Det betyr at du kan filme deg selv foran en grønn bakgrunn (eller en annen farg
 *[Lenke til video]*
 
 Dette er en super måte å lage engasjerende og kreative presentasjoner på – enten du er lærer eller student.
+

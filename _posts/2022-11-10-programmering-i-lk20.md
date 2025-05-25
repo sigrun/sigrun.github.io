@@ -1,7 +1,7 @@
 ---
 title: 'Programmering i LK20'
 date: 2022-11-10
-permalink: /posts/2022/11/programmering-i-lk20/
+permalink: /posts/2022-11-10-programmering-i-lk20
 tags:
   - programmering
   - LK20
