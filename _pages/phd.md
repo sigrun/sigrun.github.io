@@ -13,7 +13,6 @@ Doktorgradsprosjektet undersøker hvordan profesjonsfaglig digital kompetanse (P
 Prosjektet er strukturert som en artikkelbasert avhandling med tre delstudier som sammen belyser det teoretiske, strukturelle og praktiske grunnlaget for utvikling og dokumentasjon av PfDK i lærerutdanning.
 
 
-  
 #### **Jeg lurer på:**
 
 1. Hva sier forskningen om hvordan PfDK forstås og anvendes i lærerutdanning?

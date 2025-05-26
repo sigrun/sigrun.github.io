@@ -19,7 +19,7 @@ Her finner du eksempler på prosjekter jeg har vært involvert i - fra oppbyggin
 
 ### Pedagogisk innovasjon og læringsmiljø
 
-- Initiert og utviklet Læringslaben ved NLA, som senere ble utvidet med både Lekelab og Gamelab  
+- Initiert og utviklet Læringslaben ved NLA, som senere er utvidet med både konseptet Lekelab og Gamelab  
 - Etablert infrastruktur for selvbetjent videoproduksjon og podcast, inkludert selvkjøringsstudio og dedikerte podcastrom  
 - Bidratt til utviklingen av teknologisk tilpassede undervisningsrom, som Zoom Rooms og Active Learning Classrooms  
 
@@ -39,12 +39,8 @@ Her finner du eksempler på prosjekter jeg har vært involvert i - fra oppbyggin
 Flere av prosjektene presenteres i mer detalj på egne undersider. Samlet viser de hvordan jeg jobber med å gjøre utdanning mer tilgjengelig, engasjerende og fremtidsrettet –  med en fot godt plantet i klasserommet og en i teknologiverdenen.
 
 
-### [Prosjektnavn 1]
-* Beskrivelse av prosjektet
-* Hvilke teknologier som ble brukt
-* Link til kode eller demo hvis tilgjengelig
+### [Læringslaben](https://sites.google.com/view/nlalab/start)
+Læringslab-rommet er et tverrfaglig prosjektareal og en sosial arena for studenter, ansatte, alumni og eksterne partnere, der man kan møtes uavhengig av interesser, kompetanse, og bakgrunn og samarbeide på tvers av fagfelt. Innredningen skal bidra til å fremme ferdigheter som kreativitet, samarbeid, kritisk tenking, kommunikasjon og faglighet ved bruk av framtidsrettede digitale løsninger. 
 
-### [Prosjektnavn 2]
-* Beskrivelse av prosjekt 2
-* Nøkkelpunkter
-* Resultater
+### [eBok-prosjektet](https://prosjekt.nla.no/ebok/1-7/)
+Som del av NLA Høgskolens satsing på pedagogisk innovasjon utviklet vi en digital eBok for grunnskolelærerutdanningen. Læremiddelet kombinerte tekst, video og interaktive elementer for å støtte studentenes forberedelser til nasjonal deleksamen i matematikk. Målet var å legge til rette for tilpasset opplæring og gjøre fagstoffet mer tilgjengelig gjennom en fleksibel og brukervennlig plattform.
