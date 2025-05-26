@@ -1,7 +1,7 @@
 ---
 title: 'Arbeidskrav: Videosammendrag av forskningsartikkel'
-date: 2019-08-14
-permalink: /posts/2019/08/videosammendrag/
+date: 2021-03-14
+permalink: /posts/2021/03/videosammendrag/
 tags:
   - arbeidskrav
   - digital fortelling

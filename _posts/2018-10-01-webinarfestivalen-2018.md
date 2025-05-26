@@ -17,5 +17,4 @@ Målgruppen var bred – alle som er interessert i undervisning og læring kunne
 Festivalen bestod av en rekke korte innlegg og samtaler som ble strømmet direkte og gjort tilgjengelige i opptak.
 
 🎥 **Se opptak av innleggene her:** 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zngjRT6j9HE?si=7TomXvovmRmC69Ci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=hHdXrcXSP6kd_3Z_&amp;list=PLyczo9mHqK7G7wO6rSqxCjuxw3PYNV49f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
