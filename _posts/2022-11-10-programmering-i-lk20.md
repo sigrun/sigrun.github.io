@@ -10,7 +10,7 @@ tags:
   - fagfornyelsen
 ---
 
-Etter innføringen av ny læreplan (LK20) har **programmering og algoritmisk tenkning** fått en tydelig plass i flere fag. 
+Etter innføringen av ny læreplan (LK20) har **programmering og algoritmisk tenkning** fått en tydelig plass i flere fag. Her kan du se en oversikt! 
 
 Under finner du en oversikt over relevante **kompetansemål i LK20** og hvordan programmering også er forankret i rammeverket for **profesjonsfaglig digital kompetanse (PfDK)**.
 
