@@ -23,7 +23,7 @@ Through research, teaching, and development projects, she contributes to innovat
 - Universal Design
 - Online pedagogy and hybrid learning environments
 - Multimedia learning and visual learning principles
-- Educational use of digital tools (Canvas, Inspera, Zoom, PowerPoint, WeVideo, Miro, etc.)
+- Educational use of digital tools 
 - Student-active and inquiry-based teaching methods
 - Constructive alignment in teaching and assessment
 - Flipped classroom
