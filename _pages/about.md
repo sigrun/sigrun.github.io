@@ -25,7 +25,7 @@ Jeg utvikler kurs og undervisningsopplegg for både studenter og lærere, og har
 🔍 Les mer om doktorgradsprosjektet mitt [her].
 
 #### Hva jeg brenner for
-Jeg er spesielt opptatt av *teknologiforståelse for barn og unge. Det handler ikke bare om å bruke digitale verktøy, men om å forstå hvordan teknologien fungerer, hvordan den påvirker oss, og hvordan vi kan ta informerte og etiske valg i en digital verden.
+Jeg er spesielt opptatt av *teknologiforståelse* for barn og unge. Det handler ikke bare om å bruke digitale verktøy, men om å forstå hvordan teknologien fungerer, hvordan den påvirker oss, og hvordan vi kan ta informerte og etiske valg i en digital verden.
 
 Jeg er også fascinert av læring på tvers av livsfaser – hvordan vi lærer, hva som motiverer oss, og hvordan utdanning kan utformes slik at flere får lyst og mulighet til å lære hele livet.
 
