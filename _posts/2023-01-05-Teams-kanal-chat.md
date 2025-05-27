@@ -1,7 +1,7 @@
 ---
 title: "Team vs. Kanal vs. Gruppechat – når skal jeg bruke hva?"
-date: 2025-05-26
-permalink: /posts/2025/05/team-kanal-chat/
+date: 2023-01-05
+permalink: /posts/2023/01/team-kanal-chat/
 tags:
   - Microsoft Teams
   - samarbeid
