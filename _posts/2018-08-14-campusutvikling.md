@@ -1,4 +1,3 @@
-
 ---
 title: 'Leseliste for campusutvikling'
 date: 2018-08-14
@@ -8,9 +7,9 @@ tags:
   - leseliste
 ---
 
-For å sette seg inn i forskning og høste erfaring fra de som har drevet med campusutvikling de siste årene, har jeg samlet en liste over interessante foredrag og artikler som er verdt å sette seg inn i.
+I denne posten har jeg samlet en liste over interessante foredrag og artikler som er verdt å sette seg inn i når du skal drive med campusutvikling.
 
-1. Seminar om Campusutvikling 2.0 (Videoopptak)
+## 1. Seminar om Campusutvikling 2.0 (Videoopptak)
 
 – Nye læringsarealer i eksisterende og nye undervisningsbygg
 
@@ -30,7 +29,7 @@ Brukerbidrag i utviklingen av nye læringsarealer ved Merete Kvidal, prosjektdir
 
 Vi trodde vi visste hva vi skulle ved Kjetil Hellang, økonomidirektør, Universitetet i Agder
 
-2. Forskning
+## 2. Forskning
 
 
 [CAMPUSUTFORMING FOR UNDERVISNING, FORSKNING, SAMARBEID OG LÆRING
