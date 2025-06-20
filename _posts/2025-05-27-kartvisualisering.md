@@ -16,11 +16,11 @@ Derfor anbefaler jeg at du tar en titt på dette blogginnlegget fra Flourish:
 
 👉 **[Choosing the right map type for your data](https://flourish.studio/blog/choosing-the-right-map-type-for-your-data/)**
 
-Innlegget gir en lettfattelig innføring i ulike karttyper: choropleth-kart, punktkart, proporsjonale symbolkart, pilkart, varmekart, linjekart, buede linjer (arc maps), kartogrammer og 3D-ekstrusjoner. For hver karttype forklares styrker, svakheter og bruksområder – alt med eksempler som kan overføres til skolefag som samfunnsfag, naturfag og geografi.
+Innlegget gir en lettfattelig innføring i ulike karttyper. For hver karttype forklares styrker, svakheter og bruksområder – alt med eksempler som kan overføres til skolefag som samfunnsfag, naturfag og geografi.
 
 ### Hvorfor er dette relevant i GLU?
 
-- I **samfunnsfag** skal elevene lære å tolke kart og statistikk som en del av det å forstå samfunnet og delta som medborgere. Digitale kart gir nye muligheter – og utfordringer – for visuell lesing og kritisk refleksjon.
+- I **samfunnsfag** skal elevene lære å tolke kart og statistikk som en del av det å forstå samfunnet og delta som medborgere. Digitale kart gir nye muligheter for «visuell lesing» 
 - I arbeidet med **PfDK** handler det ikke bare om å bruke digitale verktøy, men om å forstå *hvordan teknologien rammer inn informasjon* og påvirker hvordan elever forstår verden.
 - Kart er også en del av **data literacy** – en kjernekompetanse i møte med store datamengder og komplekse samfunnsutfordringer.
 
@@ -30,7 +30,4 @@ Innlegget gir en lettfattelig innføring i ulike karttyper: choropleth-kart, pun
 - Bruk kart i tverrfaglige prosjekter mellom matematikk, naturfag og samfunnsfag.
 - La studentene utforske Flourish som verktøy og vurdere det som en del av kritisk profesjonsutøvelse.
 
----
-
-Ved å styrke lærerstudenters bevissthet om visuell kommunikasjon, bidrar vi til en mer kritisk og informert lærerrolle i møte med digitale læremidler. Dette blogginnlegget er en enkel inngang – men et viktig steg – i å integrere kartforståelse og visualisering i lærerutdanningen.
 

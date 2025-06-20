@@ -13,7 +13,7 @@ I boken *Eksamensrevolusjonen* (anbefales!) presenterer Arild Raaheim over **40 
 
 ## Eksempler på alternative eksamensformer
 
-| Eksamensform | Navn | Vurderingsform | Hvordan gjennomføre? | Vanskelighetsgrad |
+| Eksamensform | Navn | Vurderingsform | Vanskelighetsgrad |  |
 |--------------|------|----------------|------------------------|--------------------|
 | Med medbrakte notater | Skoleeksamen | Studenter får ta med håndskrevne notater. | Lett |
 | Med mulighet for diskusjon | Skoleeksamen | Først individuell del, deretter diskusjon og ny innlevering. | Lett–middels |
