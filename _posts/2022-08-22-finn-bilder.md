@@ -8,4 +8,13 @@ tags:
     - digital kompetanse
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper ligula arcu, viverra tempus diam vehicula vitae. Mauris a libero a purus congue pellentesque. Aliquam erat volutpat. Nunc id finibus elit. Proin eget tellus posuere, finibus lorem vestibulum, laoreet lacus. Vestibulum commodo augue in elementum cursus. Cras sit amet elit sit amet orci tempor tempus vitae nec mauris. Maecenas efficitur mattis maximus. Quisque sit amet bibendum mauris. Sed eget massa eu ex molestie facilisis et non massa. Vivamus porttitor sollicitudin sem eu lobortis. Nunc scelerisque laoreet purus nec tempus. Ut leo massa, faucibus eget sem in, imperdiet vestibulum metus. Morbi nec libero velit. Quisque viverra magna eu ante blandit, at placerat mauris pharetra.
+I videoen viser jeg hvordan du finner bilder som du fritt kan bruke, direkte fra PowerPoint, I Canvas og i søk på nett
+
+Table of Contents:
+00:20 – PowerPoint
+02:04 – Canvas
+03:59 – CC commons
+06:38 – Googlesøk
+08:19 – Pixabay
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TJv0HLh8rzY?si=FzeSLDLqUArx2KFx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

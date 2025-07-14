@@ -22,7 +22,7 @@ Nå er jeg leder for digitalisering av utdanning ved NLA Høgskolen, samtidig so
 
 Jeg utvikler kurs og undervisningsopplegg for både studenter og lærere, og har blant annet vært med på å etablere et 15 studiepoengs emne i PfDK og flere microkurs for etter- og videreutdanning. Forskningen min er praksisnær, og jeg samarbeider tett med lærere, lærerutdannere og skoleledere for å finne gode modeller for utvikling og dokumentasjon av digital kompetanse.
 
-🔍 Les mer om doktorgradsprosjektet mitt [her]().
+🔍 Les mer om doktorgradsprosjektet mitt [her](https://sigrun.github.io/portfolio/portfolio-1/).
 
 #### Hva jeg brenner for
 Jeg er spesielt opptatt av *teknologiforståelse* for barn og unge. Det handler ikke bare om å bruke digitale verktøy, men om å forstå hvordan teknologien fungerer, hvordan den påvirker oss, og hvordan vi kan ta informerte og etiske valg i en digital verden.
