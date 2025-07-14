@@ -1,17 +1,25 @@
 ---
-title: "The PDC ladder"
-excerpt: ".<br/><img src='/images/DIDLE-Logo.png'>"
+title: «PDC ladder – Et rammeverk for profesjonsfaglig digital kompetanse i lærerutdanningen"
+excerpt: "PfDK-stigen er en visuell og begrepsmessig modell som tydeliggjør hvordan digital kompetanse opererer på tre gjensidig forbundne nivåer: elever, lærere og lærerutdannere. Modellen støtter lærerutdannere i å navigere sin doble rolle ved å legge vekt på pedagogisk modellering, metakognitiv bevissthet og strategisk teknologiintegrasjon på alle nivåer i lærerutdanningen.<br/><img src='/images/PDC-Ladder.png'>"
 collection: portfolio
 ---
 
-<img src='/images/DIDLE-Logo.png'>
+<img src='/images/PDC-Ladder.png'>
 
-DIDLE (Digital interaksjon i den digitale lærearenaen) var et forsknings- og utviklingsprosjekt ved Høgskulen på Vestlandet som utforsket hvordan digitale verktøy kan støtte autentisk nabospråklæring i ungdomsskolen. I prosjektet samarbeidet 14-åringer fra Norge, Sverige og Danmark gjennom digitale plattformer og applikasjoner, der formålet var å styrke både språklig forståelse og interkulturell kompetanse.
+**PfDK-stigen for lærerutdanning** er et rammeverk som visualiserer digital kompetanse på tre nivåer: elever, lærere og lærerutdannere. Modellen er utviklet for å støtte lærerutdannere i deres særegne rolle, hvor de både skal undervise lærerstudenter og forberede dem på å utvikle digital kompetanse hos egne elever.
 
-Et sentralt fokus i prosjektet var å utvikle elevenes evne til å kommunisere og samhandle på tvers av språkgrenser – både skriftlig og muntlig. Gjennom strukturerte oppgaver og videomøter med jevnaldrende fra nabolandene, fikk elevene erfare hvordan språk og teknologi kan brukes for å bygge broer mellom mennesker.
+Der lærere forventes å bruke digitale verktøy i undervisningen, har lærerutdannere et utvidet ansvar: De må modellere og synliggjøre den pedagogiske begrunnelsen for sine teknologivalg, og på den måten bidra til at studentene utvikler en kritisk og reflektert forståelse av profesjonsfaglig digital kompetanse (PfDK).
 
-Prosjektet avdekket samtidig et viktig læringsbehov: mange elever behersket de tekniske løsningene godt, men manglet sosiale og pragmatiske ferdigheter knyttet til digital samtalepraksis. Dette kom blant annet til uttrykk ved at elever ofte unnlot å presentere seg i samtaler eller avsluttet videosamtaler brått, uten høflighetsfraser. Disse observasjonene understreker at digital samhandling ikke bare handler om teknisk mestring, men også om sosial kompetanse og kommunikative normer – ferdigheter som må læres og som bør inngå i undervisningen.
+PfDK-stigen består av tre nivåer:
 
-Gjennom DIDLE ble det tydelig at digitale arenaer kan fungere som kraftfulle læringsrom for både språk og samhandling, forutsatt at skolene også støtter elevene i å utvikle normer for god digital kommunikasjon.
+1. **Elevnivået** – Handler om elevenes digitale ferdigheter og forståelse, slik disse er beskrevet i læreplanen (LK20).
+2. **Lærernivået** – Bygger på modeller som Starkey (2019), og omfatter lærerens profesjonsutøvelse med teknologi: å lede digitale læringsmiljøer, integrere teknologi i undervisningen og utvikle seg som profesjonsutøver i en digital tid.
+3. **Lærerutdannernivået** – Vektlegger lærerutdannerens rolle som modell og metakommunikatør. Her handler det ikke bare om å bruke teknologi i egen undervisning, men å gjøre begrunnelsene eksplisitte slik at studentene kan overføre innsikten til egen praksis.
 
-Prosjektets nettside: [DIDLE](https://didleproject.wordpress.com/about/)
+Det unike med modellen er at den skiller tydelig mellom nivåene, samtidig som den viser forbindelsene mellom dem. Slik støtter PDC-stigen lærerutdannere i å strukturere undervisningen slik at digital kompetanse utvikles helhetlig – både som innhold og som metode.
+
+🔗 **Ressurser**
+
+📄 Full artikkel: *Norhagen et al. (2024). Developing professional digital competence in Norwegian teacher education*  
+🪜 Modell: *PDC-stigen som illustrasjon (PNG)*  
+🛠️ Eksempler: *Teachable Moments – Hva lærerutdannere kan gjøre (Markdown)*  
