@@ -1,10 +1,10 @@
 ---
 title: "VR i KRLE"
-excerpt: "Studentene laget virtuelle ekskursjoner til religiøse rom med 360-kamera og Google Expeditions.<br/><img src='/images/vr-religion.jpg'>"
+excerpt: "Studentene laget virtuelle ekskursjoner til religiøse rom med 360-kamera og Google Expeditions.<br/><img src='/images/360-prosjekt.png'>"
 collection: portfolio
 ---
 
-<img src='/images/vr-religion.jpg'>
+<img src='/images/360-prosjekt.png'>
 
 Dette undervisningsprosjektet brukte VR og 360-teknologi som inngang til å utforske religiøse rom i KRLE. Studentene tok utgangspunkt i en ferdig virtuell ekskursjon til Jerusalem og laget deretter egne 360-presentasjoner av kirker, templer og moskeer, som de tok med ut i praksis.
 

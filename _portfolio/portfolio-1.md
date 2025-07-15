@@ -1,9 +1,9 @@
 ---
 title: "PhD prosjektet"
-excerpt: "Undersøker hvordan profesjonsfaglig digital kompetanse kan implementeres systematisk i norsk lærerutdanning gjennom kunnskapskartlegging, systemanalyse og utvikling av en dokumentasjonspraksis.<br/><img src='/images/PHD-prosjekt.png'>"
+excerpt: "Undersøker hvordan profesjonsfaglig digital kompetanse kan implementeres systematisk i norsk lærerutdanning gjennom kunnskapskartlegging, systemanalyse og utvikling av en dokumentasjonspraksis.<br/><img src='/images/PhD-prosjektet.png'>"
 collection: portfolio
 ---
-<img src='/images/PHD-prosjekt.png'>
+<img src='/images/PhD-prosjektet.png'>
 # Doktorgradsprosjektet
 *Project summary:*
 >*This doctoral project investigates how Professional Digital Competence (PDC) can be systematically implemented in Norwegian teacher education. Drawing on a combination of literature review, systems analysis, and design-based research, the project aims to develop practical approaches that support student teachers in developing digital competence as both an educational and professional asset.*
