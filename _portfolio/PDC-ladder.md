@@ -1,6 +1,6 @@
 ---
-title: «PDC ladder – Et rammeverk for profesjonsfaglig digital kompetanse i lærerutdanningen"
-excerpt: "PfDK-stigen er en visuell og begrepsmessig modell som tydeliggjør hvordan digital kompetanse opererer på tre gjensidig forbundne nivåer: elever, lærere og lærerutdannere. Modellen støtter lærerutdannere i å navigere sin doble rolle ved å legge vekt på pedagogisk modellering, metakognitiv bevissthet og strategisk teknologiintegrasjon på alle nivåer i lærerutdanningen.<br/><img src='/images/PDC-Ladder.png'>"
+title: «PDC ladder» – Et rammeverk for profesjonsfaglig digital kompetanse i lærerutdanningen
+excerpt: "PfDK-stigen er en visuell og begrepsmessig modell som tydeliggjør hvordan lærerutdannere kan utvikle studentens profesjonsfaglig digital kompetanse.<br/><img src='/images/PDC-Ladder.png'>"
 collection: portfolio
 ---
 

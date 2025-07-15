@@ -21,7 +21,7 @@ Her er teknologiske nyvinninger, sosiale kriser og politiske reformer plassert s
 
 ## Hva sier forskningen?
 
-Blogginnlegget [“Why Use a Timeline-Based Assignment?”](https://cft.vanderbilt.edu/guides-sub-pages/timeline-assignments/) fra Vanderbilt University trekker fram hvordan digitale tidslinjer gir rom for:
+Blogginnlegget [“Why Use a Timeline-Based Assignment?”](https://learningandteaching.byui.edu/guides/strategiesforteaching/guides/digital-timelines) fra Vanderbilt University trekker fram hvordan digitale tidslinjer gir rom for:
 
 - **mikro- og makroperspektiver**
 - **tematiske kategorier**
