@@ -20,7 +20,7 @@ Hvordan kan vi bruke VR-teknologi for å utforske religiøse rom sammen med elev
 
 🎧 **Virtuell reise til Jerusalem**
 
-Den første ressursen vi tok i bruk var en 360-graders tur til Jerusalem med manus. Du kan lese manuset her: [Virtuell ekskursjon Jerusalem (PDF)](../assets/Virtuell%20ekskursjon%20Jerusalem.pdf)
+Den første ressursen vi tok i bruk var en 360-graders tur til Jerusalem med manus. Du kan lese manuset her: [Virtuell ekskursjon Jerusalem (PDF)](https://docs.google.com/document/d/19DJUkb8EPcf35s7WTs3M34QEa04R7fZPGNK4Glrezf4/edit?usp=sharing)
 
 Denne inneholdt blant annet:
 - **Gravkirken**
@@ -77,5 +77,5 @@ Dette prosjektet ga studentene erfaring med planlegging, produksjon og bruk av V
 
 📎 **Ressurser**
 
-- [Manus til Jerusalem-turen (PDF)](../assets/Virtuell%20ekskursjon%20Jerusalem.pdf)
-- [Oppgavetekst: VR-opplegg i uke 44 (Word)](../assets/VR-opplegg%20i%20uke%2044.docx)
+- [Manus til Jerusalem-turen (PDF)](https://docs.google.com/document/d/19DJUkb8EPcf35s7WTs3M34QEa04R7fZPGNK4Glrezf4/edit?usp=sharing)
+- [Oppgavetekst: VR-opplegg](https://docs.google.com/document/d/1BbglnWG8OgMFvjeO62liuQlL55eONeToYWV8EIyOW8I/edit?usp=sharing)

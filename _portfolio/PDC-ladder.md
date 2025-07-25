@@ -20,6 +20,8 @@ Det unike med modellen er at den skiller tydelig mellom nivåene, samtidig som d
 
 🔗 **Ressurser**
 
-📄 Full artikkel: *Norhagen et al. (2024). Developing professional digital competence in Norwegian teacher education*  
-🪜 Modell: *PDC-stigen som illustrasjon (PNG)*  
-🛠️ Eksempler: *Teachable Moments – Hva lærerutdannere kan gjøre (Markdown)*  
+- 📄 [Full article (PDF)](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1363529/full)  
+- 🧾 [Poster abstract (PDF)](https://eden-europe.eu/wp-content/uploads/2025/07/EDEN-2025-AC-Proceedings.pdf#page=218)  
+- 🪜 [Model: The PDC Ladder model (PNG)](/images/PDC-ladder-model.png) 
+- 🖼️ [Illustration: PDC Ladder illustration (PNG)](/images/PDC-ladder-illustration.png)  
+- 🛠️ [Teachable Moments – What Teacher Educators Can Do (Markdown)](/files/EDEN-output.pdf)
