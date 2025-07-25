@@ -1,5 +1,6 @@
 ---
-title: "The PDC Ladder for Teacher Education: Making Digital Competence Visible at Every Level"
+title: "The PDC Ladder for Teacher Education: A Three-Tiered
+Framework for Digital Competence Integration"
 collection: publications
 category: conferences
 permalink: /publication/2025-06-10-pdc-ladder-poster
@@ -7,7 +8,8 @@ excerpt: 'Poster presented at EDEN 2025 – visualizing the differences between 
 date: 2025-06-10
 venue: 'EDEN Europe 2025'
 paperurl: 'https://your-link-to-full-article.pdf'
-citation: 'Norhagen, Sigrun Lindaas. "The PDC Ladder for Teacher Education: Making Digital Competence Visible at Every Level." EDEN Europe 2025.'
+citation: 'Norhagen, Sigrun Lindaas. "The PDC Ladder for Teacher Education: A Three-Tiered
+Framework for Digital Competence Integration" EDEN Europe 2025.'
 ---
 
 ## Poster Abstract
