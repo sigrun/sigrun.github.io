@@ -17,7 +17,7 @@ This poster introduces the **PDC Ladder for Teacher Education**, a visual and co
 ## 🔗 Resources
 
 - 📄 [Full article (PDF)](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1363529/full)  
-- 🧾 [Poster abstract (PDF)](https://your-link-to-poster-abstract.pdf)  
+- 🧾 [Poster abstract (PDF)](https://eden-europe.eu/wp-content/uploads/2025/07/EDEN-2025-AC-Proceedings.pdf#page=218)  
 - 🪜 [Model: The PDC Ladder model (PNG)](/images/PDC-ladder-model.png) 
 - 🖼️ [Illustration: PDC Ladder illustration (PNG)](/images/PDC-ladder-illustration.png)  
 - 🛠️ [Teachable Moments – What Teacher Educators Can Do (Markdown)](/files/EDEN-output.pdf)
