@@ -13,7 +13,7 @@ Når du bruker **Microsoft Teams**, kan det være vanskelig å avgjøre hvor du 
 
 ---
 
-## 🧱 Team – for varige samarbeid
+## TEAM – for varige samarbeid
 
 Et **Microsoft Team** er et område for samarbeid med personene i din «indre sirkel» – folk du jobber med daglig over tid. Når du oppretter et Team, får du:
 
@@ -36,7 +36,7 @@ Bruk et Team når samarbeidet er **langsiktig** og involverer flere ressurser og
 
 ---
 
-## 📂 Kanal – for tema og delprosjekter
+## KANAL – for tema og delprosjekter
 
 En **Kanal** er et område **innenfor et Team** og brukes for å organisere arbeid etter emner, prosjekter eller arbeidsstrømmer. Hvis du f.eks. jobber i markedsføringsteamet, kan du ha egne kanaler for kampanjer, innhold, sosiale medier osv.
 
@@ -53,7 +53,7 @@ Bruk en kanal når det du jobber med er relevant for de som allerede er med i et
 
 ---
 
-## 💬 Gruppechat – for raske avklaringer og ad hoc-samarbeid
+## GRUPPECHAT – for raske avklaringer og ad hoc-samarbeid
 
 En **Gruppechat** er som en WhatsApp-gruppe i Teams. Den er rask å sette opp og fungerer best for kortsiktig samarbeid:
 

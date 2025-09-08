@@ -1,4 +1,4 @@
-🪜---
+---
 title: "Developing professional digital competence in Norwegian teacher education: A scoping review"
 collection: publications
 category: manuscripts

@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Velkommen! 👋
-
-Jeg er Sigrun – lærerutdanner, tidligere barneskolelærer og nå PhD-kandidat med et særlig engasjement for profesjonsfaglig digital kompetanse i lærerutdanningen. Her deler jeg prosjektene mine, forskningen jeg jobber med og ressurser jeg har vært med på å utvikle. Målet er å bidra til at både lærere og elever får en trygg og reflektert inngang til det digitale samfunnet vi er en del av.
+👋 Jeg er Sigrun – lærerutdanner, tidligere barneskolelærer og nå PhD-kandidat med et særlig engasjement for profesjonsfaglig digital kompetanse i lærerutdanningen. Her deler jeg prosjektene mine, forskningen jeg jobber med og ressurser jeg har vært med på å utvikle. Målet er å bidra til at både lærere og elever får en trygg og reflektert inngang til det digitale samfunnet vi er en del av.
 
 Hvem jeg er
 ------
