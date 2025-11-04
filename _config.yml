@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "snorhagen.no"
+title                    : "sigrun.github.io"
 title_separator          : "-"
 name                     : &name "Sigrun"
 description              : &description "personal description"
@@ -28,7 +28,7 @@ author:
   bio              : "PhD-kandidat PfDK på GLU"
   location         : "Bergen"
   employer         : "NLA høgskolen"
-  uri              : # URL
+  uri              : "Se min prosjekt-sandkasse på https://www.snorhagen.no"
   email            : # 
 
   # Academic websites
