@@ -1,13 +1,12 @@
 ---
-title: "Kart og kritisk kompetanse: Tidsbesparende bruk av ChatGPT for lærere"
+title: "Ki i skolen: Tidsbesparende bruk av ChatGPT for lærere"
 date: 2025-09-08
-permalink: /posts/2025/09/tidsbesbarende ki/
+permalink: /posts/2025/09/skolebruk av ki/
 tags:
-  - PfDK
-  - visualisering
-  - samfunnsfag
-  - kart
-  - data literacy
+  - Språkmodeller
+  - ChatGPT
+  - LLM
+  - Tidstyver
 ---
 # Tidsbesparende bruk av ChatGPT for lærere
 
