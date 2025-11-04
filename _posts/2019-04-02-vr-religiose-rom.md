@@ -10,15 +10,15 @@ tags:
   - digitale verktøy
 ---
 
-> 💡 **Merk:** Google Expeditions var et gratis verktøy utviklet av Google for å lage og gjennomføre VR-turer (i klasserommet). Lærere kunne lede elevene «gjennom» 360-bilder og 3D-modeller med tekst og lyd, mens de hadde kontroll over elevenes synsfelt. Det var særlig godt egnet for tematiske ekskursjoner i KRLE, naturfag og samfunnsfag.  
+>Google Expeditions var et gratis verktøy utviklet av Google for å lage og gjennomføre VR-turer (i klasserommet). Lærere kunne lede elevene «gjennom» 360-bilder og 3D-modeller med tekst og lyd, mens de hadde kontroll over elevenes synsfelt. Det var særlig godt egnet for tematiske ekskursjoner i KRLE, naturfag og samfunnsfag.  
 >  
-> ❌ **Obs:** Google Expeditions ble avviklet i 2021. Mange av funksjonene er nå flyttet over til Google Arts & Culture, men den lærerstyrte VR-funksjonaliteten er ikke lenger tilgjengelig.
+> **Obs:** Google Expeditions ble avviklet i 2021. Mange av funksjonene er nå flyttet over til Google Arts & Culture, men den lærerstyrte VR-funksjonaliteten er ikke lenger tilgjengelig.
 
 ---
 
 Hvordan kan vi bruke VR-teknologi for å utforske religiøse rom sammen med elever? Dette prosjektet startet med en ferdig virtuell ekskursjon til Jerusalem – en guidet tur i Google Expeditions som allerede var tilgjengelig. Vi brukte den som inspirasjon, og laget vårt eget undervisningsopplegg.
 
-🎧 **Virtuell reise til Jerusalem**
+**Virtuell reise til Jerusalem**
 
 Den første ressursen vi tok i bruk var en 360-graders tur til Jerusalem med manus. Du kan lese manuset her: [Virtuell ekskursjon Jerusalem (PDF)](https://docs.google.com/document/d/19DJUkb8EPcf35s7WTs3M34QEa04R7fZPGNK4Glrezf4/edit?usp=sharing)
 
@@ -31,7 +31,7 @@ Denne inneholdt blant annet:
 
 ---
 
-📸 **Studentene lager egne ekskursjoner**
+**Studentene lager egne ekskursjoner**
 
 Neste steg var at studentene skulle lage egne virtuelle ekskursjoner til religiøse rom. Dette ble gjort i følgende steg:
 
@@ -40,13 +40,13 @@ Neste steg var at studentene skulle lage egne virtuelle ekskursjoner til religi�
 3. **VR-produkt:** Bildene ble lastet opp i Google Expeditions og koblet sammen med tekst og lyd.
 4. **Ut i praksis:** Studentene tok med seg produktet ut i praksis og brukte det med elever ved hjelp av VR-cardboards og iPhones.
 
-🛠 **Teknisk løsning**
+**Teknisk løsning**
 
 Google Expeditions tillot læreren å **styre elevenes blikk** i VR – en funksjon som var særlig nyttig i undervisningen. En utfordring var at alle måtte være på samme nettverk for å være "sammen" i VR-opplevelsen. Løsningen ble en mobil Wi-Fi-ruter med eget SIM-kort – en enkel og effektiv workaround.
 
 ---
 
-🧭 **To versjoner av ekskursjonen**
+**To versjoner av ekskursjonen**
 
 Vi laget to ulike versjoner av produktet (fra Birkeland kirke):
 
@@ -57,13 +57,13 @@ Vi laget to ulike versjoner av produktet (fra Birkeland kirke):
 
 ---
 
-📋 **Tips og erfaringer**
+**Tips og erfaringer**
 
 - Tenk nøye gjennom **hvor du tar 360-bildene** i rommet. Se for deg ruten elevene skal følge.
 - Lag korte, visuelle **manustekster** som fungerer godt i kombinasjon med VR-bildet.
 - **Test på forhånd** at teknologien fungerer der du skal bruke den – særlig nettverket.
 
-🖼 Her er en skisse som viser hvordan vi planla kamerastandpunktene i rommet:
+Her er en skisse som viser hvordan vi planla kamerastandpunktene i rommet:
 
 ![Skisse av rommet](../assets/Skisse%20av%20rommet.png)
 
