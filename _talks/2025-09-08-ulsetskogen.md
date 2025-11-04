@@ -7,6 +7,8 @@ venue: "Ulsetskogen skole"
 date: 2025-09-08
 location: "Bergen"
 ---
+En analog inngang til KI i skolen med trafikklysmodell for personvern, eksempler på hallusinasjoner og diskusjoner om bias.
+
 
 Vi starter analogt: praktiske øvelser som gir et bedre grunnlag for å forstå hva KI betyr i skolen – før vi snakker om verktøy. Jeg går gjennom **personvern** med en enkel *trafikklysmodell* (grønn/gul/rød), viser hvordan **hallusinasjoner** oppstår (og hvordan være kildekritisk), og gjør **bias** konkret gjennom korte cases og diskusjon.
 

@@ -7,6 +7,7 @@ venue: "Rektormøte for partnerskoler – NLA Høgskolen"
 date: 2025-04-03
 location: "Bergen"
 ---
+Innlegg om hvordan lærerutdanningen kan dokumentere og utvikle studentenes profesjonsfaglige digitale kompetanse (PfDK).
 
 Invitert innlegg på rektormøte for partnerskoler ved NLA Høgskolen. Presentasjonen tok for seg utfordringer og muligheter knyttet til dokumentasjon og utvikling av studentenes profesjonsfaglige digitale kompetanse (PfDK).
 

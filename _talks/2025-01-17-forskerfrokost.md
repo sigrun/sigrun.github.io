@@ -7,6 +7,8 @@ venue: "NLA Høgskolen"
 date: 2025-01-17
 location: "Bergen"
 ---
+Et praktisk kurs i hvordan du kan lage en spesialisert KI-assistent tilpasset din faglige kontekst – fra forskerbot til spesialpedagogisk veileder.
+
 
 ### Bakgrunn
 
