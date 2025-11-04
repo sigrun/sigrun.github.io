@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Sigrun Lindaas Norhagen"
   pronouns         : # example: "she/her"  
-  bio              : "PhD-kandidat PfDK på GLU </br> Se min prosjekt-sandkasse på https://www.snorhagen.no"
+  bio              : "PhD-kandidat PfDK på GLU </br> Se min prosjekt-sandkasse på <a href="http://www.snorhagen.no">snorhagen.no</a>"
   location         : "Bergen"
   employer         : "NLA høgskolen"
   uri              : "https://www.snorhagen.no"
