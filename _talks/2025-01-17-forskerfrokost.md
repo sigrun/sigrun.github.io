@@ -8,13 +8,6 @@ date: 2025-01-17
 location: "Bergen"
 ---
 
-## Mitt doktorgradsprosjekt
-
-**Sigrun Lindaas Norhagen**  
-Leder for digitalisering av utdanning · Webutvikler · Lærerutdanner
-
----
-
 ### Bakgrunn
 
 Jeg har bakgrunn som allmennlærer, lærerutdanner og webutvikler i IT-avdelingen.  
