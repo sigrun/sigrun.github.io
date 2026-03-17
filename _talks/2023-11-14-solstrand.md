@@ -8,4 +8,5 @@ date: 2023-11-14
 location: "Solstrand, Os"
 ---
 
-[Se presentasjonen her](/presentasjoner/2023-raadgiverseminar/)
+[Se presentasjonen her](sigrun.github.io/presentasjoner/2023-raadgiverseminar/
+)
