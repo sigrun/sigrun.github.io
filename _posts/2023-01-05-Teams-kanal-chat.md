@@ -18,7 +18,7 @@ Når du bruker **Microsoft Teams**, kan det være vanskelig å avgjøre hvor du 
 Et **Microsoft Team** er et område for samarbeid med personene i din «indre sirkel» – folk du jobber med daglig over tid. Når du oppretter et Team, får du:
 
 - **Kanaler** for å organisere informasjon og emner  
-- **Faner** for å tilpasse området, f.eks. med oppgavehåndtering  
+- **Faner** for å tilpasse området, f.eks. med oppgavehåndtering eller link til annet område  
 - **Fildeling og samarbeid** gjennom et tilknyttet SharePoint-område  
 - **E-postadresse** knyttet til teamet  
 - **Mulighet for Teams-møter** og møteopptak  
@@ -58,7 +58,7 @@ Bruk en kanal når det du jobber med er relevant for de som allerede er med i et
 En **Gruppechat** er som en WhatsApp-gruppe i Teams. Den er rask å sette opp og fungerer best for kortsiktig samarbeid:
 
 - Kommunikasjon skjer via chat  
-- Filer deles via **OneDrive for Business**  
+- Filer deles via **OneDrive** dvs at det ikke finnes noe tilhørende lagringsområde for chatten slik det er i en kanal i et Teamsområde  
 - Du kan legge til faner med f.eks. oppgaver, nettsteder og notater  
 - **Ingen SharePoint**-plass eller felles e-postadresse  
 - Eksterne kan legges til, men får ikke tilgang til filer  
