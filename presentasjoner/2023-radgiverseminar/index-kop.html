@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rådgiverseminar, Utdanning i Bergen – Sigrun Lindaas Norhagen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       MOBILE HEADER
+       ============================================================ -->
+  <header class="mobile-header">
+    <button class="hamburger" id="hamburger-btn" aria-label="Åpne navigasjon">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-title">Rådgiverseminar – Utdanning i Bergen</div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- ============================================================
+       SIDEBAR NAV
+       ============================================================ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-name">Sigrun Lindaas Norhagen</div>
+      <div class="sidebar-logo-title">Rådgiverseminar, Utdanning i Bergen</div>
+    </div>
+    <nav id="sidebar-nav">
+      <a href="#hero" class="nav-item">Innledning</a>
+
+      <div class="nav-group-label">Bakgrunn</div>
+      <a href="#section-1" class="nav-item">30 år tilbake</a>
+      <a href="#section-2" class="nav-item">Er ikke KI bare et verktøy?</a>
+      <a href="#section-3" class="nav-item">Ansvarsfordeling</a>
+
+      <a href="#chapter-naa" class="nav-item nav-chapter-link">1. Nå</a>
+
+      <div class="nav-group-label">Nå</div>
+      <a href="#section-4" class="nav-item">DATA og personvern</a>
+      <a href="#section-5" class="nav-item">Chat, chatbot, assistent, agent</a>
+      <a href="#section-6" class="nav-item">Hva er en chatbot?</a>
+      <a href="#section-7" class="nav-item">Hva slags bot vil du lage?</a>
+      <a href="#section-8" class="nav-item">Femtrinnsmodellen</a>
+      <a href="#section-9" class="nav-item">Systemprompt oppbygning</a>
+      <a href="#section-10" class="nav-item">Systemprompt → KI-assistent</a>
+      <a href="#section-11" class="nav-item">Chatboter i skolen</a>
+      <a href="#section-12" class="nav-item">Mitt KI-kompass</a>
+
+      <a href="#chapter-naer" class="nav-item nav-chapter-link">2. Nær fremtid</a>
+      <a href="#chapter-fremtid" class="nav-item nav-chapter-link">3. Fremtid</a>
+
+      <div class="nav-group-label">Øvelse</div>
+      <a href="#section-exercise" class="nav-item">Mennesker vs. KI</a>
+    </nav>
+  </aside>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main class="main">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="hero" class="hero">
+      <h1>Hva trenger elever å lære om KI?</h1>
+      <!-- Dato og sted — fyll inn, f.eks.: 17. mars 2026 <span class="hero-meta-sep">·</span> Bergen -->
+      <p class="hero-meta">
+        16.03.26 <span class="hero-meta-sep">·</span> Solstrand
+      </p>
+      <div class="hero-speaker">
+        <div class="hero-speaker-dot">SN</div>
+        <div>
+          <div class="hero-speaker-name">Sigrun Lindaas Norhagen</div>
+          <div class="hero-speaker-org">NLA Høgskolen — PhD-stipendiat, Profesjonsfaglig digital kompetanse</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 1: 30 år tilbake
+         Source slides: page 2–7 (build sequence)
+         ============================================================ -->
+    <section id="section-1" class="slide-section">
+      <h2 class="section-heading">30 år tilbake: verden uten internett</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide01.png" alt="30 år tilbake: verden uten internett" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 01 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>For tretti år siden fantes ikke internett i folks hverdag. Ingen søkemotorer, ingen sosiale medier, ingen strømmetjenester — og ingen ville ha trodd at dette ville endre alt. Det samme skjer nå med kunstig intelligens. Vi befinner oss midt i et teknologiskifte som er like gjennomgripende, og det skjer fortere enn noe vi har sett før.</p>
+          <p>Spørsmålet er ikke om KI vil påvirke skolen, men hvordan vi som lærere og rådgivere skal hjelpe elevene å navigere i dette landskapet — med kunnskap, kritisk blikk og etisk bevissthet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: Er ikke KI bare enda et verktøy?
+         Source slides: page 6
+         ============================================================ -->
+    <section id="section-2" class="slide-section">
+      <h2 class="section-heading">Er ikke KI bare enda et verktøy?</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide02.png" alt="Er ikke KI bare enda et verktøy?" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 02 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Det er fristende å tenke på KI som bare enda et verktøy — som kalkulatoren eller tekstbehandleren. Men det er en forenkling som kan villede oss. Et verktøy gjør det du ber det om. KI genererer, tolker og tilpasser — og dets output avhenger i stor grad av hvem som bruker det og hvordan.</p>
+          <p>Verktøy-metaforen fritar oss for ansvar. Når en elev bruker en kalkulator, vet de hva som skjer. Når de bruker en KI-assistent, er prosessen usynlig. Det krever en helt annen form for kritisk tenkning å vurdere det som kommer ut.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: Ansvarsfordeling
+         Source slides: page 9
+         ============================================================ -->
+    <section id="section-3" class="slide-section">
+      <h2 class="section-heading">Hvem har ansvaret — og for hva?</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide03.png" alt="Ansvarsfordeling" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 03 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>KI-ansvaret i skolen er ikke ett ansvar, det er mange. Utviklerne bak systemene har ansvar for at de er trygge og rettferdige. Skoleleiere og myndigheter har ansvar for retningslinjer og rammeverk. Lærerne har ansvar for pedagogisk bruk. Og elevene har ansvar for sin egen bruk.</p>
+          <p>Problemet er at disse ansvarslagene sjelden er tydelig artikulert — hverken for lærere eller elever. Uten klarhet om hvem som eier hvilket ansvar, ender vi opp med at ingen tar det helhetlige ansvaret som trengs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CHAPTER DIVIDER: 1. NÅ
+         ============================================================ -->
+    <div id="chapter-naa" class="chapter-divider">
+      <h2>1. Nå</h2>
+      <p class="chapter-sub">KI i klasserom og lærerhverdag i dag</p>
+    </div>
+
+    <!-- ============================================================
+         SECTION 4: DATA og personvern / trafikklysmodellen
+         Source slides: page 31
+         ============================================================ -->
+    <section id="section-4" class="slide-section">
+      <h2 class="section-heading">DATA: hva du deler med KI-tjenester</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide04.png" alt="DATA og personvern – trafikklysmodellen" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 04 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Når elevene (og lærerne) bruker kommersielle KI-tjenester, sender de data ut av skolen. Spørsmålet er: hvilken data, og med hvilke konsekvenser? Trafikklysmodellen gir en enkel heuristikk: grønt lys for offentlig og ikke-sensitiv informasjon, gult lys der du må tenke deg om, rødt lys for personopplysninger, helseopplysninger og alt som er underlagt taushetsplikt.</p>
+          <p>For rådgivere er dette særlig viktig. Det som diskuteres på kontoret hører ikke hjemme i en chatbot-prompt. Samtaler om elevers personlige situasjon, familie og helse er rødt — alltid.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: Chat VS. Chatbot VS. Assistent VS. Agent
+         Text-only section — no slide image
+         ============================================================ -->
+    <section id="section-5" class="slide-section">
+      <h2 class="section-heading">Chat, chatbot, assistent og agent — fire ulike ting</h2>
+      <div class="section-body text-only">
+        <div class="slide-text-col">
+          <p>Ord som «KI», «chatbot» og «assistent» brukes om hverandre i hverdagsspråket, men de betyr faktisk ganske ulike ting. Å kjenne forskjellen hjelper deg å velge riktig verktøy og forstå hva du egentlig har foran deg.</p>
+          <div class="concept-grid">
+            <div class="concept-card">
+              <h3>Chat</h3>
+              <p>En vanlig samtaleflate — som SMS eller Messenger. Ingen KI involvert av natur. Du skriver, en annen svarer.</p>
+            </div>
+            <div class="concept-card">
+              <h3>Chatbot</h3>
+              <p>Et automatisert system som svarer på meldinger etter forhåndsdefinerte regler eller med en språkmodell. Det handler om én-til-én-samtaler med en maskin.</p>
+            </div>
+            <div class="concept-card">
+              <h3>KI-assistent</h3>
+              <p>En chatbot med tilgang til kontekst, hukommelse eller integrasjoner. Den kan «kjenne deg» og handle på dine vegne innenfor gitte rammer.</p>
+            </div>
+            <div class="concept-card">
+              <h3>KI-agent</h3>
+              <p>Et system som handler autonomt for å nå et mål — kan planlegge, bruke verktøy og ta beslutninger uten å spørre deg for hvert steg.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: Hva er en chatbot?
+         Source slides: page 18 (dark library analogy)
+         ============================================================ -->
+    <section id="section-6" class="slide-section">
+      <h2 class="section-heading">Chatboten som bibliotekar med millioner av bøker</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide06.png" alt="Hva er en chatbot – bibliotekanalogien" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 06 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Tenk deg et enormt bibliotek — millioner av bøker, artikler og nettsider. En chatbot er trent på alt dette, og kan svare på spørsmål basert på mønstre i teksten den har sett. Den «vet» ikke — den forutsier hva som er et sannsynlig og nyttig svar.</p>
+          <p>Det betyr at chatboten kan ha feil. Den kan hallusinere — generere informasjon som høres riktig ut, men ikke er det. Og den er ikke nøytral: treningsdataene bærer med seg de holdningene og perspektivene som finnes i kildene.</p>
+          <p>Å forstå dette er ikke for å skremme elever fra å bruke KI. Det er for å gi dem nok kunnskap til å bruke det klokt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7: Hva slags bot vil du lage?
+         Source slides: page 19
+         ============================================================ -->
+    <section id="section-7" class="slide-section">
+      <h2 class="section-heading">Hva slags bot vil du lage?</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide07.png" alt="Hva slags bot vil du lage?" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 07 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Det er stor forskjell på en bot som er et arbeidsverktøy og en som er en læringsassistent. Et arbeidsverktøy gjør jobben for deg — gir svar, skriver tekst, løser oppgaver. En læringsassistent stiller spørsmål tilbake, veileder, og hjelper deg å tenke.</p>
+          <p>Hvilken type bot du lager — og hva du programmerer den til å gjøre — avgjør hva slags læringsopplevelse elevene får. En dårlig designet bot kan underminere all innsats i klasserommet. En gjennomtenkt bot kan forsterke læringen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 8: Lag en chatbot – femtrinnsmodellen
+         Source slides: page 20
+         ============================================================ -->
+    <section id="section-8" class="slide-section">
+      <h2 class="section-heading">Lag en chatbot: femtrinnsmodellen</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide08.png" alt="Femtrinnsmodellen for chatbot-design" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 08 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Å lage en chatbot for skolen trenger ikke være komplisert. Femtrinnsmodellen gir en strukturert tilnærming som fungerer enten du lager en enkel FAQ-bot eller en avansert læringsassistent:</p>
+          <p><strong>1. Formål</strong> — hva skal boten hjelpe med, og hvem er brukeren?<br>
+          <strong>2. Persona</strong> — hvilken «karakter» og tone skal boten ha?<br>
+          <strong>3. Kunnskap</strong> — hva skal boten vite, og hva skal den ikke si?<br>
+          <strong>4. Grenser</strong> — hva er boten instruert om å nekte å gjøre?<br>
+          <strong>5. Test og iterer</strong> — prøv, juster, test med ekte brukere.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 9: Systemprompt oppbygning
+         Source slides: page 21
+         ============================================================ -->
+    <section id="section-9" class="slide-section">
+      <h2 class="section-heading">Slik bygger du et systemprompt</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide09.png" alt="Systemprompt oppbygning" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 09 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Systemprompten er instruksjonene du gir til KI-assistenten — den «instruksjonsboken» som bestemmer hvordan boten oppfører seg. En god systemprompt er tydelig på rolle, kontekst, begrensninger og tone.</p>
+          <p>Eksempel: «Du er en læringsassistent for elever på Vg1. Du hjelper elevene å forstå historiske hendelser ved å stille åpne spørsmål. Du svarer aldri direkte på oppgavene deres, men veileder dem til svaret. Du bruker enkelt norsk og unngår fagsjargong.»</p>
+          <p>Jo mer presis instruksen er, jo mer forutsigbar og pedagogisk nyttig blir boten.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 10: Systemprompt → KI-assistent
+         Source slides: page 22
+         ============================================================ -->
+    <section id="section-10" class="slide-section">
+      <h2 class="section-heading">Fra systemprompt til ferdig KI-assistent</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide10.png" alt="Fra systemprompt til KI-assistent – Sikt KI" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 10 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Plattformer som Sikt KI gjør det mulig for norske skoler å lage og dele KI-assistenter uten å sende data til kommersielle aktører. Her kan du legge inn systemprompten din, dele assistenten med klassen, og la elever bruke den i en trygg ramme.</p>
+          <p>Dette er et konkret eksempel på hvordan infrastruktur og pedagogikk henger sammen. En god pedagog trenger gode verktøy — og de finnes nå, tilpasset norske personvernkrav.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 11: Bruk av chatboter i skolen
+         Source slides: page 23
+         ============================================================ -->
+    <section id="section-11" class="slide-section">
+      <h2 class="section-heading">Chatboter i skolen: eksempler fra praksis</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide11.png" alt="Bruk av chatboter i skolen – Asker kommune" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 11 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Asker kommune har eksperimentert med lærerspesifikke KI-assistenter: én for norskfaget, én for matematikk, én for spesialpedagogisk oppfølging. Erfaringene viser at spesialiserte boter fungerer bedre enn generelle — fordi de er trent og instruert til å kjenne konteksten og møte elevene der de er.</p>
+          <p>Fellesnevneren for de gode eksemplene er at læreren er involvert i designet. Boten er et pedagogisk verktøy — ikke et IT-prosjekt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 12: Mitt KI-kompass
+         Source slides: page 24
+         ============================================================ -->
+    <section id="section-12" class="slide-section">
+      <h2 class="section-heading">Mitt KI-kompass: retningslinjer for elever</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide12.png" alt="Mitt KI-kompass – fem prinsipper" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 12 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>KI-kompasett er et sett med fem enkle prinsipper som hjelper elever å navigere etisk og klokt i møte med kunstig intelligens. Det er ikke en forbuds-liste, men et orienteringsverktøy — noe å stille seg spørsmål mot når man er usikker.</p>
+          <p>Prinsippene handler om ærlighet (si fra om du har brukt KI), kritisk tenkning (sjekk alltid det KI sier), ansvarlighet (KI er et verktøy — du er ansvarlig for resultatet), personvern (del aldri det du ikke vil at andre skal lese) og raushet (del kunnskap om KI med andre).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CHAPTER DIVIDER: 2. NÆR FREMTID
+         ============================================================ -->
+    <div id="chapter-naer" class="chapter-divider">
+      <h2>2. Nær fremtid</h2>
+      <p class="chapter-sub">Hva er på vei — og hva bør skolen forberede seg på?</p>
+    </div>
+
+    <!-- ============================================================
+         SECTION 13: NÆR FREMTID – AI fluency
+         Source slides: page 27
+         ============================================================ -->
+    <section id="section-13" class="slide-section">
+      <h2 class="section-heading">AI fluency: mer enn digitale ferdigheter</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide13.png" alt="AI fluency og nær fremtid" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 13 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>«AI fluency» — KI-flyt — handler om mer enn å vite hvordan man bruker et bestemt verktøy. Det handler om å forstå hva KI er, hva den kan og ikke kan, og å ha evnen til å vurdere når og hvordan det er klokt å bruke den.</p>
+          <p>I nær fremtid vil KI-flyt bli en grunnleggende kompetanse på linje med lesing og regning. Elever som mangler dette vil møte et arbeidsliv der KI er allestedsnærværende — uten redskaper til å navigere det kritisk eller kreativt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CHAPTER DIVIDER: 3. FREMTID
+         ============================================================ -->
+    <div id="chapter-fremtid" class="chapter-divider">
+      <h2>3. Fremtid</h2>
+      <p class="chapter-sub">Hva slags skole og samfunn vil vi ha?</p>
+    </div>
+
+    <!-- ============================================================
+         SECTION 14: FREMTID – skolen
+         Source slides: page 28
+         ============================================================ -->
+    <section id="section-14" class="slide-section">
+      <h2 class="section-heading">Fremtidens skole: hva er unikt menneskelig?</h2>
+      <div class="section-body">
+        <div class="slide-image-col">
+          <img src="slides/Slide14.png" alt="Fremtidens skole" class="slide-image"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="slide-placeholder">Slide 14 — Legg inn din eksporterte slide her</div>
+        </div>
+        <div class="slide-text-col">
+          <p>Når KI kan gjøre mye av det som tidligere krevde menneskelig innsats — skrive, analysere, beregne — hva er da skolens oppgave? Det handler ikke om å konkurrere med maskinen, men om å utvikle det som forblir genuint menneskelig: empati, kreativitet, etisk resonering, relasjonsbygging og evnen til å leve godt sammen.</p>
+          <p>Fremtidens skole er ikke en skole som motstår teknologien — det er en skole som bevisst velger hva teknologien skal brukes til, og hva som skal ivaretas av mennesker.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXERCISE SECTION: Mennesker vs. KI
+         Source slides: pages 33–43
+         ============================================================ -->
+    <section id="section-exercise" class="exercise-section">
+      <h2 class="section-heading">Øvelse: hva er lett for mennesker — og hva er lett for KI?</h2>
+
+      <p class="exercise-intro">Les hvert utsagn og diskuter med sidemannen: er dette noe <strong>mennesker</strong> er gode på, eller noe <strong>KI</strong> er god på?</p>
+
+      <div class="exercise-legend">
+        <div class="exercise-legend-item">
+          <span class="emoji">👏</span>
+          <span><strong>Klappe</strong> = lett for mennesker</span>
+        </div>
+        <div class="exercise-legend-item">
+          <span class="emoji">🤌</span>
+          <span><strong>Knipse</strong> = lett for KI</span>
+        </div>
+      </div>
+
+      <table class="exercise-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Utsagn</th>
+            <th>Svar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Gjenkjenne en enkel strekfigur av en hund</td>
+            <td><span class="answer-badge badge-human">👏 Lett for mennesker</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Forstå ironi og sarkasme i språk</td>
+            <td><span class="answer-badge badge-human">👏 Lett for mennesker</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Kjenne igjen en venn i motlys eller med hatt</td>
+            <td><span class="answer-badge badge-human">👏 Lett for mennesker</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Oversette mellom mange språk samtidig</td>
+            <td><span class="answer-badge badge-ki">🤌 Lett for KI</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Søke gjennom millioner av sider for informasjon</td>
+            <td><span class="answer-badge badge-ki">🤌 Lett for KI</span></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Bruke sunt folkevett (is i lomma smelter)</td>
+            <td><span class="answer-badge badge-human">👏 Lett for mennesker</span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Oppfatte følelser hos andre (empati)</td>
+            <td><span class="answer-badge badge-human">👏 Lett for mennesker</span></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Utføre repeterende oppgaver uten å bli slitne</td>
+            <td><span class="answer-badge badge-ki">🤌 Lett for KI</span></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Se forskjell på tvillinger</td>
+            <td><span class="answer-badge badge-human">👏 Lett for mennesker</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="https://kiforskolen.no" class="exercise-cta">
+        Vil du prøve dette opplegget i klassen din? ↗
+      </a>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-name">Sigrun Lindaas Norhagen — NLA Høgskolen</div>
+        <div class="footer-links">
+          <a href="mailto:sigrun@nla.no" class="footer-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m2 7 10 7 10-7"/>
+            </svg>
+            sigrun@nla.no
+          </a>
+          <a href="https://kiforskolen.no" class="footer-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            kiforskolen.no
+          </a>
+        </div>
+        <p class="footer-note">Rådgiverseminar, Utdanning i Bergen · Sigrun Lindaas Norhagen · NLA Høgskolen</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ============================================================
+       JAVASCRIPT: Hamburger menu + active nav highlighting
+       ============================================================ -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const sidebar      = document.getElementById('sidebar');
+    const overlay      = document.getElementById('sidebar-overlay');
+
+    function openSidebar()  { sidebar.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
+
+    hamburgerBtn.addEventListener('click', () => sidebar.classList.contains('open') ? closeSidebar() : openSidebar());
+    overlay.addEventListener('click', closeSidebar);
+
+    document.querySelectorAll('#sidebar-nav a').forEach(link => {
+      link.addEventListener('click', () => { if (window.innerWidth <= 768) closeSidebar(); });
+    });
+
+    const navLinks = document.querySelectorAll('#sidebar-nav a.nav-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + id));
+        }
+      });
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+
+    document.querySelectorAll('#sidebar-nav a.nav-item').forEach(a => {
+      const el = document.getElementById(a.getAttribute('href').replace('#', ''));
+      if (el) observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

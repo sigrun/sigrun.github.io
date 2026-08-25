@@ -38,7 +38,8 @@ Gjennom en systematisk gjennomgang av fagfellevurdert forskning fra 2017–2022 
 Denne studien utforsker hvordan organisatoriske og strukturelle forhold påvirker implementeringen av PfDK i lærerutdanning. Gjennom dokumentanalyse, spørreskjema og intervjuer med lærerutdannere og studenter analyseres PDC som et "wicked problem". Studien har en systemisk-organisatorisk tilnærming.
 
 **Studie 3 – Porteføljen som grenseobjekt (i utviklingsfase)**  
-Den tredje studien har en designbasert tilnærming og tar utgangspunkt i spørsmålet om hvordan porteføljen kan fungere som dokumentasjonsverktøy for PDC – både i utdanningen og i møte med profesjonsfeltet. Gjennom co-design-workshops og validering med ulike aktører undersøkes PDC som noe som må både utvikles og gjøres eksplisitt. Tilnærmingen kombinerer teori om boundary objects og medierende artefakter.
+Under utvikling
+<!-- Den tredje studien har en designbasert tilnærming og tar utgangspunkt i spørsmålet om hvordan porteføljen kan fungere som dokumentasjonsverktøy for PDC – både i utdanningen og i møte med profesjonsfeltet. Gjennom co-design-workshops og validering med ulike aktører undersøkes PDC som noe som må både utvikles og gjøres eksplisitt. Tilnærmingen kombinerer teori om boundary objects og medierende artefakter. -->
 
 ## Relevans og bidrag
 
