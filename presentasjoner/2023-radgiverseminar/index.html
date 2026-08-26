@@ -1,758 +1,946 @@
----
-layout: null
----
-<!-- HOW TO ADD YOUR SLIDE IMAGES:
-     Export your presentation slides as PNG files.
-     Name them Slide01.png, Slide02.png, etc. (see section numbers below).
-     Place them in a folder called "slides/" next to this HTML file.
-     Then upload both the HTML file and the slides/ folder to your website.
-
-     SLIDE MAPPING:
-     Slide00.png = Hero/title slide (page 1)
-     Slide01.png = "Prompts i ChatGPT" (page 2)
-     Slide02.png = "DALL-E illustration styles" (page 4)
-     Slide03.png = "Quality graph - Mollick" (page 6)
-     Slide04.png = "Google vs ChatGPT" (page 10)
-     Slide05.png = "AI Literacy definition" (page 12)
-     Slide06.png = "Neural network exercise" (page 18)
-     Slide07.png = "Is this a fish?" (page 21)
-     Slide08.png = "AI or Not - toaster" (page 25)
-     Slide09.png = "Face filter, virtual assistant etc" (page 26)
-     Slide10.png = "Talegjenkjenning" (page 29)
-     Slide11.png = "Turingtesten" (page 30)
-     Slide12.png = "Which Face Is Real" (page 32)
--->
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Literacy — Hvilke ferdigheter trenger elever i skolen?</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Literacy — Hvilke ferdigheter trenger elever i skolen? – Sigrun Lindaas Norhagen</title>
+    <meta name="description"
+        content="Presentasjonsnotater fra Rådgiverkonferansen VGS, Solstrand 2023. Utforsk hva AI Literacy betyr for skolen.">
+
+    <!-- Open Graph / Sosiale medier (Delekort) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI Literacy — Hvilke ferdigheter trenger elever?">
+    <meta property="og:description" content="Støttemateriell for Rådgiverkonferansen VGS, Solstrand 2023.">
+    <meta property="og:image" content="slides/Slide01.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Literacy — Hvilke ferdigheter trenger elever?">
+    <meta name="twitter:description" content="Støttemateriell for Rådgiverkonferansen VGS 2023.">
+    <meta name="twitter:image" content="slides/Slide01.png">
+
+    <!-- JSON-LD Akademisk Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PresentationDigitalDocument",
+      "name": "AI Literacy — Hvilke ferdigheter trenger elever i skolen?",
+      "description": "Presentasjonsnotater fra Rådgiverkonferansen VGS, Solstrand 2023",
+      "creator": { "@type": "Person", "name": "Sigrun Lindaas Norhagen", "affiliation": "NLA Høgskolen", "url": "https://snorhagen.no" }
     }
+    </script>
 
-    :root {
-      --color-bg: #ffffff;
-      --color-text: #1a1a1a;
-      --color-heading: #000000;
-      --color-accent: #0a7a6e;
-      --color-nav-bg: #f7f7f5;
-      --color-border: #e8e8e8;
-      --color-muted: #6b6b6b;
-      --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-      --nav-width: 240px;
-    }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
 
-    html {
-      scroll-behavior: smooth;
-    }
+    <!-- CSS ER NÅ SAMLET HER. For å lage en mal kan alt innenfor <style> legges i en egen style.css fil -->
+    <style>
+        :root {
+            /* NLA Høgskolen Fargepalett */
+            --nla-dark-green: #0A4D3E;
+            --nla-light-green: #1a6f5b;
+            --nla-light-beige: #F7F5F0;
+            --nla-accent: #E29F5B;
 
-    body {
-      font-family: var(--font-main);
-      font-size: 17px;
-      line-height: 1.75;
-      color: var(--color-text);
-      background: var(--color-bg);
-    }
+            /* Temafarger (Crux struktur) */
+            --accent-bg: var(--nla-light-beige);
+            --accent-text: var(--nla-dark-green);
 
-    /* ===================== NAVIGATION ===================== */
-    .nav-sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: var(--nav-width);
-      height: 100vh;
-      background: var(--color-nav-bg);
-      border-right: 1px solid var(--color-border);
-      overflow-y: auto;
-      z-index: 100;
-      padding: 1.5rem 0;
-      transition: transform 0.3s ease;
-    }
+            /* Gråtoner */
+            --text-heading: #1a202c;
+            --text-body: #2d3748;
+            --text-muted: #718096;
+            --border-color: #e2e8f0;
+            --bg-color: #ffffff;
 
-    .nav-header {
-      padding: 0 1.25rem 1rem;
-      border-bottom: 1px solid var(--color-border);
-      margin-bottom: 0.75rem;
-    }
+            /* Typografi */
+            --font-sans: 'Inter', system-ui, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+        }
 
-    .nav-header .speaker-name {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--color-heading);
-      letter-spacing: -0.01em;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .nav-header .event-name {
-      font-size: 12px;
-      color: var(--color-muted);
-      line-height: 1.4;
-    }
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-body);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
 
-    .nav-links {
-      list-style: none;
-    }
+        /* --- GRID SYSTEM --- */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1rem;
+            padding: 0 1rem;
+            max-width: 100%;
+        }
 
-    .nav-links li a {
-      display: block;
-      padding: 0.4rem 1.25rem;
-      font-size: 13px;
-      color: var(--color-muted);
-      text-decoration: none;
-      line-height: 1.4;
-      border-left: 2px solid transparent;
-      transition: all 0.15s ease;
-    }
+        .nav-inner,
+        .hero-inner,
+        .content-wrapper,
+        .footer-inner {
+            grid-column: 1 / -1;
+        }
 
-    .nav-links li a:hover {
-      color: var(--color-text);
-      background: rgba(0,0,0,0.03);
-    }
+        .sidebar-left {
+            display: none;
+        }
 
-    .nav-links li a.active {
-      color: var(--color-accent);
-      border-left-color: var(--color-accent);
-      font-weight: 500;
-    }
+        @media (min-width: 64rem) {
 
-    /* Hamburger */
-    .hamburger {
-      display: none;
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      z-index: 200;
-      background: var(--color-nav-bg);
-      border: 1px solid var(--color-border);
-      border-radius: 6px;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      color: var(--color-text);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
+            .nav-inner,
+            .hero-inner,
+            .footer-inner {
+                grid-column: 2 / span 11;
+            }
 
-    /* ===================== MAIN CONTENT ===================== */
-    .main-content {
-      margin-left: var(--nav-width);
-    }
+            .content-wrapper {
+                grid-column: 2 / span 9;
+            }
+        }
 
-    /* ===================== HERO ===================== */
-    .hero {
-      position: relative;
-      padding: 4rem 3rem 3rem;
-      background: linear-gradient(135deg, #e0f7f5 0%, #f0faf9 100%);
-      border-bottom: 1px solid var(--color-border);
-    }
+        @media (min-width: 80rem) {
 
-    .hero h1 {
-      font-size: clamp(28px, 4vw, 42px);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: var(--color-heading);
-      margin-bottom: 0.25rem;
-    }
+            .nav-inner,
+            .hero-inner,
+            .footer-inner {
+                grid-column: 2 / span 10;
+            }
 
-    .hero .subtitle {
-      font-size: clamp(16px, 2vw, 20px);
-      color: var(--color-muted);
-      font-weight: 400;
-    }
+            .sidebar-left {
+                display: block;
+                grid-column: 2 / span 2;
+            }
 
-    .hero .meta {
-      margin-top: 1.5rem;
-      font-size: 14px;
-      color: var(--color-muted);
-    }
+            .content-wrapper {
+                grid-column: 4 / span 7;
+            }
+        }
 
-    /* ===================== SECTIONS ===================== */
-    .slide-section {
-      padding: 3rem 3rem 2rem;
-      border-bottom: 1px solid var(--color-border);
-    }
+        /* --- SEKSJONER --- */
+        .nav-section {
+            background-color: var(--accent-bg);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(10, 77, 62, 0.1);
+        }
 
-    .section-heading {
-      font-size: clamp(20px, 2.5vw, 26px);
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      color: var(--color-heading);
-      margin-bottom: 1.5rem;
-    }
+        .hero-section {
+            background-color: var(--accent-bg);
+            padding: 2rem 0 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-    .section-body {
-      display: grid;
-      grid-template-columns: 45% 1fr;
-      gap: 2rem;
-      align-items: start;
-    }
+        @media (min-width: 48rem) {
+            .hero-section {
+                padding: 4rem 0 5rem 0;
+            }
+        }
 
-    .slide-image-col {
-      position: relative;
-    }
+        .main-section {
+            padding: 3rem 0;
+            flex: 1;
+        }
 
-    .slide-image {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      border: 1px solid var(--color-border);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
+        .footer-section {
+            background-color: var(--nla-dark-green);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 4rem 0 2rem 0;
+            margin-top: 4rem;
+        }
 
-    .slide-placeholder {
-      width: 100%;
-      aspect-ratio: 16/9;
-      background: var(--color-nav-bg);
-      border: 1px dashed var(--color-border);
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      color: var(--color-muted);
-    }
+        /* --- TOPPMENY --- */
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
 
-    .slide-text-col {
-      padding-top: 0.25rem;
-    }
+        .nav-logo-link {
+            text-decoration: none;
+            color: var(--accent-text);
+            transition: opacity 0.2s;
+        }
 
-    .slide-text-col p {
-      margin-bottom: 1rem;
-    }
+        .nav-logo-link:hover {
+            opacity: 0.8;
+        }
 
-    .slide-text-col p:last-child {
-      margin-bottom: 0;
-    }
+        .nav-logo-text {
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
 
-    .content-link {
-      color: var(--color-accent);
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.15s;
-    }
+        .nav-desktop-menu {
+            display: none;
+        }
 
-    .content-link:hover {
-      border-bottom-color: var(--color-accent);
-    }
+        @media (min-width: 48rem) {
+            .nav-desktop-menu {
+                display: block;
+            }
+        }
 
-    .sub-heading {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--color-heading);
-      margin: 1.5rem 0 0.5rem;
-    }
+        .nav-desktop-menu ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
 
-    /* Video embed */
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      margin-top: 1rem;
-      border-radius: 6px;
-      overflow: hidden;
-      background: #000;
-    }
+        .nav-desktop-menu a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: color 0.15s;
+        }
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+        .nav-desktop-menu a:hover,
+        .nav-desktop-menu a.active {
+            color: var(--accent-text);
+            font-weight: 600;
+        }
 
-    /* ===================== FOOTER ===================== */
-    footer {
-      padding: 2.5rem 3rem;
-      text-align: center;
-      color: var(--color-muted);
-      font-size: 14px;
-      border-top: 1px solid var(--color-border);
-    }
+        .mobile-menu-btn {
+            display: flex;
+            height: 2.5rem;
+            width: 2.5rem;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-text);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
 
-    footer a {
-      color: var(--color-accent);
-      text-decoration: none;
-    }
+        @media (min-width: 48rem) {
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
 
-    footer p {
-      margin-bottom: 0.25rem;
-    }
+        .mobile-menu.open {
+            display: flex;
+        }
 
-    /* ===================== MOBILE ===================== */
-    @media (max-width: 860px) {
-      .nav-sidebar {
-        transform: translateX(-100%);
-        width: 260px;
-        box-shadow: 2px 0 12px rgba(0,0,0,0.1);
-      }
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--text-body);
+            font-weight: 500;
+            padding: 0.5rem;
+        }
 
-      .nav-sidebar.open {
-        transform: translateX(0);
-      }
+        /* --- HERO --- */
+        .hero-tag {
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            color: var(--nla-accent);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
 
-      .hamburger {
-        display: flex;
-      }
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--accent-text);
+        }
 
-      .main-content {
-        margin-left: 0;
-      }
+        @media (min-width: 48rem) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+        }
 
-      .hero {
-        padding: 4rem 1.5rem 2rem;
-      }
+        .hero-ingress {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
 
-      .slide-section {
-        padding: 2rem 1.5rem 1.5rem;
-      }
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent-text);
+            align-items: center;
+        }
 
-      .section-body {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
+        /* --- INNHOLDSFORTEGNELSE (SIDEBAR) --- */
+        .toc-sticky {
+            position: sticky;
+            top: 6rem;
+            max-height: calc(100vh - 8rem);
+            overflow-y: auto;
+            padding-right: 1rem;
+        }
 
-      footer {
-        padding: 2rem 1.5rem;
-      }
-    }
+        .toc-category {
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin: 1.5rem 0 0.5rem 0;
+            text-transform: uppercase;
+        }
 
-    /* Nav overlay on mobile */
-    .nav-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.3);
-      z-index: 90;
-    }
+        .toc-category:first-child {
+            margin-top: 0;
+        }
 
-    .nav-overlay.active {
-      display: block;
-    }
-  </style>
+        .toc-list {
+            list-style: none;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .toc-list li a {
+            display: block;
+            margin-left: -2px;
+            border-left: 2px solid transparent;
+            padding: 0.3rem 0 0.3rem 1rem;
+            text-decoration: none;
+            color: var(--text-muted);
+            transition: all 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .toc-list li a:hover {
+            color: var(--accent-text);
+        }
+
+        .toc-list li a.active {
+            border-left-color: var(--nla-accent);
+            color: var(--accent-text);
+            font-weight: 600;
+            background: linear-gradient(90deg, rgba(247, 245, 240, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        /* --- PROSE (HOVEDINNHOLD) --- */
+        .prose {
+            max-width: 800px;
+        }
+
+        .chapter-divider {
+            margin: 4rem 0 2rem 0;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--nla-accent);
+        }
+
+        .chapter-divider h1 {
+            font-family: var(--font-serif);
+            color: var(--accent-text);
+            font-size: 2.5rem;
+        }
+
+        .prose section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 6rem;
+        }
+
+        .prose h2 {
+            font-family: var(--font-sans);
+            color: var(--text-heading);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .prose p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            color: var(--text-body);
+        }
+
+        .prose ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .slide-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .image-credit {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: right;
+            margin-top: -1.5rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        /* Video embed */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin: 1rem 0 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- FOOTER --- */
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-size: 0.95rem;
+        }
+
+        @media (min-width: 48rem) {
+            .footer-inner {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .footer-profile h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .footer-profile p {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--nla-accent);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        /* --- PRINT CSS --- */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .nav-section,
+            .sidebar-left,
+            .footer-section {
+                display: none !important;
+            }
+
+            .grid-container,
+            .content-wrapper,
+            .hero-inner {
+                padding: 0 !important;
+                grid-column: 1 / -1 !important;
+                margin: 0 !important;
+                display: block;
+            }
+
+            .hero-section {
+                background: transparent;
+                padding: 0 0 2rem 0;
+                border-bottom: 2px solid black;
+                margin-bottom: 2rem;
+            }
+
+            .prose section {
+                margin-bottom: 2rem;
+                page-break-inside: avoid;
+            }
+
+            .slide-img {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- ===================== NAVIGATION SIDEBAR ===================== -->
-<button class="hamburger" id="hamburger" aria-label="Meny">&#9776;</button>
-<div class="nav-overlay" id="navOverlay"></div>
-
-<nav class="nav-sidebar" id="navSidebar">
-  <div class="nav-header">
-    <div class="speaker-name">Sigrun Lindaas Norhagen</div>
-    <div class="event-name">Radgiverkonferansen VGS, Solstrand<br>14.11.23</div>
-  </div>
-  <ul class="nav-links">
-    <li><a href="#section-1">Prompts: er det nok?</a></li>
-    <li><a href="#section-2">DALL-E og visuelle stiler</a></li>
-    <li><a href="#section-3">KI gjor alle bedre</a></li>
-    <li><a href="#section-4">Google vs. ChatGPT</a></li>
-    <li><a href="#section-5">Hva er AI literacy?</a></li>
-    <li><a href="#section-6">Nevrale nettverk</a></li>
-    <li><a href="#section-7">Trening av nevrale nettverk</a></li>
-    <li><a href="#section-8">AI or Not?</a></li>
-    <li><a href="#section-9">Talegjenkjenning</a></li>
-    <li><a href="#section-10">Turingtesten</a></li>
-    <li><a href="#section-11">Falske bilder</a></li>
-  </ul>
-</nav>
-
-<!-- ===================== MAIN CONTENT ===================== -->
-<main class="main-content">
-
-  <!-- HERO -->
-  <header class="hero" id="hero">
-    <h1>AI Literacy</h1>
-    <p class="subtitle">Hvilke ferdigheter trenger elever i skolen?</p>
-    <p class="meta">Sigrun Lindaas Norhagen, NLA h&oslash;gskolen &middot; R&aring;dgiverkonferansen VGS, Solstrand &middot; 14.11.23</p>
-  </header>
-
-
-  <!-- ============================================================
-       SECTION 1: PROMPTS: ER DET NOK?
-       Source slides: page 2
-       ============================================================ -->
-  <section id="section-1" class="slide-section">
-
-    <!-- SECTION HEADING -->
-    <h2 class="section-heading">Prompts i ChatGPT &mdash; er det det vi trenger &aring; kunne?</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide01.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide01.png" alt="Prompts i ChatGPT — er det det vi trenger å kunne?" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 01</div>
-      </div>
-
-      <!-- SECTION TEXT -->
-      <div class="slide-text-col">
-
-        <p>N&aring;r vi snakker om KI i skolen, ender samtalen ofte opp med prompts. Hvordan skrive gode ledetekster i ChatGPT? Men er det egentlig det viktigste elevene trenger &aring; l&aelig;re? Oppbygningen av en god prompt er nyttig &aring; forst&aring;, men AI literacy handler om langt mer enn &aring; formulere sp&oslash;rsm&aring;l til en chatbot.</p>
-
-        <p>For &aring; v&aelig;re godt rustede borgere i en verden med KI trenger elevene en bredere forst&aring;else: Hva er KI egentlig? Hvordan virker det? Og hva betyr det for livene deres?</p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 2: DALL-E OG VISUELLE STILER
-       Source slides: pages 3–4
-       ============================================================ -->
-  <section id="section-2" class="slide-section">
-
-    <h2 class="section-heading">DALL-E og hvordan prompte frem ulike visuelle stiler</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide02.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide02.png" alt="DALL-E prompt book og illustrasjonsstiler" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 02</div>
-      </div>
-
-      <div class="slide-text-col">
-
-        <p>Et godt eksempel p&aring; hva prompting kan v&aelig;re utover ren tekst, er bildegenerering med verkt&oslash;y som DALL-E. Ved &aring; variere ledeteksten kan du f&aring; alt fra tekniske blåkopier og patentskisser til botaniske illustrasjoner og mytologiske kart. Prompten styrer ikke bare <em>hva</em> som vises, men ogs&aring; <em>hvordan</em> det fremstilles &mdash; stil, sjanger og visuelt spr&aring;k.</p>
-
-        <p>Dette viser at KI-kompetanse ogs&aring; handler om &aring; forst&aring; hvordan teknologien tolker og transformerer spr&aring;k til visuelt innhold. Det &aring;pner for spennende pedagogiske muligheter, men krever samtidig kritisk blikk p&aring; hva som genereres.</p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 3: KI GJØR ALLE BEDRE — OG LIKERE
-       Source slides: pages 5–8 (Ethan Mollick)
-       ============================================================ -->
-  <section id="section-3" class="slide-section">
-
-    <h2 class="section-heading">KI gj&oslash;r alle bedre &mdash; og likere</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide03.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide03.png" alt="Forskningsresultater: kvalitetsforbedring med KI" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 03</div>
-      </div>
-
-      <div class="slide-text-col">
-
-        <p>Forskning fra Ethan Mollick og kolleger viser noe interessant: n&aring;r folk bruker KI, blir kvaliteten p&aring; arbeidet generelt bedre &mdash; men ogs&aring; mer likt. Grafen viser at de som ikke brukte KI hadde stor spredning i kvalitet, mens de som brukte KI samlet seg rundt et h&oslash;yere, men smalere niv&aring;.</p>
-
-        <p>Dette reiser et viktig sp&oslash;rsm&aring;l for skolen: Hvis KI utjevner forskjeller i produksjon, hva blir da verdien av &aring; l&aelig;re seg noe selv? Og hva slags ferdigheter trenger elevene for &aring; skille seg ut &mdash; og for &aring; bruke KI p&aring; en meningsfull m&aring;te?</p>
-
-        <!-- OPTIONAL: link -->
-        <p><a href="https://dx.doi.org/10.2139/ssrn.4573321" class="content-link">Les forskningsartikkelen (SSRN)</a></p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 4: GOOGLE VS. CHATGPT
-       Source slides: pages 9–11
-       ============================================================ -->
-  <section id="section-4" class="slide-section">
-
-    <h2 class="section-heading">Google vs. ChatGPT: To helt ulike logikker</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide04.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide04.png" alt="Sammenligning av Google-søk og ChatGPT" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 04</div>
-      </div>
-
-      <div class="slide-text-col">
-
-        <p>Mange &mdash; b&aring;de elever og voksne &mdash; forveksler det &aring; s&oslash;ke p&aring; Google med det &aring; sp&oslash;rre ChatGPT. Men de fungerer p&aring; fundamentalt ulike m&aring;ter. Google er som &aring; sp&oslash;rre en bibliotekar: du skriver n&oslash;kkelord, f&aring;r nettsider tilbake, og informasjonen er hentet fra internett. Troverdigheten avhenger av hvem som har laget nettsiden.</p>
-
-        <p>ChatGPT derimot er mer som &aring; sp&oslash;rre en venn. Du f&oslash;rer en dialog, og f&aring;r menneskelignende tekst generert av en spr&aring;kmodell. Informasjonen er basert p&aring; m&oslash;nstre i treningsdata &mdash; ikke p&aring; faktiske kilder. Troverdigheten m&aring; mottakeren selv vurdere, fordi resultatet avhenger av algoritmene og treningsdataene.</p>
-
-        <p>Denne forskjellen er helt avgj&oslash;rende &aring; forst&aring;. Som Inga Str&uuml;mke har p&aring;pekt: mange elever har rett og slett ikke forst&aring;tt hva en spr&aring;kmodell er. En NRK-unders&oslash;kelse viste at 1 av 5 elever bruker ChatGPT til skolearbeid &mdash; noen uten &aring; forst&aring; at det verken er juks eller magi, men et verkt&oslash;y som krever kunnskap for &aring; bruke riktig.</p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 5: HVA ER AI LITERACY?
-       Source slides: page 12 (AI literacy definition)
-       ============================================================ -->
-  <section id="section-5" class="slide-section">
-
-    <h2 class="section-heading">Hva er AI literacy?</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide05.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide05.png" alt="AI Literacy — tre akser" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 05</div>
-      </div>
-
-      <div class="slide-text-col">
-
-        <p>AI literacy kan defineres som et sett med ferdigheter som gir en solid forst&aring;else av KI gjennom tre akser: &aring; l&aelig;re <em>om</em> KI, &aring; l&aelig;re om <em>hvordan KI virker</em>, og &aring; l&aelig;re for <em>et liv med KI</em> (Long &amp; Magerko, 2020; Miao et al., 2021).</p>
-
-        <p>I tillegg til &aring; kjenne til og bruke KI p&aring; en etisk m&aring;te, handler AI literacy om kompetanser som gj&oslash;r at man kan vurdere KI-teknologier kritisk, og kommunisere og samarbeide effektivt med KI. Det handler alts&aring; ikke bare om &aring; bruke verkt&oslash;yene, men om &aring; forst&aring; hva de er, hva de kan &mdash; og hva de ikke kan.</p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 6: NEVRALE NETTVERK
-       Source slides: pages 17–18
-       ============================================================ -->
-  <section id="section-6" class="slide-section">
-
-    <h2 class="section-heading">Hva er nevrale nettverk?</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide06.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide06.png" alt="Barn som lager nevralt nettverk med garn — input, hidden og output layer" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 06</div>
-      </div>
-
-      <div class="slide-text-col">
-
-        <p>For &aring; forst&aring; KI m&aring; man forst&aring; nevrale nettverk &mdash; den underliggende teknologien bak moderne spr&aring;kmodeller og bildegenerering. Et nevralt nettverk best&aring;r av lag: et input-lag som mottar data, skjulte lag som bearbeider informasjonen, og et output-lag som gir et resultat.</p>
-
-        <p>Bildet viser en praktisk &oslash;velse der barn bygger et nevralt nettverk med garn og tape p&aring; gulvet. Elevene sitter som &laquo;noder&raquo; i de ulike lagene og sender informasjon videre til neste lag. P&aring; denne m&aring;ten f&aring;r de kjenne p&aring; kroppen hvordan data flyter gjennom et nettverk &mdash; fra input via skjulte lag til output.</p>
-
-        <p><a href="https://kiforskolen.no" class="content-link">Vil du pr&oslash;ve opplegget selv? Se kiforskolen.no</a></p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 7: HVORDAN TRENES NEVRALE NETTVERK?
-       Source slides: pages 19–22
-       ============================================================ -->
-  <section id="section-7" class="slide-section">
-
-    <h2 class="section-heading">Hvordan trenes nevrale nettverk?</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide07.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide07.png" alt="Is this a fish? — maskinlæringsøvelse" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 07</div>
-      </div>
-
-      <div class="slide-text-col">
-
-        <p>Nevrale nettverk l&aelig;rer ved &aring; trenes p&aring; store mengder data. I enkle &oslash;velser kan elevene oppleve dette selv: ved &aring; sortere bilder i kategorier &mdash; som &laquo;fisk&raquo; eller &laquo;ikke fisk&raquo; &mdash; trener de i praksis en modell til &aring; gjenkjenne m&oslash;nstre. Jo flere eksempler modellen f&aring;r, desto bedre blir den til &aring; klassifisere riktig.</p>
-
-        <p>Aktiviteter som dette gj&oslash;r det mulig for elever &aring; forst&aring; prinsippene bak maskinl&aelig;ring uten &aring; m&aring;tte programmere. De erfarer hvordan treningsdata p&aring;virker resultatene, og hvorfor skjevheter i dataene kan f&oslash;re til feil i modellen.</p>
-
-        <p><a href="https://kiforskolen.no" class="content-link">Flere aktiviteter p&aring; kiforskolen.no</a></p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 8: AI OR NOT?
-       Source slides: pages 23–27
-       ============================================================ -->
-  <section id="section-8" class="slide-section">
-
-    <h2 class="section-heading">AI or Not? &Aring; skille KI fra vanlig teknologi</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide08.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide08.png" alt="AI or Not — fem nøkkelspørsmål med brødrister-eksempel" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 08</div>
-      </div>
-
-      <div class="slide-text-col">
-
-        <p>En effektiv &oslash;velse for &aring; bygge forst&aring;else av hva KI er &mdash; og ikke er &mdash; g&aring;r ut p&aring; &aring; stille fem n&oslash;kkelsp&oslash;rsm&aring;l om ulike teknologier: Oppfatter den omgivelsene? Kan den l&aelig;re over tid? Legger den planer p&aring; egenh&aring;nd? Samvirker den med milj&oslash;et? Er den intelligent, eller f&oslash;lger den bare programmeringen?</p>
-
-        <p>Elevene bruker disse sp&oslash;rsm&aring;lene p&aring; konkrete eksempler: en br&oslash;drister, et ansiktsfilter, en virtuell assistent, en selvkj&oslash;rende bil og en fjernstyrt robot. Gjennom diskusjonen oppdager de at ikke alt som virker &laquo;smart&raquo; faktisk er KI &mdash; og at ekte KI kjennetegnes av evnen til &aring; l&aelig;re og tilpasse seg.</p>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 9: TALEGJENKJENNING
-       Source slides: pages 28–29
-       ============================================================ -->
-  <section id="section-9" class="slide-section">
-
-    <h2 class="section-heading">Bruk av talegjenkjenning</h2>
-
-    <div class="section-body">
-
-      <!-- SLIDE IMAGE — file: slides/Slide10.png -->
-       <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/OAdegPmkK-o" title="Talegjenkjenning — video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <nav class="nav-section">
+        <div class="grid-container">
+            <div class="nav-inner">
+                <a href="#" class="nav-logo-link">
+                    <div class="nav-logo-wrapper">
+                        <span class="nav-logo-text">AI LITERACY — HVILKE FERDIGHETER TRENGER ELEVER I SKOLEN?</span>
+                    </div>
+                </a>
+
+                <div class="nav-desktop-menu">
+                    <ul>
+                        <li><a href="#kap-grunnleggende" class="top-link">Grunnleggende</a></li>
+                        <li><a href="#kap-teknologien" class="top-link">Teknologien bak</a></li>
+                        <li><a href="#kap-vurdering" class="top-link">Kritisk vurdering</a></li>
+                    </ul>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="Meny" onclick="toggleMenu()">
+                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M3 5h14M3 10h14M3 15h14"></path>
+                    </svg>
+                </button>
+
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="#kap-grunnleggende" onclick="toggleMenu()">Grunnleggende</a>
+                    <a href="#kap-teknologien" onclick="toggleMenu()">Teknologien bak</a>
+                    <a href="#kap-vurdering" onclick="toggleMenu()">Kritisk vurdering</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-section">
+            <div class="grid-container">
+                <div class="hero-inner">
+                    <span class="hero-tag">Rådgiverkonferansen VGS, 14.11.23</span>
+                    <h1 class="hero-title">AI Literacy</h1>
+                    <p class="hero-ingress">Hvilke ferdigheter trenger elever i skolen? Utforsk kompetansen som kreves i
+                        møte med kunstig intelligens.</p>
+                    <div class="hero-meta" style="align-items: center;">
+                        <span>Av <a href="#om-meg"
+                                style="color: inherit; text-decoration: underline; text-decoration-style: dotted; text-decoration-color: rgba(10, 77, 62, 0.4); text-underline-offset: 4px; transition: all 0.2s;"
+                                onmouseover="this.style.textDecorationColor='rgba(10, 77, 62, 1)';"
+                                onmouseout="this.style.textDecorationColor='rgba(10, 77, 62, 0.4)';">Sigrun Lindaas
+                                Norhagen</a></span>
+                        <span style="display: inline-flex; align-items: center; gap: 0.4rem;">presentert på <a
+                                href="https://www.utdanningibergen.no/radgivere-og-laerere#Nyheter%20om%20h%C3%B8yere%20utdanning"
+                                style="color: var(--nla-dark-green); padding: 0.2rem 0.6rem; border: 1px solid rgba(10, 77, 62, 0.15); border-radius: 6px; text-decoration: none; background: rgba(255,255,255,0.5); font-size: 0.9rem; transition: all 0.2s;"
+                                onmouseover="this.style.background='white'; this.style.borderColor='rgba(10, 77, 62, 0.3)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)';"
+                                onmouseout="this.style.background='rgba(255,255,255,0.5)'; this.style.borderColor='rgba(10, 77, 62, 0.15)'; this.style.boxShadow='none';">Utdanning
+                                i Bergen ↗</a></span>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="main-section">
+            <div class="grid-container">
+                <aside class="sidebar-left">
+                    <nav aria-label="På denne siden" class="toc-sticky">
 
-      <div class="slide-text-col">
+                        <p class="toc-category">1. Grunnleggende</p>
+                        <ul class="toc-list" id="toc-list-1">
+                            <li><a href="#slide01">Prompts: er det nok?</a></li>
+                            <li><a href="#slide02">DALL-E og stiler</a></li>
+                            <li><a href="#slide03">KI gjør alle bedre</a></li>
+                            <li><a href="#slide04">Google vs. ChatGPT</a></li>
+                            <li><a href="#slide05">Hva er AI literacy?</a></li>
+                        </ul>
 
-        <p>Talegjenkjenning er et av de mest h&aring;ndgripelige eksemplene p&aring; KI i hverdagen. N&aring;r du snakker til telefonen og den omdanner tale til tekst, bruker den nevrale nettverk trent p&aring; enorme mengder taledata. For elevene er dette en fin inngang til &aring; forst&aring; at KI allerede er overalt rundt dem &mdash; i Siri, i diktering, i undertekster.</p>
+                        <p class="toc-category">2. Teknologien bak</p>
+                        <ul class="toc-list" id="toc-list-2">
+                            <li><a href="#slide06">Nevrale nettverk</a></li>
+                            <li><a href="#slide07">Trening av nettverk</a></li>
+                        </ul>
 
-     
-      </div>
+                        <p class="toc-category">3. Kritisk vurdering</p>
+                        <ul class="toc-list" id="toc-list-3">
+                            <li><a href="#slide08">AI or Not?</a></li>
+                            <li><a href="#slide09">Talegjenkjenning</a></li>
+                            <li><a href="#slide10">Turingtesten</a></li>
+                            <li><a href="#slide11">Falske bilder</a></li>
+                        </ul>
+                    </nav>
+                </aside>
 
-    </div>
-  </section>
+                <div class="content-wrapper">
+                    <div class="prose">
 
+                        <div id="kap-grunnleggende" class="chapter-divider">
+                            <h1>1. Grunnleggende</h1>
+                        </div>
 
-  <!-- ============================================================
-       SECTION 10: TURINGTESTEN
-       Source slides: page 30
-       ============================================================ -->
-  <section id="section-10" class="slide-section">
+                        <section id="slide01">
+                            <h2>Prompts i ChatGPT — er det det vi trenger å kunne?</h2>
+                            <img src="slides/Slide01.png" alt="Prompts i ChatGPT" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p class="image-credit">Bilde: Ethan Mollick</p>
+                            <p>Når vi snakker om KI i skolen, ender samtalen ofte opp med prompts. Hvordan skrive gode
+                                ledetekster i ChatGPT? Men er det egentlig det viktigste elevene trenger å lære?
+                                Oppbygningen av en god prompt er nyttig å forstå, men AI literacy handler om langt mer
+                                enn å formulere spørsmål til en chatbot.</p>
+                            <p>For å være godt rustede borgere i en verden med KI trenger elevene en bredere forståelse:
+                                Hva er KI egentlig? Hvordan virker det? Og hva betyr det for livene deres?</p>
+                        </section>
 
-    <h2 class="section-heading">Turingtesten</h2>
+                        <section id="slide02">
+                            <h2>DALL-E og hvordan prompte frem ulike visuelle stiler</h2>
+                            <img src="slides/Slide02.png" alt="DALL-E prompt book" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p class="image-credit">Kilde: The <a href="https://dallery.gallery/the-dalle-2-prompt-book/" target="_blank" style="color: inherit;">DALL-E 2 Prompt Book</a> by Guy Parsons</p>
+                            <p>Et godt eksempel på hva prompting kan være utover ren tekst, er bildegenerering med
+                                verktøy som DALL-E. Ved å variere ledeteksten kan du få alt fra tekniske blåkopier og
+                                patentskisser til botaniske illustrasjoner og mytologiske kart. Prompten styrer ikke
+                                bare <em>hva</em> som vises, men også <em>hvordan</em> det fremstilles — stil, sjanger
+                                og visuelt språk.</p>
+                            <p>Dette viser at KI-kompetanse også handler om å forstå hvordan teknologien tolker og
+                                transformerer språk til visuelt innhold. Det åpner for spennende pedagogiske muligheter,
+                                men krever samtidig kritisk blikk på hva som genereres.</p>
+                        </section>
 
-    <div class="section-body">
+                        <section id="slide03">
+                            <h2>KI gjør alle bedre — og likere</h2>
+                            <img src="slides/Slide03.png" alt="Kvalitetsforbedring med KI" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p class="image-credit">Kilde: Ethan Mollick</p>
+                            <p>Forskning fra Ethan Mollick og kolleger viser noe interessant: når folk bruker KI, blir
+                                kvaliteten på arbeidet generelt bedre — men også mer likt. Grafen viser at de som ikke
+                                brukte KI hadde stor spredning i kvalitet, mens de som brukte KI samlet seg rundt et
+                                høyere, men smalere nivå.</p>
+                            <p>Dette reiser et viktig spørsmål for skolen: Hvis KI utjevner forskjeller i produksjon,
+                                hva blir da verdien av å lære seg noe selv? Og hva slags ferdigheter trenger elevene for
+                                å skille seg ut — og for å bruke KI på en meningsfull måte?</p>
+                        </section>
 
-      <!-- SLIDE IMAGE — file: slides/Slide11.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide11.png" alt="Illustrasjon av Turingtesten" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 11</div>
-      </div>
+                        <section id="slide04">
+                            <h2>Google vs. ChatGPT: To helt ulike logikker</h2>
+                            <img src="slides/Slide04.png" alt="Google vs ChatGPT" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Mange — både elever og voksne — forveksler det å søke på Google med det å spørre ChatGPT.
+                                Men de fungerer på fundamentalt ulike måter. Google er som å spørre en bibliotekar: du
+                                skriver nøkkelord, får nettsider tilbake, og informasjonen er hentet fra internett.
+                                Troverdigheten avhenger av hvem som har laget nettsiden.</p>
+                            <p>ChatGPT derimot er mer som å spørre en venn. Du fører en dialog, og får menneskelignende
+                                tekst generert av en språkmodell. Informasjonen er basert på mønstre i treningsdata —
+                                ikke på faktiske kilder. Troverdigheten må mottakeren selv vurdere, fordi resultatet
+                                avhenger av algoritmene og treningsdataene.</p>
+                        </section>
 
-      <div class="slide-text-col">
+                        <section id="slide05">
+                            <h2>Hva er AI literacy?</h2>
+                            <img src="slides/Slide05.png" alt="AI Literacy" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>AI literacy kan defineres som et sett med ferdigheter som gir en solid forståelse av KI
+                                gjennom tre akser: å lære <em>om</em> KI, å lære om <em>hvordan KI virker</em>, og å
+                                lære for <em>et liv med KI</em>.</p>
+                            <p>I tillegg til å kjenne til og bruke KI på en etisk måte, handler AI literacy om
+                                kompetanser som gjør at man kan vurdere KI-teknologier kritisk, og kommunisere og
+                                samarbeide effektivt med KI. Det handler altså ikke bare om å bruke verktøyene, men om å
+                                forstå hva de er, hva de kan — og hva de ikke kan.</p>
+                        </section>
 
-        <p>Turingtesten, foresl&aring;tt av Alan Turing i 1950, stiller et grunnleggende sp&oslash;rsm&aring;l: kan en maskin oppf&oslash;re seg s&aring; menneskelignende at vi ikke klarer &aring; skille den fra et ekte menneske? I testen kommuniserer en person med b&aring;de en maskin og et menneske via tekst, uten &aring; vite hvem som er hvem.</p>
+                        <div id="kap-teknologien" class="chapter-divider">
+                            <h1>2. Teknologien bak</h1>
+                        </div>
 
-        <p>Med dagens spr&aring;kmodeller har dette sp&oslash;rsm&aring;let blitt sv&aelig;rt aktuelt. Mange elever opplever at ChatGPT &laquo;forst&aring;r&raquo; dem &mdash; men forst&aring;r den virkelig? Turingtesten er en fin inngang til &aring; diskutere forskjellen mellom &aring; simulere forst&aring;else og faktisk &aring; forst&aring;.</p>
+                        <section id="slide06">
+                            <h2>Hva er nevrale nettverk?</h2>
+                            <img src="slides/Slide06.png" alt="Nevrale nettverk" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p class="image-credit">Kilde: Catherine Schuman, Steven Young, Thomas Proffen, Dasha Herrmannova - Unplugged Activity for Machine Learning</p>
+                            <p>For å forstå KI må man forstå nevrale nettverk — den underliggende teknologien bak
+                                moderne språkmodeller og bildegenerering. Et nevralt nettverk består av lag: et
+                                input-lag som mottar data, skjulte lag som bearbeider informasjonen, og et output-lag
+                                som gir et resultat.</p>
+                            <p>Bildet viser en praktisk øvelse der barn bygger et nevralt nettverk med garn og tape på
+                                gulvet. Elevene sitter som «noder» i de ulike lagene og sender informasjon videre til
+                                neste lag. På denne måten får de kjenne på kroppen hvordan data flyter gjennom et
+                                nettverk — fra input via skjulte lag til output.</p>
+                        </section>
 
-      </div>
+                        <section id="slide07">
+                            <h2>Hvordan trenes nevrale nettverk?</h2>
+                            <img src="slides/Slide07.png" alt="Trening av nettverk" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p class="image-credit">Kilde: Code.org</p>
+                            <p>Nevrale nettverk lærer ved å trenes på store mengder data. I enkle øvelser kan elevene
+                                oppleve dette selv: ved å sortere bilder i kategorier — som «fisk» eller «ikke fisk» —
+                                trener de i praksis en modell til å gjenkjenne mønstre. Jo flere eksempler modellen får,
+                                desto bedre blir den til å klassifisere riktig.</p>
+                            <p>Aktiviteter som dette gjør det mulig for elever å forstå prinsippene bak maskinlæring
+                                uten å måtte programmere. De erfarer hvordan treningsdata påvirker resultatene, og
+                                hvorfor skjevheter i dataene kan føre til feil i modellen.</p>
+                        </section>
 
-    </div>
-  </section>
+                        <div id="kap-vurdering" class="chapter-divider">
+                            <h1>3. Kritisk vurdering</h1>
+                        </div>
 
+                        <section id="slide08">
+                            <h2>AI or Not? Å skille KI fra vanlig teknologi</h2>
+                            <img src="slides/Slide08.png" alt="AI or Not" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>En effektiv øvelse for å bygge forståelse av hva KI er — og ikke er — går ut på å stille
+                                fem nøkkelspørsmål om ulike teknologier: Oppfatter den omgivelsene? Kan den lære over
+                                tid? Legger den planer på egenhånd? Samvirker den med miljøet? Er den intelligent, eller
+                                følger den bare programmeringen?</p>
+                            <p>Elevene bruker disse spørsmålene på konkrete eksempler: en brødrister, et ansiktsfilter,
+                                en virtuell assistent, en selvkjørende bil og en fjernstyrt robot. Gjennom diskusjonen
+                                oppdager de at ikke alt som virker «smart» faktisk er KI — og at ekte KI kjennetegnes av
+                                evnen til å lære og tilpasse seg.</p>
+                        </section>
 
-  <!-- ============================================================
-       SECTION 11: FALSKE BILDER — WHICH FACE IS REAL
-       Source slides: pages 31–32
-       ============================================================ -->
-  <section id="section-11" class="slide-section">
+                        <section id="slide09">
+                            <h2>Bruk av talegjenkjenning</h2>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/OAdegPmkK-o" title="Talegjenkjenning"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <p>Talegjenkjenning er et av de mest håndgripelige eksemplene på KI i hverdagen. Når du
+                                snakker til telefonen og den omdanner tale til tekst, bruker den nevrale nettverk trent
+                                på enorme mengder taledata. For elevene er dette en fin inngang til å forstå at KI
+                                allerede er overalt rundt dem — i Siri, i diktering, i undertekster.</p>
+                        </section>
 
-    <h2 class="section-heading">Kjennetegn p&aring; falske bilder</h2>
+                        <section id="slide10">
+                            <h2>Turingtesten</h2>
+                            <img src="slides/Slide11.png" alt="Turingtesten" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Turingtesten, foreslått av Alan Turing i 1950, stiller et grunnleggende spørsmål: kan en
+                                maskin oppføre seg så menneskelignende at vi ikke klarer å skille den fra et ekte
+                                menneske? I testen kommuniserer en person med både en maskin og et menneske via tekst,
+                                uten å vite hvem som er hvem.</p>
+                            <p>Med dagens språkmodeller har dette spørsmålet blitt svært aktuelt. Mange elever opplever
+                                at ChatGPT «forstår» dem — men forstår den virkelig? Turingtesten er en fin inngang til
+                                å diskutere forskjellen mellom å simulere forståelse og faktisk å forstå.</p>
+                        </section>
 
-    <div class="section-body">
+                        <section id="slide11">
+                            <h2>Kjennetegn på falske bilder</h2>
+                            <img src="slides/Slide12.png" alt="Which Face Is Real" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p class="image-credit">Kilde: whichfaceisreal.com</p>
+                            <p>En viktig del av AI literacy er å kunne vurdere om bilder er ekte eller KI-genererte.
+                                Nettsiden <em>Which Face Is Real?</em> lar deg øve på dette: du får se to portretter
+                                side om side og må gjette hvilket som er ekte og hvilket som er laget av en algoritme.
+                            </p>
+                            <p>Slike øvelser trener det kritiske blikket og gjør elevene oppmerksomme på at visuelt
+                                innhold ikke lenger er til å stole på bare fordi det «ser riktig ut». Det er en
+                                kompetanse som blir stadig viktigere i en verden med deepfakes og syntetiske medier.</p>
+                        </section>
 
-      <!-- SLIDE IMAGE — file: slides/Slide12.png -->
-      <div class="slide-image-col">
-        <img src="slides/Slide12.png" alt="Which Face Is Real?" class="slide-image"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="slide-placeholder" style="display:none">Slide 12</div>
-      </div>
+                        <!-- Relaterte opplegg kort -->
+                        <div style="margin-top: 4rem; padding-top: 3rem; border-top: 2px solid var(--nla-light-beige);">
+                            <h2
+                                style="font-family: var(--font-serif); color: var(--accent-text); margin-bottom: 2rem; font-size: 1.8rem;">
+                                Relaterte undervisningsopplegg</h2>
+                            <div
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
 
-      <div class="slide-text-col">
+                                <!-- Kort 1: Havet -->
+                                <a href="https://kiforskolen.no/opplegg/ki-for-havet/index.html" target="_blank"
+                                    style="text-decoration: none; color: inherit; background: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; transition: all 0.2s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.02); display: flex; flex-direction: column;"
+                                    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'; this.style.borderColor='var(--nla-accent)';"
+                                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.02)'; this.style.borderColor='var(--border-color)';">
+                                    <span
+                                        style="font-size: 0.8rem; font-weight: 700; color: var(--nla-accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Kiforskolen.no</span>
+                                    <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem; color: var(--text-heading);">
+                                        Rydd havet med KI</h3>
+                                    <p
+                                        style="margin: 0 0 1.5rem 0; font-size: 1rem; color: var(--text-body); flex-grow: 1;">
+                                        Hvordan kan en KI-modell hjelpe med å rydde havet? Et praktisk opplegg om
+                                        maskinlæring og bærekraft.</p>
+                                    <span
+                                        style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--nla-dark-green); font-weight: 600; font-size: 0.95rem;">
+                                        Gå til opplegget <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </a>
 
-        <p>En viktig del av AI literacy er &aring; kunne vurdere om bilder er ekte eller KI-genererte. Nettsiden <em>Which Face Is Real?</em> lar deg &oslash;ve p&aring; dette: du f&aring;r se to portretter side om side og m&aring; gjette hvilket som er ekte og hvilket som er laget av en algoritme.</p>
+                                <!-- Kort 2: Smartere enn KI -->
+                                <a href="https://kiforskolen.no/opplegg/er-du-smartere-enn-ki/index.html"
+                                    target="_blank"
+                                    style="text-decoration: none; color: inherit; background: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; transition: all 0.2s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.02); display: flex; flex-direction: column;"
+                                    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'; this.style.borderColor='var(--nla-accent)';"
+                                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.02)'; this.style.borderColor='var(--border-color)';">
+                                    <span
+                                        style="font-size: 0.8rem; font-weight: 700; color: var(--nla-accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Kiforskolen.no</span>
+                                    <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem; color: var(--text-heading);">Er
+                                        du smartere enn KI?</h3>
+                                    <p
+                                        style="margin: 0 0 1.5rem 0; font-size: 1rem; color: var(--text-body); flex-grow: 1;">
+                                        Hvordan lære elever å kjenne igjen KI-hallusinasjoner? Et kritisk blikk på
+                                        språkmodellenes begrensninger.</p>
+                                    <span
+                                        style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--nla-dark-green); font-weight: 600; font-size: 0.95rem;">
+                                        Gå til opplegget <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </a>
 
-        <p>Slike &oslash;velser trener det kritiske blikket og gj&oslash;r elevene oppmerksomme p&aring; at visuelt innhold ikke lenger er til &aring; stole p&aring; bare fordi det &laquo;ser riktig ut&raquo;. Det er en kompetanse som blir stadig viktigere i en verden med deepfakes og syntetiske medier.</p>
+                            </div>
+                        </div>
 
-        <p><a href="https://www.whichfaceisreal.com/" class="content-link">Pr&oslash;v selv: whichfaceisreal.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-      </div>
+    <footer class="footer-section">
+        <div class="grid-container">
+            <div class="footer-inner">
+                <div id="om-meg" class="footer-profile">
+                    <h3>Sigrun Lindaas Norhagen</h3>
+                    <p>NLA Høgskolen. Jeg er ph.d.-kandidat og lærerutdanner ved NLA Høgskolen. Jeg forsker på
+                        profesjonsfaglig digital kompetanse i lærerutdanningen og arbeider særlig med hvordan lærere,
+                        lærerstudenter og elever kan forstå og vurdere digital teknologi og kunstig intelligens – ikke
+                        bare bruke den.
+                    </p>
+                    <div style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 2rem;">Laget med KI -
+                        Denne siden er laget med KI som støtte og faglig bearbeidet av meg.</div>
+                </div>
 
-    </div>
-  </section>
+                <div class="footer-links">
+                    <a href="https://kiforskolen.no" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        kiforskolen.no
+                    </a>
+                    <a href="https://sigrun.github.io" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        sigrun.github.io
+                    </a>
+                    <a href="https://snorhagen.no" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                        snorhagen.no
+                    </a>
+                    <a href="mailto:sigrun@nla.no">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m2 7 10 7 10-7"></path>
+                        </svg>
+                        sigrun@nla.no
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- JS ER NÅ SAMLET HER. Kan også skilles ut i script.js -->
+    <script>
+        function toggleMenu() { document.getElementById("mobileMenu").classList.toggle("open"); }
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer>
-    <p>Sigrun Lindaas Norhagen &middot; <a href="/cdn-cgi/l/email-protection#4033292732352e002e2c216e2e2f"><span class="__cf_email__" data-cfemail="c6b5afa1b4b3a886a8aaa7e8a8a9">[email&#160;protected]</span></a> &middot; <a href="https://sigrun.github.io">sigrun.github.io</a></p>
-    <p>R&aring;dgiverkonferansen VGS, Solstrand &middot; 14.11.23</p>
-  </footer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(".prose section[id], .prose div.chapter-divider[id]");
+            const navLinks = document.querySelectorAll(".toc-list a");
+            const topLinks = document.querySelectorAll(".top-link");
 
-</main>
+            const observerOptions = { root: null, rootMargin: "-100px 0px -60% 0px", threshold: 0 };
 
-<!-- ===================== JAVASCRIPT ===================== -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Hamburger menu
-  const hamburger = document.getElementById('hamburger');
-  const sidebar = document.getElementById('navSidebar');
-  const overlay = document.getElementById('navOverlay');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
 
-  hamburger.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-    overlay.classList.toggle('active');
-  });
+                        navLinks.forEach(link => {
+                            link.classList.remove("active");
+                            if (link.getAttribute("href") === `#${id}`) link.classList.add("active");
+                        });
 
-  overlay.addEventListener('click', () => {
-    sidebar.classList.remove('open');
-    overlay.classList.remove('active');
-  });
+                        if (id.startsWith('kap-')) {
+                            topLinks.forEach(link => {
+                                link.classList.remove("active");
+                                if (link.getAttribute("href") === `#${id}`) link.classList.add("active");
+                            });
+                        }
+                    }
+                });
+            }, observerOptions);
 
-  // Close nav on link click (mobile)
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('active');
-    });
-  });
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
 
-  // Active section highlighting with IntersectionObserver
-  const sections = document.querySelectorAll('.slide-section');
-  const navLinks = document.querySelectorAll('.nav-links a');
+</body>
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        navLinks.forEach(link => {
-          link.classList.toggle('
+</html>
