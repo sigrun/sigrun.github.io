@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forskerbot – Hvordan lage sin egen KI-assistent – Sigrun Lindaas Norhagen</title>
+    <meta name="description"
+        content="Presentasjonsnotater og kursmateriell fra UiB D-Lab (29.10.25). Lær å bygge din egen spissede KI-assistent.">
+
+    <!-- Open Graph / Sosiale medier (Delekort) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Forskerbot – Hvordan lage sin egen KI-assistent">
+    <meta property="og:description"
+        content="Kursmateriell fra UiB D-Lab. Lær å bygge spissede KI-assistenter for undervisning og forskning.">
+    <meta property="og:image" content="slides/Slide007.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Forskerbot – Hvordan lage sin egen KI-assistent">
+    <meta name="twitter:description" content="Kursmateriell fra UiB D-Lab. Lær å bygge spissede KI-assistenter.">
+    <meta name="twitter:image" content="slides/Slide007.png">
+
+    <!-- JSON-LD Akademisk Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PresentationDigitalDocument",
+      "name": "Forskerbot – Hvordan lage sin egen KI-assistent",
+      "description": "Kursmateriell og presentasjonsnotater fra UiB D-Lab",
+      "creator": { "@type": "Person", "name": "Sigrun Lindaas Norhagen", "affiliation": "NLA Høgskolen", "url": "https://snorhagen.no" }
+    }
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="nav-section">
+        <div class="grid-container">
+            <div class="nav-inner">
+                <a href="#" class="nav-logo-link">
+                    <div class="nav-logo-wrapper">
+                        <span class="nav-logo-text">FORSKERBOT – LAGE DIN EGEN KI-ASSISTENT</span>
+                    </div>
+                </a>
+
+                <div class="nav-desktop-menu">
+                    <ul>
+                        <li><a href="#kap-kontekst" class="top-link">Kontekst & Modeller</a></li>
+                        <li><a href="#kap-varianter" class="top-link">Fire typer assistenter</a></li>
+                        <li><a href="#kap-bygging" class="top-link">Slik bygger du en bot</a></li>
+                        <li><a href="#kap-avslutning" class="top-link">Eksempel & Avslutning</a></li>
+                    </ul>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="Meny" onclick="toggleMenu()">
+                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M3 5h14M3 10h14M3 15h14"></path>
+                    </svg>
+                </button>
+
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="#kap-kontekst" onclick="toggleMenu()">Kontekst & Modeller</a>
+                    <a href="#kap-varianter" onclick="toggleMenu()">Fire typer assistenter</a>
+                    <a href="#kap-bygging" onclick="toggleMenu()">Slik bygger du en bot</a>
+                    <a href="#kap-avslutning" onclick="toggleMenu()">Eksempel & Avslutning</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-section">
+            <div class="grid-container">
+                <div class="hero-inner">
+                    <span class="hero-tag">UiB D-Lab · 29.10.2025</span>
+                    <h1 class="hero-title">Forskerbot – Hvordan lage sin egen KI-assistent</h1>
+                    <p class="hero-ingress">Et kurs i hvordan du kan bygge en personlig og kontekstsensitiv KI-assistent
+                        (bot) som støtter faglig arbeid, forskning og undervisning.</p>
+                    <div class="hero-meta" style="align-items: center;">
+                        <span>Av <a href="#om-meg"
+                                style="color: inherit; text-decoration: underline; text-decoration-style: dotted; text-decoration-color: rgba(10, 77, 62, 0.4); text-underline-offset: 4px; transition: all 0.2s;"
+                                onmouseover="this.style.textDecorationColor='rgba(10, 77, 62, 1)';"
+                                onmouseout="this.style.textDecorationColor='rgba(10, 77, 62, 0.4)';">Sigrun Lindaas
+                                Norhagen</a></span>
+                        <span style="display: inline-flex; align-items: center; gap: 0.4rem;">presentert på <a href="#"
+                                style="color: var(--nla-dark-green); padding: 0.2rem 0.6rem; border: 1px solid rgba(10, 77, 62, 0.15); border-radius: 6px; text-decoration: none; background: rgba(255,255,255,0.5); font-size: 0.9rem; transition: all 0.2s;"
+                                onmouseover="this.style.background='white'; this.style.borderColor='rgba(10, 77, 62, 0.3)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)';"
+                                onmouseout="this.style.background='rgba(255,255,255,0.5)'; this.style.borderColor='rgba(10, 77, 62, 0.15)'; this.style.boxShadow='none';">UiB
+                                D-Lab ↗</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <div class="grid-container">
+                <aside class="sidebar-left">
+                    <nav aria-label="På denne siden" class="toc-sticky">
+
+                        <p class="toc-category">1. Kontekst & Modeller</p>
+                        <ul class="toc-list" id="toc-list-1">
+                            <li><a href="#slide07">Målet er å finne din kontekst</a></li>
+                            <li><a href="#slide08">Språkmodeller og GDPR</a></li>
+                        </ul>
+
+                        <p class="toc-category">2. Fire typer assistenter</p>
+                        <ul class="toc-list" id="toc-list-2">
+                            <li><a href="#slide13">Fire varianter i ChatGPT</a></li>
+                            <li><a href="#slide14">Lommelykt-metaforen</a></li>
+                        </ul>
+
+                        <p class="toc-category">3. Slik bygger du en bot</p>
+                        <ul class="toc-list" id="toc-list-3">
+                            <li><a href="#slide20">Bygge et systemprompt</a></li>
+                            <li><a href="#slide21">Eksempel: Spesialpedagogen</a></li>
+                            <li><a href="#slide22">Moduser og støtteark</a></li>
+                        </ul>
+
+                        <p class="toc-category">4. Eksempel & Avslutning</p>
+                        <ul class="toc-list" id="toc-list-4">
+                            <li><a href="#slide23">Prøv Spesialpedagogen</a></li>
+                            <li><a href="#slide24">AI literacy uten skjerm</a></li>
+                            <li><a href="#slide25">Takk og kontakt</a></li>
+                        </ul>
+
+                    </nav>
+                </aside>
+
+                <div class="content-wrapper">
+                    <div class="prose">
+
+                        <!-- KAPITTEL 1 -->
+                        <div id="kap-kontekst" class="chapter-divider">
+                            <h1>1. Kontekst & Modeller</h1>
+                        </div>
+
+                        <section id="slide07">
+                            <h2>Målet er å hjelpe KI-en å oppdage din kontekst</h2>
+                            <img src="slides/Slide007.png" alt="Kontekst og PfDK" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Målet med en KI-assistent er <em>ikke</em> at du skal få en personlig relasjon til en AI.
+                                Målet er å hjelpe den å oppdage ditt eget bruksområde og din faglige kontekst. Veldig
+                                mye av det jeg bruker AI til handler om Profesjonsfaglig digital kompetanse (PfDK).</p>
+                            <p>Hadde jeg vært en cowgirl som drev en hestefarm, ville konteksten vært en helt annen –
+                                mye mer fysisk enn min akademiske tilværelse. Både cowboyen og forskeren har like stor
+                                nytte av AI, men ChatGPT vet ikke om du er Lucky Luke eller en som forsker på historiske
+                                dokumenter før du gir den kontekst!</p>
+                        </section>
+
+                        <section id="slide08">
+                            <h2>Språkmodeller, GDPR og valg i Norge</h2>
+                            <img src="slides/Slide008.png" alt="Språkmodeller og GDPR" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Jeg tar for gitt at dere vet hva en språkmodell er. Kanskje vet dere ikke at det florerer
+                                av <em>ulike</em> typer språkmodeller som hele tiden kniver om å være i front. Noen er
+                                spesielt gode til å kode, andre til å generere bilder, og noen har færre sikkerhetslag.
+                                I tillegg har kinesiske utfordrere (som DeepSeek) vist at man kan lage modeller som
+                                resonnerer utrolig godt til en billig penge.</p>
+                            <p>Det kan være slitsomt å følge med på dette, men i praksis er valget enkelt: I Norge og EU
+                                må vi forholde oss til personvern og GDPR. De fleste skoler og universiteter tilbyr
+                                derfor <strong>Sikt KI-chat</strong>, <strong>UiO GPT</strong>, eller <strong>Microsoft
+                                    CoPilot</strong>. Alle disse tilbyr nå muligheten til å bygge egne bot-er.</p>
+                        </section>
+
+                        <!-- KAPITTEL 2 -->
+                        <div id="kap-varianter" class="chapter-divider">
+                            <h1>2. Fire typer assistenter</h1>
+                        </div>
+
+                        <section id="slide13">
+                            <h2>De fire variantene i ChatGPT</h2>
+                            <img src="slides/Slide013.png" alt="Fire varianter av assistenter" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Før vi ser på hvordan vi bygger en bot, er det nyttig å skille mellom fire måter å
+                                samhandle med KI på:</p>
+                            <ul>
+                                <li><strong>1. Generell ChatGPT:</strong> En språkmodell du chatter med uten kontekst.
+                                    Den svarer på alt, men har ingen forforståelse om deg eller hva du jobber med.</li>
+                                <li><strong>2. Bot (Custom GPT):</strong> En spisset assistent med en tydelig rolle,
+                                    tone og oppgaveområde (f.eks. «hjelpe lærerstudenter å forstå PfDK-rammeverket»).
+                                    <em>Dette er det vi bygger i dag!</em>
+                                </li>
+                                <li><strong>3. Prosjekt i ChatGPT:</strong> Et arbeidsområde der du samler dokumenter,
+                                    instruksjoner, verktøy (kode, bildegenerering) og bot-er rundt et felles prosjekt.
+                                </li>
+                                <li><strong>4. Agent:</strong> En selvstendig «arbeider» som kan utføre oppgaver i
+                                    bakgrunnen (hente data, skrive e-post, gjøre research). Agentteknologi er under rask
+                                    utvikling og blir det neste store steget.</li>
+                            </ul>
+                        </section>
+
+                        <section id="slide14">
+                            <h2>Lommelykt-metaforen: ChatGPT som det mørke rommet</h2>
+                            <img src="slides/Slide014.png" alt="Lommelykt-metaforen" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Når vi lager en spisset bot, reduserer vi ikke kapasiteten til språkmodellen – vi øker
+                                relevansen og anvendeligheten for våre behov.</p>
+                            <p>Se for deg at du går inn i et stort, mørkt rom fullt av bøker fra hele verden og alle
+                                fagfelt. ChatGPT er det rommet. Når du stiller et generelt spørsmål, slår du på taklyset
+                                og ser et vagt glimt av alt. Men når du stiller et presist faglig spørsmål eller lager
+                                en bot med en bestemt rolle – da bruker du en <strong>lommelykt</strong> og lyser opp
+                                akkurat det hjørnet du trenger!</p>
+                        </section>
+
+                        <!-- KAPITTEL 3 -->
+                        <div id="kap-bygging" class="chapter-divider">
+                            <h1>3. Slik bygger du en bot</h1>
+                        </div>
+
+                        <section id="slide20">
+                            <h2>Slik bygger du et systemprompt (instruksjonssett)</h2>
+                            <img src="slides/Slide020.png" alt="Bygge systemprompt" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Kjernen i en god bot er instruksjonen du gir den. Start gjerne med formelen: <em>«Du er
+                                    en erfaren pedagogisk veileder med spesialkompetanse på...»</em></p>
+                            <p><strong>Hvorfor dette fungerer:</strong></p>
+                            <ul>
+                                <li>Det aktiverer modellens relevante kunnskap.</li>
+                                <li>Det setter ønsket tone og ekspertisenivå.</li>
+                                <li>Det skaper mer konsistente svar over tid.</li>
+                            </ul>
+                            <p><strong>Tre nøkkelsteg for økt presisjon:</strong></p>
+                            <ol>
+                                <li><strong>Kontekst:</strong> Fortell hvem brukeren er, hvilken situasjon de står i, og
+                                    gi faglig bakgrunn.</li>
+                                <li><strong>Kunnskapsfiler:</strong> Last opp læreplaner, rapporter eller
+                                    forskningsartikler som bot-en skal støtte seg på.</li>
+                                <li><strong>Struktur og tone:</strong> Spesifiser at den skal svare på norsk, bruke et
+                                    akademisk/profesjonelt språk, og tving den til å jobbe trinnvis.</li>
+                            </ol>
+                            <p><em>Secret Sauce:</em> Bruk den «vanlige» chatten i ChatGPT til å hjelpe deg med å
+                                formulere og forfine instruksene dine!</p>
+                        </section>
+
+                        <section id="slide21">
+                            <h2>Eksempel: Systemprompt for «Spesialpedagogen»</h2>
+                            <img src="slides/Slide021.png" alt="Spesialpedagogen systemprompt" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Her er et konkret eksempel på en komplett instruks til en spesialpedagogisk bot. Bot-en
+                                er forankret i anerkjent forskning (Sweller, Archer & Hughes, Beck & McKeown, Mayer,
+                                UDL) og kan operere i tre moduser:</p>
+                            <ul>
+                                <li><strong>🎯 Elevmodus:</strong> Forklarer temaer direkte for eleven på et tydelig,
+                                    voksent språk (korte setninger, ungdomsrelevante eksempler).</li>
+                                <li><strong>🧭 Lærermodus:</strong> Veileder læreren med forskningsforankrede didaktiske
+                                    forslag og begrunnelser.</li>
+                                <li><strong>🎨 Støtteark-modus:</strong> Genererer et halvutfylt visuelt samtalekart (i
+                                    Markdown) til bruk i klasserommet.</li>
+                            </ul>
+                        </section>
+
+                        <section id="slide22">
+                            <h2>Moduser og visuelle støtteark</h2>
+                            <img src="slides/Slide022.png" alt="Støtteark og moduser" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Når bot-en genererer et samtalekart i Støtteark-modus, følger den et tydelig visuelt
+                                hierarki. Den bruker piler, ikoner og prikkede felt slik at eleven kan fylle inn egne
+                                ord eller tegninger. 30–50 % av feltene står åpne for at eleven skal bidra aktivt.</p>
+                            <p>Dette hjelper eleven med å holde tråden og delta muntlig – arket fungerer som støtte for
+                                språk og minne, ikke som en test (jf. Archer & Hughes 2011: modellering → veiledet
+                                deltakelse → selvstendiggjøring).</p>
+                        </section>
+
+                        <!-- KAPITTEL 4 -->
+                        <div id="kap-avslutning" class="chapter-divider">
+                            <h1>4. Eksempel & Avslutning</h1>
+                        </div>
+
+                        <section id="slide23">
+                            <h2>Prøv bot-ene mine på chatbot.snorhagen.no</h2>
+                            <img src="slides/Slide023.png" alt="chatbot.snorhagen.no" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Du kan teste «Spesialpedagogen» og flere av mine spesialiserte bot-er direkte ved å
+                                besøke <a href="https://chatbot.snorhagen.no/" target="_blank"
+                                    style="color: var(--nla-light-green); font-weight: 600;">chatbot.snorhagen.no</a>.
+                            </p>
+                            <p>Her ser du hvordan en tilpasset GPT oppfører seg i praksis og stiller oppstartspørsmål
+                                for å avklare om du ønsker Elevmodus, Lærermodus eller et Støtteark.</p>
+                        </section>
+
+                        <section id="slide24">
+                            <h2>AI literacy uten skjerm – penn, papir og laminering</h2>
+                            <img src="slides/Slide024.png" alt="AI literacy uten skjerm" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Det jeg har lyst til å utforske mye mer i tiden som kommer er AI literacy, programmering
+                                og algoritmisk tenkning <strong>uten skjerm</strong>!</p>
+                            <p>Det er utrolig mange lærerike ting man kan bygge for å gi elever en dyp forståelse for
+                                teknologi ved å bruke ren penn og papir, litt farget tape og en lamineringsmaskin.</p>
+                        </section>
+
+                        <section id="slide25">
+                            <h2>Takk for meg!</h2>
+                            <img src="slides/Slide025.png" alt="Avslutning og kontakt" class="slide-img"
+                                onerror="this.style.display='none'">
+                            <p>Takk for oppmerksomheten! Ta gjerne kontakt om du vil diskutere spesialpedagogikk,
+                                KI-assistenter eller digital kompetanse i skolen.</p>
+                            <ul style="list-style: none; padding-left: 0; font-size: 1.1rem; line-height: 2;">
+                                <li>✉️ <strong>E-post:</strong> <a href="mailto:sigrun@nla.no"
+                                        style="color: var(--nla-dark-green);">sigrun@nla.no</a></li>
+                                <li>🌐 <strong>Nettside:</strong> <a href="https://sigrun.github.io" target="_blank"
+                                        style="color: var(--nla-dark-green);">sigrun.github.io</a></li>
+                                <li>🤖 <strong>Bot-oversikt:</strong> <a href="https://chatbot.snorhagen.no"
+                                        target="_blank" style="color: var(--nla-dark-green);">chatbot.snorhagen.no</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Relaterte opplegg kort (Standard i malen) -->
+                        <div style="margin-top: 4rem; padding-top: 3rem; border-top: 2px solid var(--nla-light-beige);">
+                            <h2
+                                style="font-family: var(--font-serif); color: var(--accent-text); margin-bottom: 2rem; font-size: 1.8rem;">
+                                Relaterte undervisningsopplegg</h2>
+                            <div
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+
+                                <!-- Kort 1: Havet -->
+                                <a href="https://kiforskolen.no/opplegg/ki-for-havet/index.html" target="_blank"
+                                    style="text-decoration: none; color: inherit; background: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; transition: all 0.2s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.02); display: flex; flex-direction: column;"
+                                    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'; this.style.borderColor='var(--nla-accent)';"
+                                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.02)'; this.style.borderColor='var(--border-color)';">
+                                    <span
+                                        style="font-size: 0.8rem; font-weight: 700; color: var(--nla-accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Kiforskolen.no</span>
+                                    <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem; color: var(--text-heading);">
+                                        Rydd havet med KI</h3>
+                                    <p
+                                        style="margin: 0 0 1.5rem 0; font-size: 1rem; color: var(--text-body); flex-grow: 1;">
+                                        Hvordan kan en KI-modell hjelpe med å rydde havet? Et praktisk opplegg om
+                                        maskinlæring og bærekraft.</p>
+                                    <span
+                                        style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--nla-dark-green); font-weight: 600; font-size: 0.95rem;">
+                                        Gå til opplegget <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <!-- Kort 2: Smartere enn KI -->
+                                <a href="https://kiforskolen.no/opplegg/er-du-smartere-enn-ki/index.html"
+                                    target="_blank"
+                                    style="text-decoration: none; color: inherit; background: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.8rem; transition: all 0.2s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.02); display: flex; flex-direction: column;"
+                                    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'; this.style.borderColor='var(--nla-accent)';"
+                                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.02)'; this.style.borderColor='var(--border-color)';">
+                                    <span
+                                        style="font-size: 0.8rem; font-weight: 700; color: var(--nla-accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Kiforskolen.no</span>
+                                    <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem; color: var(--text-heading);">Er
+                                        du smartere enn KI?</h3>
+                                    <p
+                                        style="margin: 0 0 1.5rem 0; font-size: 1rem; color: var(--text-body); flex-grow: 1;">
+                                        Hvordan lære elever å kjenne igjen KI-hallusinasjoner? Et kritisk blikk på
+                                        språkmodellenes begrensninger.</p>
+                                    <span
+                                        style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--nla-dark-green); font-weight: 600; font-size: 0.95rem;">
+                                        Gå til opplegget <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="grid-container">
+            <div class="footer-inner">
+                <div id="om-meg" class="footer-profile">
+                    <h3>Sigrun Lindaas Norhagen</h3>
+                    <p>NLA Høgskolen. Jeg er ph.d.-kandidat og lærerutdanner ved NLA Høgskolen. Jeg forsker på
+                        profesjonsfaglig digital kompetanse i lærerutdanningen og arbeider særlig med hvordan lærere,
+                        lærerstudenter og elever kan forstå og vurdere digital teknologi og kunstig intelligens – ikke
+                        bare bruke den.
+                    </p>
+                    <div style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 2rem;">Laget med KI -
+                        Denne siden er laget med KI som støtte og faglig bearbeidet av meg.</div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="https://kiforskolen.no" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        kiforskolen.no
+                    </a>
+                    <a href="https://sigrun.github.io" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        sigrun.github.io
+                    </a>
+                    <a href="https://snorhagen.no" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                        snorhagen.no
+                    </a>
+                    <a href="mailto:sigrun@nla.no">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m2 7 10 7 10-7"></path>
+                        </svg>
+                        sigrun@nla.no
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
