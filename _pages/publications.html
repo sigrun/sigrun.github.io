@@ -14,24 +14,24 @@ hide_auto_title: true
 <header class="hero">
   <p class="kicker">
     <span class="kicker-pill"></span>
-    Vitenskapelige publikasjoner · APA 7th Edition
+    <span data-no="Vitenskapelige publikasjoner · APA 7th Edition" data-en="Academic Publications · APA 7th Edition">Vitenskapelige publikasjoner · APA 7th Edition</span>
   </p>
   <h1 class="acad-h1">
-    <span class="hl-sky">Publikasjoner</span>
+    <span class="hl-sky" data-no="Publikasjoner" data-en="Publications">Publikasjoner</span>
   </h1>
-  <p class="lead">
+  <p class="lead" data-no='Standard APA-referanseliste hentet fra <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=no&amp;user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i)">Google Scholar</a> og <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener" style="color:var(--sky-i)">ORCID</a>. Klikk på selve referansen for å åpne publikasjonen, eller utvid for å lese sammendraget.' data-en='Standard APA reference list from <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i)">Google Scholar</a> and <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener" style="color:var(--sky-i)">ORCID</a>. Click a reference to open the publication, or expand to read the abstract.'>
     Standard APA-referanseliste hentet fra <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i)">Google Scholar</a> og <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener" style="color:var(--sky-i)">ORCID</a>. Klikk på selve referansen for å åpne publikasjonen, eller utvid for å lese sammendraget.
   </p>
 
   <!-- Diskret nøkkeltall-stripe fra Google Scholar -->
   <div style="display:inline-flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:10px;padding:8px 16px;background:var(--surface);border:1px solid var(--line-soft);border-radius:999px;font-size:13px;color:var(--body);">
-    <span><strong style="color:var(--ink);">Siteringer:</strong> 87</span>
+    <span><strong style="color:var(--ink);" data-no="Siteringer:" data-en="Citations:">Siteringer:</strong> 87</span>
     <span style="color:var(--line);">·</span>
-    <span><strong style="color:var(--ink);">h-indeks:</strong> 3</span>
+    <span><strong style="color:var(--ink);" data-no="h-indeks:" data-en="h-index:">h-indeks:</strong> 3</span>
     <span style="color:var(--line);">·</span>
-    <span><strong style="color:var(--ink);">i10-indeks:</strong> 1</span>
+    <span><strong style="color:var(--ink);" data-no="i10-indeks:" data-en="i10-index:">i10-indeks:</strong> 1</span>
     <span style="color:var(--line);">·</span>
-    <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i);font-weight:600;text-decoration:none;">Google Scholar-profil ↗</a>
+    <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i);font-weight:600;text-decoration:none;" data-no="Google Scholar-profil ↗" data-en="Google Scholar Profile ↗">Google Scholar-profil ↗</a>
   </div>
 </header>
 
@@ -277,7 +277,7 @@ hide_auto_title: true
     if (lb) lb.classList.remove('open');
   }
 
-  // Fallback for lokal forhåndsvisning (når Jekyll ikke kjører lokalt)
+  /* Fallback for lokal forhåndsvisning */
   (function() {
     var grid = document.getElementById('jekyllPosterGrid');
     if (!grid) return;
@@ -429,7 +429,7 @@ hide_auto_title: true
     grid.style.display = 'grid';
   }
 
-  // Automatisk sjekk mot ORCID / OpenAlex API for eventuelt nye publikasjoner som ikke allerede står i listen
+  /* Automatisk sjekk mot ORCID / OpenAlex API */
   (async function syncNewOrcidWorks() {
     try {
       const listEl = document.getElementById('apa-publications-list');
@@ -444,7 +444,6 @@ hide_auto_title: true
       data.results.forEach((work, idx) => {
         const title = (work.title || '').trim();
         if (!title) return;
-        // Sjekk om tittelen allerede finnes i listen (unngå duplikater)
         const titleKey = title.toLowerCase().slice(0, 32);
         if (existingText.includes(titleKey)) return;
 

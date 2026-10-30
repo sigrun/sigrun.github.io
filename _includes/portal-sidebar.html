@@ -127,12 +127,18 @@
     document.querySelectorAll('[data-' + lang + ']').forEach(el => {
       el.innerHTML = el.getAttribute('data-' + lang);
     });
+    document.querySelectorAll('[data-placeholder-' + lang + ']').forEach(el => {
+      el.setAttribute('placeholder', el.getAttribute('data-placeholder-' + lang));
+    });
     document.querySelectorAll('.lang-block-no').forEach(el => {
       el.style.display = (lang === 'en') ? 'none' : '';
     });
     document.querySelectorAll('.lang-block-en').forEach(el => {
       el.style.display = (lang === 'en') ? '' : 'none';
     });
+    if (typeof renderTalkTable === 'function') {
+      renderTalkTable();
+    }
   }
   document.addEventListener('DOMContentLoaded', () => {
     let saved = 'no';

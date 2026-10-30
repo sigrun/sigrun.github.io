@@ -14,12 +14,12 @@ hide_auto_title: true
 <header class="hero">
   <p class="kicker">
     <span class="kicker-pill" style="background:var(--rose-i)"></span>
-    Keynotes, rundebord, rektormøter og faglige verksteder
+    <span data-no="Keynotes, rundebord, rektormøter og faglige verksteder" data-en="Keynotes, roundtables, principal meetings and workshops">Keynotes, rundebord, rektormøter og faglige verksteder</span>
   </p>
-  <h1 class="acad-h1" style="margin-bottom:12px;">
+  <h1 class="acad-h1" style="margin-bottom:12px;" data-no='<span class="hl-rose">Foredrag</span> &amp; presentasjoner' data-en='<span class="hl-rose">Talks</span> &amp; Presentations'>
     <span class="hl-rose">Foredrag</span> &amp; presentasjoner
   </h1>
-  <p class="lead">
+  <p class="lead" data-no="Søk, filtrer på tema eller klikk på kolonneoverskriftene for å sortere databasen. Klikk på en rad for å åpne selve presentasjonssiden med lysbilder, notater og aktiviteter." data-en="Search, filter by topic, or click column headers to sort the database. Click any row to open the presentation page with slides, notes, and activities.">
     Søk, filtrer på tema eller klikk på kolonneoverskriftene for å sortere databasen. Klikk på en rad for å åpne selve presentasjonssiden med lysbilder, notater og aktiviteter.
   </p>
 </header>
@@ -32,10 +32,10 @@ hide_auto_title: true
     </div>
 
     <div class="notion-filters" role="group" aria-label="Filtrer på tema">
-      <button class="nf-pill active" data-topic="all" onclick="setTalkTopicFilter('all', this)">Alle (13)</button>
-      <button class="nf-pill" data-topic="ai" onclick="setTalkTopicFilter('ai', this)">AI Literacy &amp; Skole</button>
-      <button class="nf-pill" data-topic="pfdk" onclick="setTalkTopicFilter('pfdk', this)">PfDK &amp; LU</button>
-      <button class="nf-pill" data-topic="lead" onclick="setTalkTopicFilter('lead', this)">KI-ledelse &amp; Boter</button>
+      <button class="nf-pill active" data-topic="all" onclick="setTalkTopicFilter('all', this)" data-no="Alle" data-en="All">Alle</button>
+      <button class="nf-pill" data-topic="ai" onclick="setTalkTopicFilter('ai', this)" data-no="AI Literacy &amp; Skole" data-en="AI Literacy &amp; Schools">AI Literacy &amp; Skole</button>
+      <button class="nf-pill" data-topic="pfdk" onclick="setTalkTopicFilter('pfdk', this)" data-no="PfDK &amp; LU" data-en="PDC &amp; Teacher Ed">PfDK &amp; LU</button>
+      <button class="nf-pill" data-topic="lead" onclick="setTalkTopicFilter('lead', this)" data-no="KI-ledelse &amp; Boter" data-en="AI Leadership &amp; Bots">KI-ledelse &amp; Boter</button>
     </div>
   </div>
 
@@ -46,52 +46,77 @@ hide_auto_title: true
           <th style="width:13%" onclick="sortTalkTable('date')">
             <span class="th-inner">
               <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-              <span>Dato</span>
+              <span data-no="Dato" data-en="Date">Dato</span>
               <span id="sort-ind-date">↓</span>
             </span>
           </th>
           <th style="width:41%" onclick="sortTalkTable('title')">
             <span class="th-inner">
               <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
-              <span>Tittel på foredrag</span>
+              <span data-no="Tittel på foredrag" data-en="Talk Title">Tittel på foredrag</span>
               <span id="sort-ind-title"></span>
             </span>
           </th>
           <th style="width:24%" onclick="sortTalkTable('venue')">
             <span class="th-inner">
               <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
-              <span>Oppdragsgiver / Arena</span>
+              <span data-no="Oppdragsgiver / Arena" data-en="Venue / Organizer">Oppdragsgiver / Arena</span>
               <span id="sort-ind-venue"></span>
             </span>
           </th>
           <th style="width:10%" onclick="sortTalkTable('loc')">
             <span class="th-inner">
               <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Sted</span>
+              <span data-no="Sted" data-en="Location">Sted</span>
               <span id="sort-ind-loc"></span>
             </span>
           </th>
           <th style="width:12%">
             <span class="th-inner">
               <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg>
-              <span>Tema</span>
+              <span data-no="Tema" data-en="Topic">Tema</span>
             </span>
           </th>
         </tr>
       </thead>
-      <tbody id="talks-notion-tbody"></tbody>
+      <tbody id="talks-notion-tbody">
+        {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+        {% for post in sorted_talks %}
+        <tr onclick="window.location.href='{{ post.slidesurl | default: post.url | relative_url }}'">
+          <td style="white-space:nowrap;color:var(--muted);font-weight:500;">{{ post.date | date: "%b %Y" }}</td>
+          <td>
+            <div class="nt-title-cell">
+              <span>{{ post.title }}</span>
+              <span class="nt-open-badge" data-no="Åpne side →" data-en="Open page →">Åpne side →</span>
+            </div>
+          </td>
+          <td>{{ post.venue }}</td>
+          <td style="white-space:nowrap;">{{ post.location }}</td>
+          <td>
+            {% if post.topic == 'pfdk' or post.title contains 'PfDK' or post.title contains 'doktorgrad' %}
+              <span class="talk-topic-tag tag-pfdk">PfDK &amp; LU</span>
+            {% elsif post.topic == 'lead' or post.title contains 'bot' or post.title contains 'DIDLE' %}
+              <span class="talk-topic-tag tag-lead">KI-ledelse &amp; Boter</span>
+            {% else %}
+              <span class="talk-topic-tag tag-ai">AI Literacy &amp; Skole</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
   </div>
 
   <div style="padding:9px 16px;background:#fbfbfd;border-top:1px solid var(--line-soft);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-    <span id="talks-count-label">Viser 13 av 13 foredrag</span>
-    <span>Klikk på en rad for å åpne presentasjonssiden →</span>
+    <span id="talks-count-label" data-no="Viser 13 av 13 foredrag" data-en="Showing 13 of 13 talks">Viser 13 av 13 foredrag</span>
+    <span data-no="Klikk på en rad for å åpne presentasjonssiden →" data-en="Click any row to open the presentation page →">Klikk på en rad for å åpne presentasjonssiden →</span>
   </div>
 </div>
 
 <script type="application/json" id="jekyll-talks-json">
 [
-  {% for post in site.talks reversed %}
+  {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+  {% for post in sorted_talks %}
   {
     "url": {{ post.slidesurl | default: post.url | jsonify }},
     "dateISO": {{ post.date | date: "%Y-%m-%d" | jsonify }},
@@ -99,8 +124,8 @@ hide_auto_title: true
     "title": {{ post.title | jsonify }},
     "venue": {{ post.venue | default: "" | jsonify }},
     "loc": {{ post.location | default: "" | jsonify }},
-    "topic": {{ post.topic | default: "ai" | jsonify }},
-    "topicLabel": {{ post.topic_label | default: post.type | default: "Foredrag" | jsonify }},
+    "topic": "{% if post.topic %}{{ post.topic }}{% elsif post.title contains 'PfDK' or post.title contains 'doktorgrad' %}pfdk{% elsif post.title contains 'bot' or post.title contains 'DIDLE' %}lead{% else %}ai{% endif %}",
+    "topicLabel": "{% if post.topic_label %}{{ post.topic_label }}{% elsif post.title contains 'PfDK' or post.title contains 'doktorgrad' %}PfDK & LU{% elsif post.title contains 'bot' or post.title contains 'DIDLE' %}KI-ledelse & Boter{% else %}AI Literacy & Skole{% endif %}",
     "tagClass": "{% if post.topic == 'pfdk' or post.title contains 'PfDK' or post.title contains 'doktorgrad' %}tag-pfdk{% elsif post.topic == 'lead' or post.title contains 'bot' or post.title contains 'DIDLE' %}tag-lead{% else %}tag-ai{% endif %}"
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -108,16 +133,15 @@ hide_auto_title: true
 </script>
 
 <script>
-  let jekyllTalks = [];
+  var jekyllTalks = [];
   try {
-    const rawTalksJson = document.getElementById('jekyll-talks-json')?.textContent || '';
+    var rawTalksJson = document.getElementById('jekyll-talks-json') ? document.getElementById('jekyll-talks-json').textContent : '';
     if (rawTalksJson && rawTalksJson.indexOf('{' + '%') === -1) {
       jekyllTalks = JSON.parse(rawTalksJson);
     }
   } catch (e) {}
 
-  // Fallback for lokal forhåndsvisning (når man åpner talks.html direkte uten Jekyll):
-  const fallbackTalksData = [
+  var fallbackTalksData = [
     {
       url: '/presentasjoner/2026-radgiverseminar/index.html',
       dateISO: '2026-03-16',
@@ -263,30 +287,31 @@ hide_auto_title: true
     }
   ];
 
-  const talksData = (typeof jekyllTalks !== 'undefined' && jekyllTalks.length > 0) ? jekyllTalks : fallbackTalksData;
+  var talksData = (typeof jekyllTalks !== 'undefined' && jekyllTalks.length > 0) ? jekyllTalks : fallbackTalksData;
 
-  let currentTopicFilter = 'all';
-  let currentSortKey = 'date';
-  let currentSortAsc = false;
+  var currentTopicFilter = 'all';
+  var currentSortKey = 'date';
+  var currentSortAsc = false;
 
   function renderTalkTable() {
-    const searchVal = (document.getElementById('talk-search-input')?.value || '').toLowerCase().trim();
-    const tbody = document.getElementById('talks-notion-tbody');
+    var inputEl = document.getElementById('talk-search-input');
+    var searchVal = (inputEl ? inputEl.value : '').toLowerCase().trim();
+    var tbody = document.getElementById('talks-notion-tbody');
     if (!tbody) return;
 
-    let filtered = talksData.filter(item => {
-      const matchTopic = currentTopicFilter === 'all' || item.topic === currentTopicFilter;
-      const matchSearch = !searchVal ||
-        item.title.toLowerCase().includes(searchVal) ||
-        item.venue.toLowerCase().includes(searchVal) ||
-        item.loc.toLowerCase().includes(searchVal) ||
-        item.topicLabel.toLowerCase().includes(searchVal) ||
-        item.dateLabel.toLowerCase().includes(searchVal);
+    var filtered = talksData.filter(function(item) {
+      var matchTopic = currentTopicFilter === 'all' || item.topic === currentTopicFilter;
+      var matchSearch = !searchVal ||
+        item.title.toLowerCase().indexOf(searchVal) !== -1 ||
+        item.venue.toLowerCase().indexOf(searchVal) !== -1 ||
+        item.loc.toLowerCase().indexOf(searchVal) !== -1 ||
+        item.topicLabel.toLowerCase().indexOf(searchVal) !== -1 ||
+        item.dateLabel.toLowerCase().indexOf(searchVal) !== -1;
       return matchTopic && matchSearch;
     });
 
-    filtered.sort((a, b) => {
-      let valA, valB;
+    filtered.sort(function(a, b) {
+      var valA, valB;
       if (currentSortKey === 'date') {
         valA = a.dateISO; valB = b.dateISO;
       } else if (currentSortKey === 'title') {
@@ -301,30 +326,30 @@ hide_auto_title: true
       return 0;
     });
 
-    tbody.innerHTML = filtered.map(item => `
-      <tr onclick="window.location.href='${item.url}'">
-        <td style="white-space:nowrap;color:var(--muted);font-weight:500;">${item.dateLabel}</td>
-        <td>
-          <div class="nt-title-cell">
-            <span>${item.title}</span>
-            <span class="nt-open-badge">Åpne side →</span>
-          </div>
-        </td>
-        <td>${item.venue}</td>
-        <td style="white-space:nowrap;">${item.loc}</td>
-        <td><span class="talk-topic-tag ${item.tagClass}">${item.topicLabel}</span></td>
-      </tr>
-    `).join('');
+    var isEn = document.documentElement.lang === 'en';
+    var openText = isEn ? 'Open page →' : 'Åpne side →';
 
-    const countEl = document.getElementById('talks-count-label');
+    tbody.innerHTML = filtered.map(function(item) {
+      return '<tr onclick="window.location.href=\'' + item.url + '\'">' +
+        '<td style="white-space:nowrap;color:var(--muted);font-weight:500;">' + item.dateLabel + '</td>' +
+        '<td><div class="nt-title-cell"><span>' + item.title + '</span><span class="nt-open-badge">' + openText + '</span></div></td>' +
+        '<td>' + item.venue + '</td>' +
+        '<td style="white-space:nowrap;">' + item.loc + '</td>' +
+        '<td><span class="talk-topic-tag ' + item.tagClass + '">' + item.topicLabel + '</span></td>' +
+      '</tr>';
+    }).join('');
+
+    var countEl = document.getElementById('talks-count-label');
     if (countEl) {
-      countEl.textContent = `Viser ${filtered.length} av ${talksData.length} foredrag`;
+      countEl.textContent = isEn
+        ? ('Showing ' + filtered.length + ' of ' + talksData.length + ' talks')
+        : ('Viser ' + filtered.length + ' av ' + talksData.length + ' foredrag');
     }
   }
 
   function setTalkTopicFilter(topic, btn) {
     currentTopicFilter = topic;
-    document.querySelectorAll('.nf-pill').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.nf-pill').forEach(function(b) { b.classList.remove('active'); });
     if (btn) btn.classList.add('active');
     renderTalkTable();
   }
@@ -338,8 +363,8 @@ hide_auto_title: true
       currentSortKey = key;
       currentSortAsc = (key !== 'date');
     }
-    ['date', 'title', 'venue', 'loc'].forEach(k => {
-      const el = document.getElementById('sort-ind-' + k);
+    ['date', 'title', 'venue', 'loc'].forEach(function(k) {
+      var el = document.getElementById('sort-ind-' + k);
       if (el) el.textContent = (k === currentSortKey) ? (currentSortAsc ? '↑' : '↓') : '';
     });
     renderTalkTable();
