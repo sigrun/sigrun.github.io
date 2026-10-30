@@ -4,75 +4,53 @@ layout: default
 
 {% include base_path %}
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
-<div id="main" role="main">
-  {% include sidebar.html %}
-
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
-
-    <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-          {% endif %}
-        {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+<div class="shell no-sidebar" id="main" role="main">
+  <main class="main">
+    <nav class="pres-topbar" aria-label="Presentasjonsnavigasjon">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <a class="btn-pill" href="{{ base_path }}/talks/">
+          ← Tilbake til hovedsiden (Foredrag)
+        </a>
+        {% if page.title %}
+          <span style="font-weight:700;font-size:14.5px;color:var(--ink);">{{ page.title }}</span>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+      </div>
+      {% if page.slidesurl %}
+        <a class="btn-pill primary" href="{{ page.slidesurl }}" target="_blank" rel="noopener">
+          <span>Åpne lysbilder / presentasjon</span>
+          <svg class="ic-sm" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      {% endif %}
+    </nav>
 
-        </header>
-      {% endunless %}
+    <header class="pres-hero">
+      <p class="kicker" style="color:var(--rose-i);margin-bottom:10px;">
+        <span class="kicker-pill" style="background:var(--rose-i)"></span>
+        <span>{{ page.type | default: "Foredrag & presentasjon" | upcase }}{% if page.venue %} · {{ page.venue | upcase }}{% endif %}</span>
+      </p>
+      <h1 class="acad-h1" style="font-size:clamp(30px,4.5vw,46px);margin-bottom:14px;">
+        {{ page.title }}
+      </h1>
+      <div class="pres-meta-bar">
+        <span><strong>Foredragsholder:</strong> Sigrun Lindaas Norhagen (NLA Høgskolen / UiB)</span>
+        {% if page.date %}
+          <span><strong>Dato:</strong> {{ page.date | date: "%d.%m.%Y" }}</span>
+        {% endif %}
+        {% if page.location %}
+          <span><strong>Sted:</strong> {{ page.location }}</span>
+        {% endif %}
+      </div>
+    </header>
 
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
       <section class="page__content" itemprop="text">
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+    </article>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-      </footer>
-
-      {% if page.share %}{% include social-share.html %}{% endif %}
-
-      {% include post_pagination.html %}
-    </div>
-
-    {% if site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
-  </article>
-
-  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      {% if site.data.ui-text[site.locale].related_label %}
-        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      {% endif %}
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
+    <footer style="margin-top:72px;padding-top:20px;border-top:1px solid var(--line-soft);font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <span>© {{ site.time | date: '%Y' }} Sigrun Lindaas Norhagen · sigrun.github.io</span>
+      <a href="{{ base_path }}/talks/" style="color:var(--ink);font-weight:600;text-decoration:none;">← Tilbake til alle foredrag</a>
+    </footer>
+  </main>
 </div>

@@ -225,6 +225,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  posters:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -282,6 +285,14 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _posters
+  - scope:
+      path: ""
+      type: posters
+    values:
+      layout: poster
+      author_profile: false
+      hide_sidebar: true
 
 
 # Sass/SCSS

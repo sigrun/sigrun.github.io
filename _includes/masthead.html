@@ -6,7 +6,19 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a href="{{ base_path }}/" class="site-brand-link">
+              <svg class="scene site-brand-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <g filter="url(#hand)">
+                  <circle cx="26" cy="26" r="18" style="fill:var(--butter)" opacity="0.6" filter="url(#washs)"/>
+                  <circle cx="24" cy="24" r="18" class="ln"/>
+                  <path d="M15 29c2-5 6-7 9-7s7 2 9 7" class="ln"/>
+                  <circle cx="24" cy="18" r="4.5" class="ln"/>
+                </g>
+              </svg>
+              <span>{{ site.title }}</span>
+            </a>
+          </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}

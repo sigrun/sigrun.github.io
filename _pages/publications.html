@@ -1,36 +1,352 @@
 ---
 layout: archive
-title: "Publications"
+title: "Publikasjoner"
 permalink: /publications/
 author_profile: true
+hide_auto_title: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap">
+<link rel="stylesheet" href="/assets/css/academic-portal.css">
+<link rel="stylesheet" href="../assets/css/academic-portal.css">
 
-{% include base_path %}
+<div class="academic-portal" style="max-width:860px;margin:0 auto;padding:16px;">
+<header class="hero">
+  <p class="kicker">
+    <span class="kicker-pill"></span>
+    Vitenskapelige publikasjoner · APA 7th Edition
+  </p>
+  <h1 class="acad-h1">
+    <span class="hl-sky">Publikasjoner</span>
+  </h1>
+  <p class="lead">
+    Standard APA-referanseliste hentet fra <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i)">Google Scholar</a> og <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener" style="color:var(--sky-i)">ORCID</a>. Klikk på selve referansen for å åpne publikasjonen, eller utvid for å lese sammendraget.
+  </p>
+</header>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+<div class="apa-list">
+  <!-- Publikasjon 1: BJRE 2025 Placing Religion Virtually -->
+  <div class="apa-item">
+    <div class="apa-row-top">
+      <a class="apa-citation-link" id="cite-bjre" href="https://doi.org/10.1080/01416200.2025.2471234" target="_blank" rel="noopener" title="Åpne publikasjon">
+        Andersland, I., Faye, R., &amp; Norhagen, S. L. (2025). Placing religion virtually: Facilitating critical democratic literacy with 360-degree video in teacher education. <em>British Journal of Religious Education</em>, 1–15.
+      </a>
+      <button class="apa-copy-discreet" onclick="copyApa('cite-bjre', this)" title="Kopier APA-referanse">
+        <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Kopier</span>
+      </button>
+    </div>
+    <div class="apa-sub-meta">
+      <span class="apa-type-label">Tidsskriftartikkel (Fagfellevurdert)</span>
+      <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-bjre', this)">
+        <span>Les abstract</span>
+        <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div class="apa-abstract-drawer" id="abs-bjre">
+      Denne studien undersøker hvordan 360-graders video av hellige rom i VR-briller kan fungere som en meningsfull tilnærming til religionsundervisning i lærerutdanningen og fremme kritisk demokratisk kompetanse gjennom sanselig tilstedeværelse og felles faglig refleksjon.
+    </div>
+  </div>
+
+  <!-- Publikasjon 2: EDEN 2025 -->
+  <div class="apa-item">
+    <div class="apa-row-top">
+      <a class="apa-citation-link" id="cite-1" href="https://eden-europe.eu/wp-content/uploads/2025/07/EDEN-2025-AC-Proceedings.pdf#page=218" target="_blank" rel="noopener" title="Åpne publikasjon (PDF)">
+        Norhagen, S. L. (2025). The PDC Ladder for Teacher Education: A Three-Tiered Framework for Digital Competence Integration. I <em>EDEN Europe 2025 Annual Conference Proceedings</em> (s. 218). EDEN Digital Learning Europe.
+      </a>
+      <button class="apa-copy-discreet" onclick="copyApa('cite-1', this)" title="Kopier APA-referanse">
+        <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Kopier</span>
+      </button>
+    </div>
+    <div class="apa-sub-meta">
+      <span class="apa-type-label">Konferansebidrag &amp; Poster</span>
+      <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-1', this)">
+        <span>Les abstract</span>
+        <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div class="apa-abstract-drawer" id="abs-1">
+      This poster and paper introduce the <strong>PDC Ladder for Teacher Education</strong>, a visual and conceptual model that distinguishes digital competence at three interconnected levels: pupils, teachers, and teacher educators. Based on Starkey’s model for teachers’ Professional Digital Competence and extended through Uerz et al.’s emphasis on modeling and metacommunication, the framework supports a clearer understanding of the complex role teacher educators play in preparing future teachers for the digital age.
+    </div>
+  </div>
+
+  <!-- Publikasjon 3: Frontiers 2024 Scoping Review -->
+  <div class="apa-item">
+    <div class="apa-row-top">
+      <a class="apa-citation-link" id="cite-2" href="https://doi.org/10.3389/feduc.2024.1363529" target="_blank" rel="noopener" title="Åpne publikasjon (DOI)">
+        Norhagen, S. L., Krumsvik, R. J., &amp; Røkenes, F. M. (2024). Developing professional digital competence in Norwegian teacher education: A scoping review. <em>Frontiers in Education</em>, <em>9</em>, Artikkel 1363529. https://doi.org/10.3389/feduc.2024.1363529
+      </a>
+      <button class="apa-copy-discreet" onclick="copyApa('cite-2', this)" title="Kopier APA-referanse">
+        <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Kopier</span>
+      </button>
+    </div>
+    <div class="apa-sub-meta">
+      <span class="apa-type-label">Tidsskriftartikkel (Fagfellevurdert)</span>
+      <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-2', this)">
+        <span>Les abstract</span>
+        <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div class="apa-abstract-drawer" id="abs-2">
+      The widespread use of educational technology in schools compels teachers to seamlessly integrate technology while developing students’ digital competence. This scoping review investigates current research on Professional Digital Competence (PDC) and its implementation within Norwegian teacher education (2017–2022). Thirty-four peer-reviewed papers were identified and coded along three dimensions: (1) theoretical perspectives, (2) research questions and methods, and (3) application and implementation.
+    </div>
+  </div>
+
+  <!-- Publikasjon 4: FJORD 2024 -->
+  <div class="apa-item">
+    <div class="apa-row-top">
+      <a class="apa-citation-link" id="cite-3" href="https://eden-europe.eu/wp-content/uploads/2024/07/2024-AC-Proceedings_final-version.pdf#page=191" target="_blank" rel="noopener" title="Åpne publikasjon (PDF)">
+        Norhagen, S. L. (2024). FJORD Framework: Integrating Student Perspectives Through Holistic Course Design. I <em>Learning in the Age of AI: Towards Imaginative Futures – EDEN Europe 2024 Proceedings</em> (s. 175–191).
+      </a>
+      <button class="apa-copy-discreet" onclick="copyApa('cite-3', this)" title="Kopier APA-referanse">
+        <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Kopier</span>
+      </button>
+    </div>
+    <div class="apa-sub-meta">
+      <span class="apa-type-label">Konferansebidrag &amp; Poster</span>
+      <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-3', this)">
+        <span>Les abstract</span>
+        <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div class="apa-abstract-drawer" id="abs-3">
+      The FJORD framework (Flexible, Journey-Oriented, Remote Design) emerges from Norway as a transformative approach to educational course design for online and blended higher education. Derived from international methodologies and merged with local educational needs, this contribution introduces the model, highlighting its adaptability, learner-centered approach, and digital integration.
+    </div>
+  </div>
+</div>
+
+<!-- =====================================================================
+     SEKSJON: FAGLIGE POSTERE (HENTES AUTOMATISK FRA _posters/*.md)
+     ===================================================================== -->
+<section class="poster-section" id="postere">
+  <p class="kicker">
+    <span class="kicker-pill" style="background:var(--lilac-i)"></span>
+    <span data-no="Visuell forskningsformidling · Konferansepostere" data-en="Visual Research Communication · Conference Posters">Visuell forskningsformidling · Konferansepostere</span>
+  </p>
+  <h2 class="acad-h2" style="font-size:28px;margin:4px 0 8px;">
+    <span data-no='Faglige <span class="hl-lilac">postere</span>' data-en='Academic <span class="hl-lilac">Posters</span>'>Faglige <span class="hl-lilac">postere</span></span>
+  </h2>
+  <p style="max-width:66ch;color:var(--body);margin:0 0 18px;font-size:15.5px;" data-no="Klikk på et kort for å åpne posterens landingsside med bilde i full oppløsning, informasjon om hvor den er presentert, FoU-kategori og fullstendig sammendrag (abstract)." data-en="Click a card to open the poster landing page with the high-resolution poster image, conference details, research category, and full abstract.">
+    Klikk på et kort for å åpne posterens landingsside med bilde i full oppløsning, informasjon om hvor den er presentert, FoU-kategori og fullstendig sammendrag (abstract).
+  </p>
+
+  <!-- Jekyll-løkke som automatisk bygger kort fra _posters/*.md når GitHub Pages bygger siden -->
+  <div class="poster-grid" id="jekyllPosterGrid">
+    {% assign sorted_posters = site.posters | sort: 'date' | reverse %}
+    {% for poster in sorted_posters %}
+    <a class="poster-card" href="{{ poster.url | relative_url }}">
+      <div class="poster-card-thumb">
+        <img src="{{ poster.image | relative_url }}" alt="{{ poster.title | escape }}" loading="lazy">
+      </div>
+      <div class="poster-card-body">
+        {% if poster.category %}
+        <span class="poster-card-badge {{ poster.category_color | default: 'lilac' }}">{{ poster.category }}</span>
+        {% endif %}
+        <h3 class="poster-card-title">{{ poster.short_title | default: poster.title }}</h3>
+        <div class="poster-card-venue">{{ poster.venue }}{% if poster.year %} · {{ poster.year }}{% endif %}</div>
+      </div>
+    </a>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  </div>
 
+  <!-- Lokal forhåndsvisning av enkeltposter (brukes kun når filen åpnes direkte uten Jekyll) -->
+  <div id="localPosterDetailView" style="display:none;margin-top:24px;"></div>
+</section>
 
+<!-- Lightbox for fullskjermsvisning av poster -->
+<div class="poster-lightbox" id="posterLightbox" onclick="closePosterLightbox()">
+  <button type="button" class="poster-lightbox-close" onclick="closePosterLightbox()">Lukk ✕</button>
+  <img id="posterLightboxImg" src="" alt="Forstørret poster">
+</div>
 
+<script>
+  function copyApa(elementId, btn) {
+    const text = document.getElementById(elementId).innerText.trim();
+    navigator.clipboard.writeText(text).then(() => {
+      const original = btn.innerHTML;
+      btn.classList.add('copied');
+      btn.innerHTML = '<svg class="ic-sm" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Kopiert</span>';
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.innerHTML = original;
+      }, 1800);
+    });
+  }
+
+  function toggleAbstract(drawerId, btn) {
+    const drawer = document.getElementById(drawerId);
+    const isExpanded = drawer.classList.toggle('expanded');
+    btn.innerHTML = isExpanded
+      ? '<span>Skjul abstract</span><svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg>'
+      : '<span>Les abstract</span><svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
+  }
+
+  function openPosterLightbox(src) {
+    var lb = document.getElementById('posterLightbox');
+    var img = document.getElementById('posterLightboxImg');
+    if (lb && img) {
+      img.src = src;
+      lb.classList.add('open');
+    }
+  }
+  function closePosterLightbox() {
+    var lb = document.getElementById('posterLightbox');
+    if (lb) lb.classList.remove('open');
+  }
+
+  // Fallback for lokal forhåndsvisning (når Jekyll ikke kjører lokalt)
+  (function() {
+    var grid = document.getElementById('jekyllPosterGrid');
+    if (!grid) return;
+    var rawHtml = grid.innerHTML;
+    if (rawHtml.indexOf('{%') !== -1 || rawHtml.indexOf('{{') !== -1 || grid.children.length === 0) {
+      var fallbackPosters = [
+        {
+          id: "microfjord-2026",
+          title: "microFJORD: En fasilitert designprosess for constructive alignment i microemner",
+          short_title: "microFJORD: Constructive alignment i microemner",
+          authors: "Sigrun Lindaas Norhagen",
+          affiliation: "NLA Høgskolen",
+          venue: "UiB Læringskonferansen 2026 – På vei mot postdigital utdanning?",
+          location: "Bergen, Norge",
+          year: "2026",
+          category: "Designforskning & utviklingsarbeid",
+          category_color: "mint",
+          work_type: "Praksisnær designforskning (Utviklingsarbeid + kvalitativ empiri)",
+          data_material: "Workshoptranskripsjoner og arbeidsbok som grenseobjekt (1 stp.-emne ved HVL)",
+          tags: ["Læringsdesign", "Utviklingsarbeid", "Empirisk utprøving", "Microemner"],
+          image: "../images/posters/microfjord-2026.png",
+          website: "https://fjord.snorhagen.no",
+          website_label: "fjord.snorhagen.no (Nettside og arbeidsbok)",
+          abstractHtml: "<p>Microemner (<em>micro-credentials</em>) er i vekst i norsk og europeisk høyere utdanning, drevet av behovet for fleksibilitet og arbeidslivsrelevans. Men korte emner kan risikere å miste faglig dybde og sammenheng dersom de ikke kvalitetssikres på linje med ordinære studieløp (OECD, 2021). Den pedagogiske utfordringen blir å komprimere et omfattende fagfelt til et lite emne uten å miste den røde tråden mellom læringsutbytte, vurdering og aktivitet.</p><h3>Forskningsspørsmål</h3><p><em>Hvordan kan en strukturert, fasilitert designprosess hjelpe faglærerteam med å sikre constructive alignment (Biggs &amp; Tang, 2011) og felles pedagogisk forståelse i microemner når tiden er knapp?</em></p><h3>Design og datamateriale</h3><p><strong>microFJORD</strong> er en tilpasning av læringsdesignrammeverket FJORD (Norhagen, under arbeid) til microemnets betingelser. Rammeverket er utviklet gjennom kontinuerlig tilpasning gjennom flere år og prøvd ut i en reell designworkshop for et 1-studiepoengsemne ved HVL. Datamaterialet er workshoptranskripsjoner og en arbeidsbok som fungerer som grenseobjekt mellom fagekspertene (Star &amp; Griesemer, 1989).</p><h3>Foreløpige funn</h3><p>Et tydelig tidsbudsjett (studiepoeng konvertert til studenttimer) hjelper med å styre prioriteringene og motvirker tendensen til å oppfatte alt som like viktig. Constructive alignment kan implementeres for hele fagteamet gjennom øvelser som fokuserer på studentperspektivet, mens fysiske, analoge verktøy støtter designet for det nettbaserte emnet — en postdigital praksis.</p><h3>Målgruppe og interaktivitet</h3><p>Målgruppen er faglærere, emneansvarlige og pedagogiske ledere. I tillegg til poster, en åpen nettside og en arbeidsbok (QR), inviteres forbipasserende til å bygge en mikroemneuke av ferdige, fargekodede storyboard-lapper — og selv oppdage hvor læringsreisen glipper.</p>"
+        },
+        {
+          id: "fra-innfall-til-innsikt-2026",
+          title: "Fra innfall til innsikt: En kildestøttet KI-chatbot for historisk empati",
+          short_title: "Fra innfall til innsikt: Kildestøttet KI-chatbot for historisk empati",
+          authors: "Sigrun Lindaas Norhagen & Helga Bjørke Harnes",
+          affiliation: "NLA Høgskolen",
+          venue: "UiB Læringskonferansen 2026 – På vei mot postdigital utdanning?",
+          location: "Bergen, Norge",
+          year: "2026",
+          category: "Designeksperiment & empirisk studie",
+          category_color: "lilac",
+          work_type: "Designeksperiment (6 iterasjoner) + eksplorativ kvalitativ studie",
+          data_material: "Skjerm- og lydopptak av botsamtaler i GLU (Høst 2026 / Vår 2027)",
+          tags: ["Designeksperiment", "Empirisk studie", "KI i utdanning", "Historiedidaktikk"],
+          image: "../images/posters/fra-innfall-til-innsikt-2026.png",
+          website: "https://prosjekt.nla.no",
+          website_label: "prosjekt.nla.no",
+          abstractHtml: "<p>Såkalte <em>custom chatbots</em> (egendefinerte KI-chatboter) utvikles ofte først med fokus på den tekniske delen, og deretter på det pedagogiske aspektet. Vi vender perspektivet og spør hvordan KI kan brukes som et verktøy heller enn et mål, samtidig som vi undersøker hva en chatbot kan bidra med for å oppnå avanserte læringsmål som <strong>historisk empati</strong>.</p><h3>Fra personasimulator til kildestøttet kontekstassistent</h3><p>Gjennom seks iterasjonssykluser av et designeksperiment (2025–2026), basert på historiedidaktisk fagekspertise, utviklet verktøyet seg fra å være en innlevende «personasimulator», hvor KI forestiller en oppdiktet fortidsperson, til en kildestøttet kontekstassistent som hjelper elever med å lese ekte primærkilder. Dette skiftet er prosjektets foreløpige funn: For verdiladde læringsmål framstår smale, kildestøttede tilnærminger som mer produktive enn brede, generative, og lærerens nøkkelarbeid forskyves fra promptdesign til kuratering av kilder.</p><h3>Forskningsspørsmål og empirisk utprøving</h3><p>Så langt er dette en designhypotese. Høsten 2026 prøver vi den ut kvalitativt og eksplorativt med samfunnsfagstudenter i grunnskolelærerutdanningen.</p><p><em>Forskningsspørsmål: Hvordan utspiller samspillet mellom student og kildestøttet chatbot seg, og hvor støtter eller svikter designprinsippene arbeidet med historisk empati?</em></p><p>Datamaterialet er skjerm- og lydopptak av botsamtaler, analysert med historisk empati — kontekstualisering, perspektivtaking og unngåelse av presentisme — som koderamme.</p><h3>Målgruppe og interaktivitet</h3><p>Målgruppe er lærerutdannere og undervisere i høyere utdanning som vurderer fagspesifikk KI-design. Vi engasjerer publikum ved å la dem teste to korte chatutdrag, personabasert vs. kildestøttet, og vurdere om og evt. hvor empati fremmes eller presentisme oppstår.</p>"
+        },
+        {
+          id: "pdc-ladder-2025",
+          title: "The PDC Ladder for Teacher Education: A Three-Tiered Framework for Digital Competence Integration",
+          short_title: "The PDC Ladder for Teacher Education",
+          authors: "Sigrun Lindaas Norhagen",
+          affiliation: "Universitetet i Bergen / NLA Høgskolen",
+          venue: "EDEN Europe 2025 Annual Conference",
+          location: "Bologna, Italia",
+          year: "2025",
+          category: "Konseptuelt rammeverk & forskning",
+          category_color: "sky",
+          work_type: "Teoretisk og konseptuell modellering (basert på scoping review)",
+          data_material: "Syntese av 34 fagfellevurderte studier (Norhagen et al., 2024)",
+          tags: ["Forskning", "Konseptuell modell", "PfDK / PDC"],
+          image: "../images/PDC-ladder-illustration.png",
+          website: "https://eden-europe.eu/wp-content/uploads/2025/07/EDEN-2025-AC-Proceedings.pdf#page=218",
+          website_label: "EDEN 2025 Proceedings (PDF)",
+          abstractHtml: "<p>This poster introduces the <strong>PDC Ladder for Teacher Education</strong>, a visual and conceptual model that distinguishes digital competence at three interconnected levels: pupils, teachers, and teacher educators. Based on Starkey’s model for teachers’ Professional Digital Competence and extended through Uerz et al.’s emphasis on modeling and metacommunication, the framework supports a clearer understanding of the complex role teacher educators play in preparing future teachers for the digital age.</p>"
+        },
+        {
+          id: "fjord-framework-2024",
+          title: "FJORD Framework: Integrating Student Perspectives Through Holistic Course Design",
+          short_title: "FJORD Framework – Holistic Course Design",
+          authors: "Sigrun Lindaas Norhagen",
+          affiliation: "NLA Høgskolen",
+          venue: "EDEN Europe 2024 Annual Conference",
+          location: "Graz, Østerrike",
+          year: "2024",
+          category: "Utviklingsarbeid & læringsdesign",
+          category_color: "butter",
+          work_type: "Pedagogisk utviklingsarbeid og metodikk for emnedesign",
+          data_material: "Utviklet gjennom fasilitering av emnedesign-workshops i UH-sektoren",
+          tags: ["Utviklingsarbeid", "Læringsdesign", "Nettstudier"],
+          image: "../images/FJORD.png",
+          website: "https://fjord.snorhagen.no",
+          website_label: "fjord.snorhagen.no",
+          abstractHtml: "<p>The FJORD framework (Flexible, Journey-Oriented, Remote Design) emerges from Norway as a transformative approach to educational course design for online and blended higher education. Derived from international methodologies and merged with local educational needs, this contribution introduces the model, highlighting its adaptability, learner-centered approach, and digital integration.</p>"
+        }
+      ];
+
+      window.__fallbackPosters = fallbackPosters;
+
+      grid.innerHTML = fallbackPosters.map(function(p, idx) {
+        return '<div class="poster-card" onclick="showLocalPoster(' + idx + ')">' +
+          '<div class="poster-card-thumb">' +
+            '<img src="' + p.image + '" alt="' + p.title + '">' +
+          '</div>' +
+          '<div class="poster-card-body">' +
+            '<span class="poster-card-badge ' + p.category_color + '">' + p.category + '</span>' +
+            '<h3 class="poster-card-title">' + p.short_title + '</h3>' +
+            '<div class="poster-card-venue">' + p.venue + ' · ' + p.year + '</div>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+    }
+  })();
+
+  function showLocalPoster(idx) {
+    var p = window.__fallbackPosters && window.__fallbackPosters[idx];
+    if (!p) return;
+    var detail = document.getElementById('localPosterDetailView');
+    var grid = document.getElementById('jekyllPosterGrid');
+    grid.style.display = 'none';
+    detail.style.display = 'block';
+    detail.innerHTML =
+      '<div style="background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:24px;">' +
+        '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">' +
+          '<button type="button" class="back-btn" onclick="closeLocalPoster()">← Tilbake til alle postere</button>' +
+          '<span style="font-size:12.5px;font-weight:600;color:var(--muted);">Poster-landingsside · ' + p.year + '</span>' +
+        '</div>' +
+        '<div class="poster-tag-row">' +
+          '<span class="poster-card-badge ' + p.category_color + '">' + p.category + '</span>' +
+          (p.tags || []).map(function(t) {
+            return '<span style="background:var(--bg);color:var(--body);border:1px solid var(--line-soft);font-size:11.5px;padding:3px 10px;border-radius:999px;">' + t + '</span>';
+          }).join('') +
+        '</div>' +
+        '<h2 class="acad-h2" style="font-size:26px;margin:8px 0 12px;">' + p.title + '</h2>' +
+        '<div class="poster-meta-strip" style="background:var(--bg);">' +
+          '<div class="poster-meta-item"><span class="poster-meta-label">Forfatter(e)</span><span class="poster-meta-val">' + p.authors + ' (' + p.affiliation + ')</span></div>' +
+          '<div class="poster-meta-item"><span class="poster-meta-label">Presentert ved</span><span class="poster-meta-val">' + p.venue + '</span></div>' +
+          '<div class="poster-meta-item"><span class="poster-meta-label">Arbeidsform / FoU-type</span><span class="poster-meta-val">' + p.work_type + '</span></div>' +
+          '<div class="poster-meta-item"><span class="poster-meta-label">Datamateriale & status</span><span class="poster-meta-val">' + p.data_material + '</span></div>' +
+        '</div>' +
+        '<div class="poster-landing-grid">' +
+          '<aside class="poster-visual-col">' +
+            '<div class="poster-frame" style="background:var(--bg);" onclick="openPosterLightbox(\'' + p.image + '\')">' +
+              '<img src="' + p.image + '" alt="' + p.title + '">' +
+            '</div>' +
+            '<button type="button" class="poster-zoom-btn" onclick="openPosterLightbox(\'' + p.image + '\')">Forstørr poster (fullskjerm)</button>' +
+            (p.website ? '<a class="btn-outline" style="justify-content:center;width:100%;text-align:center;" href="' + p.website + '" target="_blank" rel="noopener">' + p.website_label + ' ↗</a>' : '') +
+          '</aside>' +
+          '<article class="poster-content-col">' +
+            '<div style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:8px;">Sammendrag · Poster Abstract</div>' +
+            p.abstractHtml +
+          '</article>' +
+        '</div>' +
+      '</div>';
+    detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function closeLocalPoster() {
+    var detail = document.getElementById('localPosterDetailView');
+    var grid = document.getElementById('jekyllPosterGrid');
+    detail.style.display = 'none';
+    grid.style.display = 'grid';
+  }
+</script>
+</div>

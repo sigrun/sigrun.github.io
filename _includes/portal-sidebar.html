@@ -1,0 +1,101 @@
+{% include base_path %}
+<aside class="side" id="left-sidebar">
+  <div class="profile-mini">
+    <div class="avatar-sketch">
+      <a href="{{ base_path }}/" title="Sigrun Lindaas Norhagen">
+        <img src="{{ base_path }}/images/profile.png" alt="Sigrun Lindaas Norhagen" onerror="this.style.display='none'">
+      </a>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px;">
+      <h2 style="margin:0;"><a href="{{ base_path }}/">Sigrun Lindaas Norhagen</a></h2>
+    </div>
+    <p data-no="PhD-kandidat i PfDK (UiB) · Leder for digitalisering av utdanning (NLA Høgskolen)"
+       data-en="PhD Candidate in PDC (UiB) · Head of Educational Digitalization (NLA University College)">
+      PhD-kandidat i PfDK (UiB) · Leder for digitalisering av utdanning (NLA Høgskolen)
+    </p>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:10px;">
+      <div class="seg" role="group" aria-label="Language switch" style="padding:2px;background:var(--surface);border-radius:8px;display:inline-flex;gap:2px;">
+        <button type="button" id="lang-btn-no" onclick="setPortalLang('no')" style="font-size:11.5px;font-weight:700;border:0;padding:3px 9px;border-radius:6px;cursor:pointer;background:var(--bg);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.1);">NO</button>
+        <button type="button" id="lang-btn-en" onclick="setPortalLang('en')" style="font-size:11.5px;font-weight:600;border:0;padding:3px 9px;border-radius:6px;cursor:pointer;background:transparent;color:var(--muted);">EN</button>
+      </div>
+    </div>
+    <div class="profile-links">
+      <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener">ORCID</a>
+      <a href="http://www.kiforskolen.no" target="_blank" rel="noopener">kiforskolen.no</a>
+      <a href="http://www.snorhagen.no" target="_blank" rel="noopener">snorhagen.no</a>
+    </div>
+  </div>
+
+  <nav class="side-nav" aria-label="Hovedmeny">
+    <a href="{{ base_path }}/" class="{% if page.url == '/' or page.url == '/about/' %}active{% endif %}">
+      <span data-no="Om meg" data-en="About me">Om meg</span>
+      <span class="nav-dot" style="background:var(--butter-i)"></span>
+    </a>
+    <a href="{{ base_path }}/portfolio/portfolio-1/" class="{% if page.url contains '/portfolio/portfolio-1' or page.url contains '/phd' %}active{% endif %}">
+      <span data-no="PhD-prosjektet" data-en="PhD Project">PhD-prosjektet</span>
+      <span class="nav-dot" style="background:var(--mint-i)"></span>
+    </a>
+    <a href="{{ base_path }}/publications/" class="{% if page.url == '/publications/' %}active{% endif %}">
+      <span data-no="Publikasjoner" data-en="Publications">Publikasjoner</span>
+      <span class="nav-dot" style="background:var(--sky-i)"></span>
+    </a>
+    <a href="{{ base_path }}/talks/" class="{% if page.url == '/talks/' %}active{% endif %}">
+      <span data-no="Foredrag" data-en="Talks & Keynotes">Foredrag</span>
+      <span class="nav-dot" style="background:var(--rose-i)"></span>
+    </a>
+    <a href="{{ base_path }}/teaching/" class="{% if page.url contains '/teaching' %}active{% endif %}">
+      <span data-no="Undervisning" data-en="Teaching">Undervisning</span>
+      <span class="nav-dot" style="background:var(--mint-i)"></span>
+    </a>
+    <a href="{{ base_path }}/projects/" class="{% if page.url contains '/projects' %}active{% endif %}">
+      <span data-no="Utviklingsarbeid" data-en="Development Work">Utviklingsarbeid</span>
+      <span class="nav-dot" style="background:var(--lilac-i)"></span>
+    </a>
+    <a href="{{ base_path }}/cv/" class="{% if page.url contains '/cv' %}active{% endif %}">
+      <span data-no="CV &amp; bakgrunn" data-en="CV &amp; Background">CV &amp; bakgrunn</span>
+      <span class="nav-dot" style="background:var(--peach-i)"></span>
+    </a>
+  </nav>
+</aside>
+
+<script>
+  function setPortalLang(lang) {
+    try { localStorage.setItem('portal_lang', lang); } catch(e) {}
+    document.documentElement.lang = lang;
+    const btnNo = document.getElementById('lang-btn-no');
+    const btnEn = document.getElementById('lang-btn-en');
+    if (btnNo && btnEn) {
+      if (lang === 'en') {
+        btnEn.style.background = 'var(--bg)';
+        btnEn.style.color = 'var(--ink)';
+        btnEn.style.boxShadow = '0 1px 2px rgba(0,0,0,.1)';
+        btnNo.style.background = 'transparent';
+        btnNo.style.color = 'var(--muted)';
+        btnNo.style.boxShadow = 'none';
+      } else {
+        btnNo.style.background = 'var(--bg)';
+        btnNo.style.color = 'var(--ink)';
+        btnNo.style.boxShadow = '0 1px 2px rgba(0,0,0,.1)';
+        btnEn.style.background = 'transparent';
+        btnEn.style.color = 'var(--muted)';
+        btnEn.style.boxShadow = 'none';
+      }
+    }
+    document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+      el.innerHTML = el.getAttribute('data-' + lang);
+    });
+    document.querySelectorAll('.lang-block-no').forEach(el => {
+      el.style.display = (lang === 'en') ? 'none' : '';
+    });
+    document.querySelectorAll('.lang-block-en').forEach(el => {
+      el.style.display = (lang === 'en') ? '' : 'none';
+    });
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    let saved = 'no';
+    try { saved = localStorage.getItem('portal_lang') || 'no'; } catch(e) {}
+    if (saved === 'en') setPortalLang('en');
+  });
+</script>
+

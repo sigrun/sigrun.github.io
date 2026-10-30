@@ -1,9 +1,12 @@
 ---
 title: "Forskerbot – Hvordan lage sin egen KI-assistent"
-collection: posts
+collection: talks
+type: "Faglig verksted"
+venue: "NLA Høgskolen"
+location: "Bergen"
 date: 2025-10-29
 author: "Sigrun Lindaas Norhagen"
-permalink: /blog/forskerbot/
+permalink: /talks/2025-10-29-forskerbot
 tags:
   - KI
   - ChatGPT
