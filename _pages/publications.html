@@ -22,14 +22,71 @@ hide_auto_title: true
   <p class="lead">
     Standard APA-referanseliste hentet fra <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i)">Google Scholar</a> og <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener" style="color:var(--sky-i)">ORCID</a>. Klikk på selve referansen for å åpne publikasjonen, eller utvid for å lese sammendraget.
   </p>
+
+  <!-- Diskret nøkkeltall-stripe fra Google Scholar -->
+  <div style="display:inline-flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:10px;padding:8px 16px;background:var(--surface);border:1px solid var(--line-soft);border-radius:999px;font-size:13px;color:var(--body);">
+    <span><strong style="color:var(--ink);">Siteringer:</strong> 87</span>
+    <span style="color:var(--line);">·</span>
+    <span><strong style="color:var(--ink);">h-indeks:</strong> 3</span>
+    <span style="color:var(--line);">·</span>
+    <span><strong style="color:var(--ink);">i10-indeks:</strong> 1</span>
+    <span style="color:var(--line);">·</span>
+    <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener" style="color:var(--sky-i);font-weight:600;text-decoration:none;">Google Scholar-profil ↗</a>
+  </div>
 </header>
 
-<div class="apa-list">
-  <!-- Publikasjon 1: BJRE 2025 Placing Religion Virtually -->
+<div class="apa-list" id="apa-publications-list">
+  <!-- Publikasjon 1: The TTT Model (Beyond Technology, EDEN) -->
   <div class="apa-item">
     <div class="apa-row-top">
-      <a class="apa-citation-link" id="cite-bjre" href="https://doi.org/10.1080/01416200.2025.2471234" target="_blank" rel="noopener" title="Åpne publikasjon">
-        Andersland, I., Faye, R., &amp; Norhagen, S. L. (2025). Placing religion virtually: Facilitating critical democratic literacy with 360-degree video in teacher education. <em>British Journal of Religious Education</em>, 1–15.
+      <a class="apa-citation-link" id="cite-ttt" href="https://scholar.google.com/citations?view_op=view_citation&hl=no&user=IibnOuQAAAAJ&sortby=pubdate&citation_for_view=IibnOuQAAAAJ:WF5omc3nYNoC" target="_blank" rel="noopener" title="Åpne i Google Scholar">
+        Norhagen, S. L. (2025). The TTT Model: A Three-Step Approach to Tracing Professional Digital Competence in Teacher Education Coursework. I <em>Beyond Technology: Human-AI Collaboration for Learning and Teaching</em> (s. 182).
+      </a>
+      <button class="apa-copy-discreet" onclick="copyApa('cite-ttt', this)" title="Kopier APA-referanse">
+        <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Kopier</span>
+      </button>
+    </div>
+    <div class="apa-sub-meta">
+      <span class="apa-type-label">Konferansebidrag (Proceedings)</span>
+      <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-ttt', this)">
+        <span>Les abstract</span>
+        <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div class="apa-abstract-drawer" id="abs-ttt">
+      Artikkelen introduserer <strong>TTT-modellen</strong> (<em>Three-Step Approach to Tracing Professional Digital Competence</em>), en tretrinns tilnærming for å kartlegge, spore og synliggjøre hvordan profesjonsfaglig digital kompetanse (PfDK) integreres og dokumenteres gjennom arbeidskrav i lærerutdanningen.
+    </div>
+  </div>
+
+  <!-- Publikasjon 2: When Everyone Is Responsible, No One Is (Beyond Technology, EDEN) -->
+  <div class="apa-item">
+    <div class="apa-row-top">
+      <a class="apa-citation-link" id="cite-every" href="https://scholar.google.com/citations?view_op=view_citation&hl=no&user=IibnOuQAAAAJ&sortby=pubdate&citation_for_view=IibnOuQAAAAJ:eQOLeE2rZwMC" target="_blank" rel="noopener" title="Åpne i Google Scholar">
+        Norhagen, S. L. (2025). When Everyone Is Responsible, No One Is: Organizational Barriers to Embedding Professional Digital Competence in Teacher Education. I <em>Beyond Technology: Human-AI Collaboration for Learning and Teaching</em> (s. 140).
+      </a>
+      <button class="apa-copy-discreet" onclick="copyApa('cite-every', this)" title="Kopier APA-referanse">
+        <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Kopier</span>
+      </button>
+    </div>
+    <div class="apa-sub-meta">
+      <span class="apa-type-label">Konferansebidrag (Proceedings)</span>
+      <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-every', this)">
+        <span>Les abstract</span>
+        <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div class="apa-abstract-drawer" id="abs-every">
+      Undersøker de organisatoriske og strukturelle barrierene som oppstår når profesjonsfaglig digital kompetanse (PfDK) pålegges som et tverrfaglig ansvar i lærerutdanningen uten tydelig ansvarsfordeling, koordinering og eierskap på program- og emnenivå.
+    </div>
+  </div>
+
+  <!-- Publikasjon 3: BJRE 2025 Placing Religion Virtually -->
+  <div class="apa-item">
+    <div class="apa-row-top">
+      <a class="apa-citation-link" id="cite-bjre" href="https://scholar.google.com/citations?view_op=view_citation&hl=no&user=IibnOuQAAAAJ&sortby=pubdate&citation_for_view=IibnOuQAAAAJ:W7OEmFMy1HYC" target="_blank" rel="noopener" title="Åpne publikasjon">
+        Andersland, I., Faye, R., &amp; Norhagen, S. L. (2025). Placing religion virtually: combining textbooks with virtual student-produced 360-degree virtual tours of churches in teacher education for RE. <em>British Journal of Religious Education</em>, 1–14.
       </a>
       <button class="apa-copy-discreet" onclick="copyApa('cite-bjre', this)" title="Kopier APA-referanse">
         <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
@@ -37,22 +94,22 @@ hide_auto_title: true
       </button>
     </div>
     <div class="apa-sub-meta">
-      <span class="apa-type-label">Tidsskriftartikkel (Fagfellevurdert)</span>
+      <span class="apa-type-label">Tidsskriftartikkel (Fagfellevurdert) · Sitert av 4</span>
       <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-bjre', this)">
         <span>Les abstract</span>
         <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
       </button>
     </div>
     <div class="apa-abstract-drawer" id="abs-bjre">
-      Denne studien undersøker hvordan 360-graders video av hellige rom i VR-briller kan fungere som en meningsfull tilnærming til religionsundervisning i lærerutdanningen og fremme kritisk demokratisk kompetanse gjennom sanselig tilstedeværelse og felles faglig refleksjon.
+      Denne studien undersøker hvordan lærebøker kombinert med studentproduserte 360-graders virtuelle ekskursjoner til kirkerom kan berike KRLE-undervisningen i lærerutdanningen gjennom sanselig tilstedeværelse, didaktisk design og felles faglig refleksjon.
     </div>
   </div>
 
-  <!-- Publikasjon 2: EDEN 2025 -->
+  <!-- Publikasjon 4: EDEN 2025 PDC Ladder -->
   <div class="apa-item">
     <div class="apa-row-top">
       <a class="apa-citation-link" id="cite-1" href="https://eden-europe.eu/wp-content/uploads/2025/07/EDEN-2025-AC-Proceedings.pdf#page=218" target="_blank" rel="noopener" title="Åpne publikasjon (PDF)">
-        Norhagen, S. L. (2025). The PDC Ladder for Teacher Education: A Three-Tiered Framework for Digital Competence Integration. I <em>EDEN Europe 2025 Annual Conference Proceedings</em> (s. 218). EDEN Digital Learning Europe.
+        Norhagen, S. L. (2025). The PDC Ladder for Teacher Education: A Three-Tiered Framework for Digital Competence Integration. I <em>Shaping the Future of Education in the Age of AI: Empowering Inclusion – EDEN Europe 2025 Annual Conference Proceedings</em> (s. 218). EDEN Digital Learning Europe.
       </a>
       <button class="apa-copy-discreet" onclick="copyApa('cite-1', this)" title="Kopier APA-referanse">
         <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
@@ -71,7 +128,7 @@ hide_auto_title: true
     </div>
   </div>
 
-  <!-- Publikasjon 3: Frontiers 2024 Scoping Review -->
+  <!-- Publikasjon 5: Frontiers 2024 Scoping Review -->
   <div class="apa-item">
     <div class="apa-row-top">
       <a class="apa-citation-link" id="cite-2" href="https://doi.org/10.3389/feduc.2024.1363529" target="_blank" rel="noopener" title="Åpne publikasjon (DOI)">
@@ -83,7 +140,7 @@ hide_auto_title: true
       </button>
     </div>
     <div class="apa-sub-meta">
-      <span class="apa-type-label">Tidsskriftartikkel (Fagfellevurdert)</span>
+      <span class="apa-type-label">Tidsskriftartikkel (Fagfellevurdert) · Sitert av 83</span>
       <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-2', this)">
         <span>Les abstract</span>
         <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
@@ -94,11 +151,11 @@ hide_auto_title: true
     </div>
   </div>
 
-  <!-- Publikasjon 4: FJORD 2024 -->
+  <!-- Publikasjon 6: FJORD 2024 -->
   <div class="apa-item">
     <div class="apa-row-top">
       <a class="apa-citation-link" id="cite-3" href="https://eden-europe.eu/wp-content/uploads/2024/07/2024-AC-Proceedings_final-version.pdf#page=191" target="_blank" rel="noopener" title="Åpne publikasjon (PDF)">
-        Norhagen, S. L. (2024). FJORD Framework: Integrating Student Perspectives Through Holistic Course Design. I <em>Learning in the Age of AI: Towards Imaginative Futures – EDEN Europe 2024 Proceedings</em> (s. 175–191).
+        Norhagen, S. L. (2024). FJORD Framework: Integrating Student Perspectives Through Holistic Course Design. I <em>Learning in the Age of AI: Towards Imaginative Futures – EDEN Europe 2024 Proceedings</em> (s. 179).
       </a>
       <button class="apa-copy-discreet" onclick="copyApa('cite-3', this)" title="Kopier APA-referanse">
         <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
@@ -114,6 +171,29 @@ hide_auto_title: true
     </div>
     <div class="apa-abstract-drawer" id="abs-3">
       The FJORD framework (Flexible, Journey-Oriented, Remote Design) emerges from Norway as a transformative approach to educational course design for online and blended higher education. Derived from international methodologies and merged with local educational needs, this contribution introduces the model, highlighting its adaptability, learner-centered approach, and digital integration.
+    </div>
+  </div>
+
+  <!-- Publikasjon 7: Masteroppgave 2016 -->
+  <div class="apa-item">
+    <div class="apa-row-top">
+      <a class="apa-citation-link" id="cite-master" href="https://scholar.google.com/citations?view_op=view_citation&hl=no&user=IibnOuQAAAAJ&sortby=pubdate&citation_for_view=IibnOuQAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener" title="Åpne i Google Scholar">
+        Norhagen, S. L. (2016). <em>Hvordan støtte lesing på nettbrett – Trenger vi nye lesestrategier for digital lesing?</em> [Masteroppgave]. Høgskolen i Oslo og Akershus (OsloMet).
+      </a>
+      <button class="apa-copy-discreet" onclick="copyApa('cite-master', this)" title="Kopier APA-referanse">
+        <svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Kopier</span>
+      </button>
+    </div>
+    <div class="apa-sub-meta">
+      <span class="apa-type-label">Masteroppgave</span>
+      <button class="apa-abstract-toggle" onclick="toggleAbstract('abs-master', this)">
+        <span>Les abstract</span>
+        <svg class="ic-sm" style="width:13px;height:13px;" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div class="apa-abstract-drawer" id="abs-master">
+      Masteroppgave i Digital Learning Design ved Høgskolen i Oslo og Akershus (nå OsloMet) som undersøker hvordan lesing på nettbrett i skolen skiller seg fra lesing på papir, og hvordan lærere kan støtte elevenes digitale leseforståelse og lesestrategier i multimodale læringsomgivelser.
     </div>
   </div>
 </div>
@@ -348,5 +428,50 @@ hide_auto_title: true
     detail.style.display = 'none';
     grid.style.display = 'grid';
   }
+
+  // Automatisk sjekk mot ORCID / OpenAlex API for eventuelt nye publikasjoner som ikke allerede står i listen
+  (async function syncNewOrcidWorks() {
+    try {
+      const listEl = document.getElementById('apa-publications-list');
+      if (!listEl) return;
+      const existingText = listEl.innerText.toLowerCase();
+
+      const res = await fetch('https://api.openalex.org/works?filter=author.orcid:0000-0002-8570-3201&sort=publication_year:desc');
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data || !Array.isArray(data.results)) return;
+
+      data.results.forEach((work, idx) => {
+        const title = (work.title || '').trim();
+        if (!title) return;
+        // Sjekk om tittelen allerede finnes i listen (unngå duplikater)
+        const titleKey = title.toLowerCase().slice(0, 32);
+        if (existingText.includes(titleKey)) return;
+
+        const year = work.publication_year || '';
+        const authors = (work.authorships || []).map(a => a.author?.display_name || '').filter(Boolean).join(', ') || 'Norhagen, S. L.';
+        const venue = work.primary_location?.source?.display_name || '';
+        const url = work.doi || work.id || 'https://scholar.google.com/citations?user=IibnOuQAAAAJ';
+        const citeId = 'cite-auto-' + idx;
+
+        const item = document.createElement('div');
+        item.className = 'apa-item';
+        item.innerHTML =
+          '<div class="apa-row-top">' +
+            '<a class="apa-citation-link" id="' + citeId + '" href="' + url + '" target="_blank" rel="noopener">' +
+              authors + ' (' + year + '). ' + title + '. ' + (venue ? '<em>' + venue + '</em>.' : '') +
+            '</a>' +
+            '<button class="apa-copy-discreet" onclick="copyApa(\'' + citeId + '\', this)" title="Kopier APA-referanse">' +
+              '<svg class="ic-sm" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>' +
+              '<span>Kopier</span>' +
+            '</button>' +
+          '</div>' +
+          '<div class="apa-sub-meta">' +
+            '<span class="apa-type-label">Publikasjon (hentet fra ORCID/OpenAlex)</span>' +
+          '</div>';
+        listEl.prepend(item);
+      });
+    } catch (e) {}
+  })();
 </script>
 </div>
