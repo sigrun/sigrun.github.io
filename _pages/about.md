@@ -16,7 +16,7 @@ redirect_from:
 <header class="hero">
   <p class="kicker">
     <span class="kicker-pill"></span>
-    <span data-no="Lærerutdanning · Profesjonsfaglig digital kompetanse · Teknologiforståelse" data-en="Teacher Education · Professional Digital Competence · Digital Literacy">Lærerutdanning · Profesjonsfaglig digital kompetanse · Teknologiforståelse</span>
+    <span data-no="Lærerutdanning · Profesjonsfaglig digital kompetanse · Teknologiforståelse" data-en="Teacher Education · Professional Digital Competence · Digital Literacy">Lærerutdanning · Profesjonsfaglig digital kompetanse · Teknologiforståelse · Ai literacy</span>
   </p>
   <h1 class="acad-h1" data-no='Læring i en <span class="hl">digital tid</span>' data-en='Learning in a <span class="hl">Digital Age</span>'>
     Læring i en <span class="hl">digital tid</span>
@@ -219,7 +219,7 @@ redirect_from:
       <ul class="focus-list">
         <li>
           <span class="focus-dot" style="background:var(--mint-i)"></span>
-          <span data-no="<strong>Ekte teknologiforståelse for barn og unge:</strong> Å forstå <em>hvordan</em> teknologien og KI fungerer og påvirker oss – ikke bare hvilke knapper vi trykker på." data-en="<strong>Genuine Digital Literacy for Pupils:</strong> Understanding <em>how</em> technology and AI work and shape society – not just which buttons to press."><strong>Ekte teknologiforståelse for barn og unge:</strong> Å forstå <em>hvordan</em> teknologien og KI fungerer og påvirker oss – ikke bare hvilke knapper vi trykker på.</span>
+          <span data-no="<strong>Teknologiforståelse for barn og unge:</strong> Å forstå <em>hvordan</em> teknologien og KI fungerer og påvirker oss – ikke bare hvilke knapper vi trykker på." data-en="<strong>Genuine Digital Literacy for Pupils:</strong> Understanding <em>how</em> technology and AI work and shape society – not just which buttons to press."><strong>Ekte teknologiforståelse for barn og unge:</strong> Å forstå <em>hvordan</em> teknologien og KI fungerer og påvirker oss – ikke bare hvilke knapper vi trykker på.</span>
         </li>
         <li>
           <span class="focus-dot" style="background:var(--mint-i)"></span>
