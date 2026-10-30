@@ -202,7 +202,7 @@ hide_auto_title: true
     var grid = document.getElementById('jekyllPosterGrid');
     if (!grid) return;
     var rawHtml = grid.innerHTML;
-    if (rawHtml.indexOf('{%') !== -1 || rawHtml.indexOf('{{') !== -1 || grid.children.length === 0) {
+    if (rawHtml.indexOf('{' + '%') !== -1 || rawHtml.indexOf('{' + '{') !== -1 || grid.children.length === 0) {
       var fallbackPosters = [
         {
           id: "microfjord-2026",

@@ -89,23 +89,32 @@ hide_auto_title: true
   </div>
 </div>
 
+<script type="application/json" id="jekyll-talks-json">
+[
+  {% for post in site.talks reversed %}
+  {
+    "url": {{ post.slidesurl | default: post.url | jsonify }},
+    "dateISO": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+    "dateLabel": {{ post.date | date: "%b %Y" | jsonify }},
+    "title": {{ post.title | jsonify }},
+    "venue": {{ post.venue | default: "" | jsonify }},
+    "loc": {{ post.location | default: "" | jsonify }},
+    "topic": {{ post.topic | default: "ai" | jsonify }},
+    "topicLabel": {{ post.topic_label | default: post.type | default: "Foredrag" | jsonify }},
+    "tagClass": "{% if post.topic == 'pfdk' or post.title contains 'PfDK' or post.title contains 'doktorgrad' %}tag-pfdk{% elsif post.topic == 'lead' or post.title contains 'bot' or post.title contains 'DIDLE' %}tag-lead{% else %}tag-ai{% endif %}"
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+</script>
+
 <script>
-  // Henter automatisk alle Markdown-filer fra _talks/-mappen når GitHub Pages (Jekyll) bygger siden:
-  const jekyllTalks = [
-    {% for post in site.talks reversed %}
-    {
-      url: {{ post.slidesurl | default: post.url | jsonify }},
-      dateISO: {{ post.date | date: "%Y-%m-%d" | jsonify }},
-      dateLabel: {{ post.date | date: "%b %Y" | jsonify }},
-      title: {{ post.title | jsonify }},
-      venue: {{ post.venue | default: "" | jsonify }},
-      loc: {{ post.location | default: "" | jsonify }},
-      topic: {{ post.topic | default: "ai" | jsonify }},
-      topicLabel: {{ post.topic_label | default: post.type | default: "Foredrag" | jsonify }},
-      tagClass: "{% if post.topic == 'pfdk' or post.title contains 'PfDK' or post.title contains 'doktorgrad' %}tag-pfdk{% elsif post.topic == 'lead' or post.title contains 'bot' or post.title contains 'DIDLE' %}tag-lead{% else %}tag-ai{% endif %}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
+  let jekyllTalks = [];
+  try {
+    const rawTalksJson = document.getElementById('jekyll-talks-json')?.textContent || '';
+    if (rawTalksJson && rawTalksJson.indexOf('{' + '%') === -1) {
+      jekyllTalks = JSON.parse(rawTalksJson);
+    }
+  } catch (e) {}
 
   // Fallback for lokal forhåndsvisning (når man åpner talks.html direkte uten Jekyll):
   const fallbackTalksData = [
