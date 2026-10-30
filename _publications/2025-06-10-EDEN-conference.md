@@ -16,24 +16,24 @@ Framework for Digital Competence Integration" EDEN Europe 2025.'
 
 This poster introduces the **PDC Ladder for Teacher Education**, a visual and conceptual model that distinguishes digital competence at three interconnected levels: pupils, teachers, and teacher educators. Based on Starkey’s model for teachers’ Professional Digital Competence and extended through Uerz et al.’s emphasis on modeling and metacommunication, the framework supports a clearer understanding of the complex role teacher educators play in preparing future teachers for the digital age.
 
-## 🔗 Resources
+## Resources
 
-- 📄 [Full article (PDF)](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1363529/full)  
-- 🧾 [Poster abstract (PDF)](https://eden-europe.eu/wp-content/uploads/2025/07/EDEN-2025-AC-Proceedings.pdf#page=218)  
-- 🪜 [Model: The PDC Ladder model (PNG)](/images/PDC-ladder-model.png) 
-- 🖼️ [Illustration: PDC Ladder illustration (PNG)](/images/PDC-ladder-illustration.png)  
-- 🛠️ [Teachable Moments – What Teacher Educators Can Do (Markdown)](/files/EDEN-output.pdf)
+- [Full article (PDF)](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1363529/full)  
+- [Poster abstract (PDF)](https://eden-europe.eu/wp-content/uploads/2025/07/EDEN-2025-AC-Proceedings.pdf#page=218)  
+- [Model: The PDC Ladder model (PNG)](/images/PDC-ladder-model.png) 
+- [Illustration: PDC Ladder illustration (PNG)](/images/PDC-ladder-illustration.png)  
+- [Teachable Moments – What Teacher Educators Can Do (PDF)](/files/EDEN-output.pdf)
 
-## 👣 What teacher educators can do
+## What teacher educators can do
 
 > Make digital competence visible. Think aloud. Invite reflection. Show the ‘why’ behind the ‘how’.
 
-- 🎙️ **Comment on tool choices** during teaching  
-- ❓ **Ask meta-questions** in feedback and supervision  
-- 🧾 **Share your digital decision-making** transparently  
-- 📽️ **Model your own digital practices** with recordings or examples  
-- 📝 **Embed reflection into assignments**  
-- ⚖️ **Highlight real dilemmas** (e.g., privacy vs. participation)
+- **Comment on tool choices** during teaching  
+- **Ask meta-questions** in feedback and supervision  
+- **Share your digital decision-making** transparently  
+- **Model your own digital practices** with recordings or examples  
+- **Embed reflection into assignments**  
+- **Highlight real dilemmas** (e.g., privacy vs. participation)
 
 ---
 

@@ -29,6 +29,36 @@
   --hand: "Caveat", "Bradley Hand", cursive;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.page__content img {
+  border-radius: 14px;
+  margin: 16px 0;
+}
+
+.page__content blockquote {
+  margin: 18px 0;
+  padding: 14px 20px;
+  border-left: 4px solid var(--mint-i);
+  background: var(--surface);
+  border-radius: 0 12px 12px 0;
+  color: var(--ink);
+  font-style: italic;
+}
+
 body.academic-portal,
 .academic-portal {
   background: var(--bg) !important;
@@ -37,8 +67,6 @@ body.academic-portal,
   font-size: 17px !important;
   line-height: 1.56 !important;
   -webkit-font-smoothing: antialiased;
-  margin: 0;
-  padding: 0;
 }
 
 .academic-portal h1,
@@ -61,8 +89,7 @@ body.academic-portal .masthead {
   display: none !important;
 }
 
-/* Nullstill gamle Susy-floats fra AcademicPages (main.css) slik at innhold og footer ikke flyter ved siden av hverandre */
-body.academic-portal #main,
+/* Nullstill gamle Susy-floats fra AcademicPages (main.css) på indre wrappers (IKKE på #main.shell!) */
 body.academic-portal .main,
 body.academic-portal .page,
 body.academic-portal .archive,
@@ -122,20 +149,27 @@ body.academic-portal .page__content,
 }
 
 /* Shell-layout */
+body.academic-portal #main.shell,
 .shell {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 24px 96px;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 32px 96px !important;
+  float: none !important;
+  clear: both !important;
+  box-sizing: border-box !important;
 }
 @media (min-width: 920px) {
+  body.academic-portal #main.shell.with-sidebar,
   .shell.with-sidebar {
-    display: grid;
-    grid-template-columns: 230px minmax(0, 1fr);
-    gap: 64px;
+    display: grid !important;
+    grid-template-columns: 230px minmax(0, 1fr) !important;
+    gap: 64px !important;
   }
+  body.academic-portal #main.shell.no-sidebar,
   .shell.no-sidebar {
-    display: block;
-    max-width: 1060px;
+    display: block !important;
+    max-width: 1060px !important;
   }
 }
 

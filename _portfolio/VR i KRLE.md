@@ -14,4 +14,4 @@ Google Expeditions hadde funksjonalitet som lot læreren styre elevenes synsfelt
 
 Prosjektet synliggjør hvordan VR-teknologi kan brukes didaktisk for å fremme opplevelsesbasert læring og flermodale arbeidsformer i KRLE. Samtidig gir det studentene innsikt i både planlegging, produksjon og gjennomføring av teknologibaserte undervisningsopplegg i praksis.
 
-📄 Tilhørende blogginnlegg: [VR i KRLE – Religiøse rom i 360 grader](/posts/2019/04/vr-religiose-rom/)
+Tilhørende blogginnlegg: [VR i KRLE – Religiøse rom i 360 grader](/posts/2019/04/vr-religiose-rom/)

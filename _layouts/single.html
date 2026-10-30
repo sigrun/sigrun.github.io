@@ -15,7 +15,7 @@ layout: default
   {% endunless %}
 
   <main class="main">
-    {% if is_level3 %}
+    {% if is_level3 and page.hide_auto_nav != true %}
       <nav class="onepager-nav" aria-label="Tilbake-navigasjon">
         {% if page.collection == 'talks' %}
           <a class="btn-pill" href="{{ base_path }}/talks/">← Tilbake til hovedsiden (Foredrag)</a>

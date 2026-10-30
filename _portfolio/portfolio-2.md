@@ -12,6 +12,6 @@ Læringsdesign handler om å planlegge og strukturere hvordan undervisning og l�
 
 FJORD-læringsdesign er utviklet av Sigrun Lindaas Norhagen. Modellen er inspirert av andre internasjonale metoder og rammeverk (Salmon,2014; Fink, 2013) og tilpasset den norske konteksten.
 
-![FJORD framework!](/assets/images/FJORD.png "FJORD læringsdesign")
+![FJORD framework!](/images/FJORD.png "FJORD læringsdesign")
 
 Prosjektet er fortsatt under utvikling, men om du er interessert i å prøve det ut vil jeg gjerne ha kontakt med deg!
