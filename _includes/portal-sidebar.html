@@ -9,9 +9,11 @@
     <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px;">
       <h2 style="margin:0;"><a href="{{ base_path }}/">Sigrun Lindaas Norhagen</a></h2>
     </div>
-    <p data-no="PhD-kandidat i PfDK (UiB) · Leder for digitalisering av utdanning (NLA Høgskolen)"
-       data-en="PhD Candidate in PDC (UiB) · Head of Educational Digitalization (NLA University College)">
-      PhD-kandidat i PfDK (UiB) · Leder for digitalisering av utdanning (NLA Høgskolen)
+    <p data-no='PhD-kandidat PfDK på GLU<br>Se mitt KI-prosjekt på <a href="http://www.kiforskolen.no" target="_blank" rel="noopener">kiforskolen.no</a> og<br>Prosjekt-sandkasse: <a href="http://www.snorhagen.no" target="_blank" rel="noopener">snorhagen.no</a>'
+       data-en='PhD Candidate in PDC (GLU)<br>See my AI project at <a href="http://www.kiforskolen.no" target="_blank" rel="noopener">kiforskolen.no</a> and<br>Project sandbox: <a href="http://www.snorhagen.no" target="_blank" rel="noopener">snorhagen.no</a>'>
+      PhD-kandidat PfDK på GLU<br>
+      Se mitt KI-prosjekt på <a href="http://www.kiforskolen.no" target="_blank" rel="noopener">kiforskolen.no</a> og<br>
+      Prosjekt-sandkasse: <a href="http://www.snorhagen.no" target="_blank" rel="noopener">snorhagen.no</a>
     </p>
     <div style="display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:10px;">
       <div class="seg" role="group" aria-label="Language switch" style="padding:2px;background:var(--surface);border-radius:8px;display:inline-flex;gap:2px;">
@@ -19,12 +21,52 @@
         <button type="button" id="lang-btn-en" onclick="setPortalLang('en')" style="font-size:11.5px;font-weight:600;border:0;padding:3px 9px;border-radius:6px;cursor:pointer;background:transparent;color:var(--muted);">EN</button>
       </div>
     </div>
-    <div class="profile-links">
-      <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener">Scholar</a>
-      <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener">ORCID</a>
-      <a href="http://www.kiforskolen.no" target="_blank" rel="noopener">kiforskolen.no</a>
-      <a href="http://www.snorhagen.no" target="_blank" rel="noopener">snorhagen.no</a>
-    </div>
+    <ul class="author-icon-links">
+      <!-- NLA Høgskolen profil -->
+      <li>
+        <a href="https://www.nla.no/om-nla/ansatte/sigrun-lindaas-norhagen/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="22" x2="21" y2="22"/>
+            <line x1="6" y1="18" x2="6" y2="11"/>
+            <line x1="10" y1="18" x2="10" y2="11"/>
+            <line x1="14" y1="18" x2="14" y2="11"/>
+            <line x1="18" y1="18" x2="18" y2="11"/>
+            <polygon points="12 2 20 7 4 7"/>
+            <line x1="2" y1="18" x2="22" y2="18"/>
+          </svg>
+          <span data-no="NLA Høgskolen" data-en="NLA University College">NLA Høgskolen</span>
+        </a>
+      </li>
+      <!-- UiB profil -->
+      <li>
+        <a href="https://www4.uib.no/finn-ansatte/Sigrun.Lindaas.Norhagen" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+          <span data-no="Universitetet i Bergen (UiB)" data-en="University of Bergen (UiB)">Universitetet i Bergen (UiB)</span>
+        </a>
+      </li>
+      <!-- Google Scholar -->
+      <li>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=no&user=IibnOuQAAAAJ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+          </svg>
+          <span>Google Scholar</span>
+        </a>
+      </li>
+      <!-- ORCID -->
+      <li>
+        <a href="https://orcid.org/0000-0002-8570-3201" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="#A6CE39"/>
+            <path fill="#fff" d="M7.6 16.8H6V9.2h1.6v7.6zM6.8 8.1c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm4.1 8.7h-1.5V9.2h3.3c2.5 0 4.1 1.4 4.1 3.8 0 2.4-1.6 3.8-4.1 3.8h-1.8zm0-6.3v5h1.6c1.7 0 2.6-.9 2.6-2.5 0-1.6-.9-2.5-2.6-2.5h-1.6z"/>
+          </svg>
+          <span>ORCID</span>
+        </a>
+      </li>
+    </ul>
   </div>
 
   <nav class="side-nav" aria-label="Hovedmeny">
