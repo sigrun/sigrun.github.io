@@ -34,7 +34,7 @@ redirect_from:
 
   <div class="explore-grid">
     <!-- 1. PhD-prosjektet -->
-    <a class="explore-card" href="/portfolio/portfolio-1/">
+    <a class="explore-card" href="/portfolio/phd-prosjekt/">
       <svg class="scene" style="width:48px;height:48px;flex-shrink:0" viewBox="0 0 56 56" aria-hidden="true">
         <g filter="url(#hand)">
           <rect x="8" y="34" width="14" height="12" rx="2" class="fo"/>

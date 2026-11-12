@@ -2,6 +2,9 @@
 title: "FJORD læringsdesign"
 excerpt: "FJORD læringsdesign er en strukturert og visuell metode for å utvikle undervisning som gir sammenheng mellom læringsutbytte, vurdering og læringsaktiviteter. Modellen bygger på prinsipper fra backward design, design thinking og Carpe Diem-metodikken, og legger vekt på samskaping, tverrfaglig samarbeid og helhetlig planlegging. FJORD brukes som et praktisk verktøy i høyere utdanning for å designe relevante og engasjerende læringsforløp – både fysisk, digitalt og hybrid.<br/><img src='/images/FJORDn.png'>"
 collection: portfolio
+permalink: /portfolio/fjord/
+redirect_from:
+  - /portfolio/portfolio-2/
 ---
 <img src='/images/FJORDn.png'>
 # FJORD framework

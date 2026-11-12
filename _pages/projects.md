@@ -57,7 +57,7 @@ hide_auto_title: true
     </div>
   </a>
 
-  <a class="fact f-mint clickable" href="/portfolio/portfolio-2/">
+  <a class="fact f-mint clickable" href="/portfolio/fjord/">
     <div>
       <span class="fact-tag" style="color:var(--mint-i)" data-no="Rammeverk &amp; EU-samarbeid" data-en="Frameworks &amp; European Collaboration">Rammeverk &amp; EU-samarbeid</span>
       <b>FJORD-framework &amp; DIDLE</b>
@@ -90,8 +90,8 @@ hide_auto_title: true
 
   <h3 class="acad-h3" data-no="Digital undervisning, rammeverk og læremidler" data-en="Digital Teaching, Frameworks and Learning Resources">Digital undervisning, rammeverk og læremidler</h3>
   <ul style="color:var(--body);">
-    <li data-no='Utviklet rammeverket <a href="/portfolio/portfolio-2/">FJORD (Flexible, Journey-Oriented, Remote Design)</a> for nettbaserte og fleksible studier' data-en='Developed the <a href="/portfolio/portfolio-2/">FJORD Framework (Flexible, Journey-Oriented, Remote Design)</a> for online and blended education'>Utviklet rammeverket <a href="/portfolio/portfolio-2/">FJORD (Flexible, Journey-Oriented, Remote Design)</a> for nettbaserte og fleksible studier</li>
-    <li data-no='Koordinert og vært faglig bidragsyter i det europeiske samarbeidsprosjektet <a href="/portfolio/portfolio-3/">DIDLE</a>' data-en='Coordinated and contributed to the European Erasmus+ collaboration project <a href="/portfolio/portfolio-3/">DIDLE</a>'>Koordinert og vært faglig bidragsyter i det europeiske samarbeidsprosjektet <a href="/portfolio/portfolio-3/">DIDLE</a></li>
+    <li data-no='Utviklet rammeverket <a href="/portfolio/fjord/">FJORD (Flexible, Journey-Oriented, Remote Design)</a> for nettbaserte og fleksible studier' data-en='Developed the <a href="/portfolio/fjord/">FJORD Framework (Flexible, Journey-Oriented, Remote Design)</a> for online and blended education'>Utviklet rammeverket <a href="/portfolio/fjord/">FJORD (Flexible, Journey-Oriented, Remote Design)</a> for nettbaserte og fleksible studier</li>
+    <li data-no='Koordinert og vært faglig bidragsyter i det europeiske samarbeidsprosjektet <a href="/portfolio/didle/">DIDLE</a>' data-en='Coordinated and contributed to the European Erasmus+ collaboration project <a href="/portfolio/didle/">DIDLE</a>'>Koordinert og vært faglig bidragsyter i det europeiske samarbeidsprosjektet <a href="/portfolio/didle/">DIDLE</a></li>
     <li data-no='Utviklet læringsressursen <a href="https://programmering.snorhagen.no" target="_blank" rel="noopener">programmering.snorhagen.no</a> og <a href="/portfolio/VR%20i%20KRLE/">VR og 360°-video i KRLE</a>' data-en='Developed the open learning resource <a href="https://programmering.snorhagen.no" target="_blank" rel="noopener">programmering.snorhagen.no</a> and <a href="/portfolio/VR%20i%20KRLE/">VR and 360° video in Religious Education</a>'>Utviklet læringsressursen <a href="https://programmering.snorhagen.no" target="_blank" rel="noopener">programmering.snorhagen.no</a> og <a href="/portfolio/VR%20i%20KRLE/">VR og 360°-video i KRLE</a></li>
   </ul>
 </section>

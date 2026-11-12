@@ -2,6 +2,9 @@
 title: "DIDLE - Development of innovative digital Learning solutions for transnational Language and Cultural education (Erasmus+)"
 excerpt: "DIDLE-prosjektet utforsket hvordan digitale teknologier og internasjonalt samarbeid kan styrke elevers språk- og kulturforståelse i nordisk kontekst. Med særlig vekt på muntlig språk og barne- og ungdomslitteratur, utvikler prosjektet undervisningspraksiser som fremmer tverrnasjonal samhandling. Gjennom videreutvikling av læringsressursene Norden i Skolen og appen Fotspor, undersøkte vi hvordan digitale verktøy og lokal informasjon kan berike språkundervisningen. Prosjektet bygde på fire perspektiver: nabospråk, digital samhandling, litteraturformidling og profesjonsutvikling på tvers av landegrenser.<br/><img src='/images/DIDLE-Logo.png'>"
 collection: portfolio
+permalink: /portfolio/didle/
+redirect_from:
+  - /portfolio/portfolio-3/
 ---
 
 <img src='/images/DIDLE-Logo.png'>

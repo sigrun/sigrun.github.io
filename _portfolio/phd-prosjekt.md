@@ -2,6 +2,12 @@
 title: "Doktorgradsprosjektet i PfDK"
 excerpt: "Undersøker hvordan profesjonsfaglig digital kompetanse kan implementeres systematisk i norsk lærerutdanning gjennom kunnskapskartlegging, systemanalyse og utvikling av en dokumentasjonspraksis."
 collection: portfolio
+permalink: /portfolio/phd-prosjekt/
+redirect_from:
+  - /portfolio/portfolio-1/
+  - /portfolio/phd/
+  - /phd/
+  - /phd-prosjekt/
 hide_auto_title: true
 ---
 
