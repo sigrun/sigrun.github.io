@@ -59,7 +59,7 @@ hide_auto_title: true
   </a>
 
   <!-- Studie 2 -->
-  <a class="fact f-peach clickable" href="/artikler/scoping-review-2024/#studie-2">
+  <a class="fact f-peach clickable" href="#studie-2">
     <div>
       <span class="fact-tag" style="color:var(--peach-i)" data-no="Delstudie 2 · Systemisk analyse" data-en="Sub-Study 2 · Systemic Analysis">Delstudie 2 · Systemisk analyse</span>
       <b>Complex Competence, Complex Challenges</b>
@@ -67,12 +67,12 @@ hide_auto_title: true
     </div>
     <div class="fact-cta">
       <span data-no="Se studieoversikt" data-en="View study overview">Se studieoversikt</span>
-      <span>→</span>
+      <span>↓</span>
     </div>
   </a>
 
   <!-- Studie 3 -->
-  <a class="fact f-lilac clickable" href="/artikler/scoping-review-2024/#studie-3">
+  <a class="fact f-lilac clickable" href="#studie-3">
     <div>
       <span class="fact-tag" style="color:var(--lilac-i)" data-no="Delstudie 3 · Designbasert" data-en="Sub-Study 3 · Design-Based">Delstudie 3 · Designbasert</span>
       <b data-no="Porteføljen som grenseobjekt" data-en="The Portfolio as a Boundary Object">Porteføljen som grenseobjekt</b>
@@ -80,15 +80,30 @@ hide_auto_title: true
     </div>
     <div class="fact-cta">
       <span data-no="Se studieoversikt" data-en="View study overview">Se studieoversikt</span>
-      <span>→</span>
+      <span>↓</span>
     </div>
   </a>
+</div>
+
+<!-- Detaljseksjoner for Delstudie 2 og Delstudie 3 -->
+<div id="studie-2" class="finding-row" style="margin-top:28px;scroll-margin-top:90px;border-left-color:var(--peach-i);background:var(--peach-soft);">
+  <span class="fact-tag" style="color:var(--peach-i)" data-no="Delstudie 2 · Systemisk og organisatorisk analyse" data-en="Sub-Study 2 · Systemic &amp; Organizational Analysis">Delstudie 2 · Systemisk og organisatorisk analyse</span>
+  <b style="font-size:18px;display:block;margin-bottom:6px;">Complex Competence, Complex Challenges (When Everyone Is Responsible, No One Is)</b>
+  <span style="font-size:15px;color:var(--body);display:block;margin-bottom:10px;" data-no="Undersøker de organisatoriske og strukturelle barrierene som oppstår når profesjonsfaglig digital kompetanse (PfDK) pålegges som et tverrfaglig ansvar i lærerutdanningen uten tydelig ansvarsfordeling, koordinering og eierskap på program- og emnenivå. Kombinerer dokumentanalyse av styringsdokumenter med spørreundersøkelser og intervjuer." data-en="Investigates the organizational and structural barriers that arise when Professional Digital Competence (PDC) is mandated as a cross-curricular responsibility in teacher education without clear ownership and coordination at program and course levels.">Undersøker de organisatoriske og strukturelle barrierene som oppstår når profesjonsfaglig digital kompetanse (PfDK) pålegges som et tverrfaglig ansvar i lærerutdanningen uten tydelig ansvarsfordeling, koordinering og eierskap på program- og emnenivå. Kombinerer dokumentanalyse av styringsdokumenter med spørreundersøkelser og intervjuer.</span>
+  <a class="btn-pill" href="/publications/#cite-every" data-no="Se tilhørende konferansebidrag i Publikasjoner →" data-en="View related conference paper in Publications →">Se tilhørende konferansebidrag i Publikasjoner →</a>
+</div>
+
+<div id="studie-3" class="finding-row" style="margin-top:16px;scroll-margin-top:90px;border-left-color:var(--lilac-i);background:var(--lilac-soft);">
+  <span class="fact-tag" style="color:var(--lilac-i)" data-no="Delstudie 3 · Designbasert intervensjon og dokumentasjon" data-en="Sub-Study 3 · Design-Based Intervention &amp; Documentation">Delstudie 3 · Designbasert intervensjon og dokumentasjon</span>
+  <b style="font-size:18px;display:block;margin-bottom:6px;" data-no="Porteføljen som grenseobjekt &amp; TTT-modellen" data-en="The Portfolio as a Boundary Object &amp; The TTT Model">Porteføljen som grenseobjekt &amp; TTT-modellen</b>
+  <span style="font-size:15px;color:var(--body);display:block;margin-bottom:10px;" data-no="Utvikler og prøver ut en tretrinns tilnærming (The TTT Model) og 80/20-modellen for arbeidskrav, der lærerstudenter dokumenterer og reflekterer over egen PfDK i en profesjonsportefølje som fungerer som grenseobjekt i overgangen til læreryrket." data-en="Develops and tests a three-step approach (The TTT Model) and the 80/20 coursework model, enabling student teachers to document and reflect on their PDC in a professional portfolio acting as a boundary object into the teaching profession.">Utvikler og prøver ut en tretrinns tilnærming (The TTT Model) og 80/20-modellen for arbeidskrav, der lærerstudenter dokumenterer og reflekterer over egen PfDK i en profesjonsportefølje som fungerer som grenseobjekt i overgangen til læreryrket.</span>
+  <a class="btn-pill" href="/publications/#cite-ttt" data-no="Se tilhørende konferansebidrag (TTT-modellen) →" data-en="View related conference paper (The TTT Model) →">Se tilhørende konferansebidrag (TTT-modellen) →</a>
 </div>
 
 <div style="margin-top:32px;padding:18px 22px;border-radius:16px;background:var(--surface);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
   <div>
     <span style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mint-i);display:block;" data-no="Relatert empirisk studie (FUTURE-prosjektet · BJRE 2025)" data-en="Related Empirical Study (FUTURE Project · BJRE 2025)">Relatert empirisk studie (FUTURE-prosjektet · BJRE 2025)</span>
-    <strong style="font-size:16px;color:var(--ink);">Placing Religion Virtually: Combining Textbooks with Virtual Student-Produced 360° Tours</strong>
+    <strong style="font-size:16px;color:var(--ink);">Placing religion virtually: combining textbooks with virtual student-produced 360-degree virtual tours of churches in teacher education for RE</strong>
   </div>
   <a class="btn-pill" href="/artikler/placing-religion-virtually-2025/" data-no="Se som Artikkel-Onepager →" data-en="Open Article Onepager →">
     Se som Artikkel-Onepager →

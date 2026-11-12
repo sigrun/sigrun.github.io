@@ -2,6 +2,9 @@
 title: "VR i KRLE"
 excerpt: "Studentene laget virtuelle ekskursjoner til religiøse rom med 360-kamera og Google Expeditions.<br/><img src='/images/360-prosjekt.png'>"
 collection: portfolio
+permalink: /portfolio/vr-i-krle/
+redirect_from:
+  - "/portfolio/VR i KRLE/"
 ---
 
 <img src='/images/360-prosjekt.png'>
@@ -14,4 +17,5 @@ Google Expeditions hadde funksjonalitet som lot læreren styre elevenes synsfelt
 
 Prosjektet synliggjør hvordan VR-teknologi kan brukes didaktisk for å fremme opplevelsesbasert læring og flermodale arbeidsformer i KRLE. Samtidig gir det studentene innsikt i både planlegging, produksjon og gjennomføring av teknologibaserte undervisningsopplegg i praksis.
 
-Tilhørende blogginnlegg: [VR i KRLE – Religiøse rom i 360 grader](/posts/2019/04/vr-religiose-rom/)
+- Tilhørende forskningsartikkel (2025): [Placing religion virtually: combining textbooks with virtual student-produced 360-degree virtual tours of churches in teacher education for RE](/artikler/placing-religion-virtually-2025/)
+- Tilhørende blogginnlegg (2019): [VR i KRLE – Religiøse rom i 360 grader](/posts/2019/04/vr-religiose-rom/)
